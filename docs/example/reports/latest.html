@@ -1,0 +1,443 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><title>Daily equity research</title>
+<style>body{font:15px system-ui,sans-serif;color:#203046;background:#f5f7fb;margin:24px}main{max-width:1150px;margin:auto}section{background:white;padding:24px;margin:20px 0;border-radius:12px}table{border-collapse:collapse;width:100%;font-size:13px}td,th{text-align:left;padding:8px;border-bottom:1px solid #dde4ee}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f2f5f9;padding:12px}a{color:#1262ae}.muted{color:#5d6b7c}h1,h2{color:#143d62}.scroll{overflow-x:auto}</style></head>
+<body><main><h1>Daily equity research</h1><p>2026-10-20T17:49:24.826610+05:30 · SYNTHETIC FIXTURE — NOT LIVE DATA</p><p class="muted">Research and decision support. Scenario estimates are uncertain. Missing evidence is N/A.</p>
+
+<section><h2>Watchlist</h2><div class="scroll"><table><thead><tr><th>Company</th><th>Price</th><th>Score / 100</th><th>Base value</th><th>Verdict</th></tr></thead><tbody>
+<tr><td><a href="#AAPL">Synthetic Apple</a><br>AAPL</td><td>159.03871248284568 USD<br>2026-10-19T00:00:00+00:00</td><td>53.93</td><td>23.705257540436726</td><td>AVOID</td></tr><tr><td><a href="#MSFT">Synthetic Technology Company</a><br>MSFT</td><td>159.03871248284568 USD<br>2026-10-19T00:00:00+00:00</td><td>53.93</td><td>23.705257540436726</td><td>AVOID</td></tr><tr><td><a href="#TCS.NS">Synthetic TCS</a><br>TCS.NS</td><td>159.03871248284568 INR<br>2026-10-19T00:00:00+00:00</td><td>N/A</td><td>23.705257540436726</td><td>INSUFFICIENT DATA</td></tr><tr><td><a href="#HDFCBANK.NS">Synthetic HDFC Bank</a><br>HDFCBANK.NS</td><td>159.03871248284568 INR<br>2026-10-19T00:00:00+00:00</td><td>N/A</td><td>N/A</td><td>INSUFFICIENT DATA</td></tr></tbody></table></div></section>
+<section id="AAPL"><h2>Synthetic Apple · AAPL</h2><p>NASDAQ · AVOID</p>
+
+<h3>Executive assessment</h3><p>Avoid candidate; Valuation: Overvalued; Review unresolved governance disclosures</p><p>Deteriorating cash generation, leverage, governance, or valuation assumptions invalidate the thesis.</p><p>closed · expected completed session 2026-10-19 · stale: False</p>
+<table><tr><th>Category</th><th>Score</th><th>Coverage</th></tr><tr><td>fundamentals</td><td>23.32 / 30</td><td>82.3%</td></tr><tr><td>valuation</td><td>1.82 / 30</td><td>66.7%</td></tr><tr><td>technicals</td><td>14.52 / 25</td><td>100.0%</td></tr><tr><td>risk</td><td>14.27 / 15</td><td>71.4%</td></tr></table>
+<h3>Valuation and assumptions</h3><pre>{
+  "accumulation_range": [
+    12.107410795074443,
+    18.96420603234938
+  ],
+  "assumptions": {
+    "scenarios": {
+      "base": {
+        "discount_rate": 0.12,
+        "growth_cap": 0.05
+      },
+      "conservative": {
+        "discount_rate": 0.14,
+        "growth_cap": 0
+      },
+      "optimistic": {
+        "discount_rate": 0.1,
+        "growth_cap": 0.08
+      }
+    },
+    "source": "Explicit research policy; rates are sensitivity assumptions, not forecasts. Historical annual FCF CAGR caps growth. No DCF for financial companies.",
+    "terminal_growth": 0.02
+  },
+  "confidence": "low/model-sensitive",
+  "fair_values": {
+    "base": {
+      "discount_rate": 0.12,
+      "growth": 0.05,
+      "value": 23.705257540436726
+    },
+    "conservative": {
+      "discount_rate": 0.14,
+      "growth": 0.0,
+      "value": 16.14321439343259
+    },
+    "optimistic": {
+      "discount_rate": 0.1,
+      "growth": 0.08,
+      "value": 33.66602443736114
+    }
+  },
+  "formulas": "FCF_t=FCF_0*(1+g)^t; PV=sum(FCF_t/(1+r)^t)+FCF_5*(1+terminal)/(r-terminal)/(1+r)^5; per-share equity=PV/shares. FCF is an equity cash-flow proxy; no second net-debt deduction.",
+  "historical_fcf_growth": 0.08000000000000007,
+  "historical_pe": {
+    "historical_pe_max": null,
+    "historical_pe_median": null,
+    "historical_pe_min": null
+  },
+  "margin_of_safety": -5.70900589084744,
+  "metrics": {
+    "earnings_yield": {
+      "formula": "1 / trailing PE",
+      "freshness": "derived",
+      "inputs": [
+        "pe"
+      ],
+      "period": "2025-12-31",
+      "retrieved_at": "2026-10-20T12:19:25.163959+00:00",
+      "source": "calculated",
+      "unit": "ratio",
+      "value": null
+    },
+    "fcf_yield": {
+      "formula": "annual FCF / market cap",
+      "freshness": "derived",
+      "inputs": [
+        "fcf",
+        "market_cap"
+      ],
+      "period": "2025-12-31",
+      "retrieved_at": "2026-10-20T12:19:25.163978+00:00",
+      "source": "calculated",
+      "unit": "ratio",
+      "value": 0.012934330738761986
+    },
+    "peg": {
+      "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
+      "freshness": "derived",
+      "inputs": [
+        "pe",
+        "eps_growth_3y"
+      ],
+      "period": "2025-12-31",
+      "retrieved_at": "2026-10-20T12:19:25.163987+00:00",
+      "source": "calculated",
+      "unit": "ratio",
+      "value": null
+    }
+  },
+  "omission_reason": null,
+  "sector_relative_pe": null,
+  "verdict": "Overvalued"
+}</pre><h3>Technical scenarios</h3><p>Trend mixed · Weekly up · Support 153.53725205244325 · Resistance 161.06660269934446</p><p>Entry [153.53725205244325, 155.53725205244325] · Invalidation 149.53725205244325 · Reward/risk 0.21342931766678785</p><p>Confirmed 5-bar pivots in last 63 sessions; zones ±0.25 ATR; invalidation support - ATR. Swing scenarios, not price forecasts.</p>
+<h3>News · No material catalyst</h3><p>headline/snippet only; material catalysts not verified. No material catalyst means none confirmed in available feed, not absence of risk. News never adds score points.</p><p>No relevant items retrieved.</p>
+<h3>Risk and thesis review</h3><pre>{
+  "concerns": [],
+  "critical": [],
+  "note": "Unknown governance information is not a clean audit or low-risk finding.",
+  "unverified": [
+    "auditor qualifications",
+    "pledged promoter shares",
+    "business concentration",
+    "refinancing maturity schedule",
+    "litigation and regulatory exposure",
+    "material corporate actions"
+  ]
+}</pre><h3>Changes since previous report</h3><pre>{
+  "baseline": "First observation"
+}</pre>
+<h3>Metric evidence and formulas</h3><div class="scroll"><table><tr><th>Metric</th><th>Value/unit</th><th>Source</th><th>Observation / retrieval</th><th>Freshness / formula</th></tr><tr><td>price</td><td>159.03871248284568 USD</td><td>SYNTHETIC FIXTURE</td><td>2026-10-19T00:00:00+00:00<br>2026-10-20T12:19:24.830390+00:00</td><td>fresh<br>N/A</td></tr><tr><td>market_cap</td><td>15903871.248284569 USD</td><td>SYNTHETIC FIXTURE</td><td>2026-10-19T00:00:00+00:00<br>2026-10-20T12:19:24.830406+00:00</td><td>fresh<br>N/A</td></tr><tr><td>roe</td><td>0.16666666666666666 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>net_income / equity</td></tr><tr><td>roa</td><td>0.09375 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>net_income / assets</td></tr><tr><td>operating_margin</td><td>N/A ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>operating_income / revenue</td></tr><tr><td>net_margin</td><td>0.15 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>net_income / revenue</td></tr><tr><td>debt_equity</td><td>0.1512407104519451 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>debt / equity</td></tr><tr><td>current_ratio</td><td>2.0 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>current_assets / current_liabilities</td></tr><tr><td>fcf_conversion</td><td>0.9333333333333333 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>fcf / net_income</td></tr><tr><td>interest_coverage</td><td>29.386561536000013 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>ebit / interest</td></tr><tr><td>roce</td><td>0.1432844333215966 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>EBIT / (assets - current liabilities)</td></tr><tr><td>fcf</td><td>205705.93075200007 USD</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>eps</td><td>2.203992115200001 USD</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>equity</td><td>1322395.2691200005 USD</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>shares</td><td>100000.0 shares</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>debt</td><td>200000.0 USD</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>cash</td><td>300000.0 USD</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>revenue_growth_1y</td><td>0.0800000000000003 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>(revenue_latest / revenue_1y_ago)^(1/1) - 1</td></tr><tr><td>eps_growth_1y</td><td>0.0800000000000003 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>(eps_latest / eps_1y_ago)^(1/1) - 1</td></tr><tr><td>revenue_growth_3y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>(revenue_latest / revenue_3y_ago)^(1/3) - 1</td></tr><tr><td>eps_growth_3y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>(eps_latest / eps_3y_ago)^(1/3) - 1</td></tr><tr><td>revenue_growth_5y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>(revenue_latest / revenue_5y_ago)^(1/5) - 1</td></tr><tr><td>eps_growth_5y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>(eps_latest / eps_5y_ago)^(1/5) - 1</td></tr><tr><td>earnings_consistency</td><td>1.0 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>Profitable annual periods / observed annual periods</td></tr><tr><td>dividend_fcf_coverage</td><td>10.285296537600004 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>FCF / absolute cash dividends</td></tr><tr><td>earnings_volatility</td><td>0.13116459629492455 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:24.830338+00:00</td><td>fresh<br>std annual net income / abs mean</td></tr><tr><td>sma20</td><td>162.09059367831705 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>mean last 20 adjusted closes</td></tr><tr><td>sma50</td><td>159.3590016885118 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>mean last 50 adjusted closes</td></tr><tr><td>sma100</td><td>156.35929919160003 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>mean last 100 adjusted closes</td></tr><tr><td>sma200</td><td>150.35980734485275 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>mean last 200 adjusted closes</td></tr><tr><td>ema20</td><td>161.32196505080327 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>EMA span 20</td></tr><tr><td>ema50</td><td>159.553270923942 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>EMA span 50</td></tr><tr><td>rsi14</td><td>38.75682723385731 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>Wilder RSI 14; flat market = 50</td></tr><tr><td>macd</td><td>0.4128363861368314 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>EMA12 - EMA26</td></tr><tr><td>macd_signal</td><td>1.095586381076533 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>EMA9 of MACD</td></tr><tr><td>macd_histogram</td><td>-0.6827499949397016 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>MACD - signal</td></tr><tr><td>bollinger_lower</td><td>157.38941114207617 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>SMA20 - 2 population std20</td></tr><tr><td>bollinger_upper</td><td>166.79177621455793 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>SMA20 + 2 population std20</td></tr><tr><td>atr14</td><td>4.0 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>Wilder mean true range14</td></tr><tr><td>volume_ratio</td><td>1.0009991911309892 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>Latest volume / previous 20 sessions mean</td></tr><tr><td>high_52w</td><td>167.07951966276556 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>Maximum adjusted high last 252 sessions</td></tr><tr><td>low_52w</td><td>126.40391407986147 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>Minimum adjusted low last 252 sessions</td></tr><tr><td>momentum_63</td><td>0.0074673223989394355 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>close / close63 sessions ago - 1</td></tr><tr><td>relative_strength_63</td><td>0.0 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:24.830327+00:00</td><td>fresh<br>stock 63-session return factor / benchmark factor - 1; aligned dates</td></tr><tr><td>gnpa</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163903+00:00</td><td>unknown<br>N/A</td></tr><tr><td>regulatory_exposure</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163912+00:00</td><td>unknown<br>N/A</td></tr><tr><td>capacity_utilization</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163915+00:00</td><td>unknown<br>N/A</td></tr><tr><td>capital_adequacy</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163917+00:00</td><td>unknown<br>N/A</td></tr><tr><td>concentration_risk</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163919+00:00</td><td>unknown<br>N/A</td></tr><tr><td>historical_pe_max</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163921+00:00</td><td>unknown<br>N/A</td></tr><tr><td>dilution_risk</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163923+00:00</td><td>unknown<br>N/A</td></tr><tr><td>funding_stability</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163925+00:00</td><td>unknown<br>N/A</td></tr><tr><td>historical_pe_min</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163927+00:00</td><td>unknown<br>N/A</td></tr><tr><td>pledge_ratio</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163930+00:00</td><td>unknown<br>N/A</td></tr><tr><td>recurring_revenue_ratio</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163932+00:00</td><td>unknown<br>N/A</td></tr><tr><td>normalized_roe</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163934+00:00</td><td>unknown<br>N/A</td></tr><tr><td>audit_clear</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163936+00:00</td><td>unknown<br>N/A</td></tr><tr><td>credit_cost</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163938+00:00</td><td>unknown<br>N/A</td></tr><tr><td>historical_pe_median</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163940+00:00</td><td>unknown<br>N/A</td></tr><tr><td>nim</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163941+00:00</td><td>unknown<br>N/A</td></tr><tr><td>promoter_ownership</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163943+00:00</td><td>unknown<br>N/A</td></tr><tr><td>competitive_advantage</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163945+00:00</td><td>unknown<br>N/A</td></tr><tr><td>nnpa</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.163947+00:00</td><td>unknown<br>N/A</td></tr><tr><td>earnings_yield</td><td>N/A ratio</td><td>calculated</td><td>2025-12-31<br>2026-10-20T12:19:25.163959+00:00</td><td>derived<br>1 / trailing PE</td></tr><tr><td>fcf_yield</td><td>0.012934330738761986 ratio</td><td>calculated</td><td>2025-12-31<br>2026-10-20T12:19:25.163978+00:00</td><td>derived<br>annual FCF / market cap</td></tr><tr><td>peg</td><td>N/A ratio</td><td>calculated</td><td>2025-12-31<br>2026-10-20T12:19:25.163987+00:00</td><td>derived<br>PE / historical EPS CAGR in percentage points; historical proxy, not forecast</td></tr><tr><td>margin_of_safety</td><td>-5.70900589084744 ratio</td><td>DCF scenarios</td><td>N/A<br>2026-10-20T12:19:25.164653+00:00</td><td>derived<br>1 - price/base fair value</td></tr><tr><td>above_sma50</td><td>0.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.164664+00:00</td><td>derived<br>price &gt; SMA50</td></tr><tr><td>above_sma200</td><td>1.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.164669+00:00</td><td>derived<br>price &gt; SMA200</td></tr><tr><td>macd_positive</td><td>0.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.164672+00:00</td><td>derived<br>MACD histogram &gt; 0</td></tr><tr><td>weekly_up</td><td>1.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.164675+00:00</td><td>derived<br>last completed weekly close &gt; weekly SMA20</td></tr></table></div>
+<p></p></section><section id="MSFT"><h2>Synthetic Technology Company · MSFT</h2><p>NASDAQ · AVOID</p>
+
+<h3>Executive assessment</h3><p>Avoid candidate; Valuation: Overvalued; Review unresolved governance disclosures</p><p>Deteriorating cash generation, leverage, governance, or valuation assumptions invalidate the thesis.</p><p>closed · expected completed session 2026-10-19 · stale: False</p>
+<table><tr><th>Category</th><th>Score</th><th>Coverage</th></tr><tr><td>fundamentals</td><td>23.32 / 30</td><td>82.3%</td></tr><tr><td>valuation</td><td>1.82 / 30</td><td>66.7%</td></tr><tr><td>technicals</td><td>14.52 / 25</td><td>100.0%</td></tr><tr><td>risk</td><td>14.27 / 15</td><td>71.4%</td></tr></table>
+<h3>Valuation and assumptions</h3><pre>{
+  "accumulation_range": [
+    12.107410795074443,
+    18.96420603234938
+  ],
+  "assumptions": {
+    "scenarios": {
+      "base": {
+        "discount_rate": 0.12,
+        "growth_cap": 0.05
+      },
+      "conservative": {
+        "discount_rate": 0.14,
+        "growth_cap": 0
+      },
+      "optimistic": {
+        "discount_rate": 0.1,
+        "growth_cap": 0.08
+      }
+    },
+    "source": "Explicit research policy; rates are sensitivity assumptions, not forecasts. Historical annual FCF CAGR caps growth. No DCF for financial companies.",
+    "terminal_growth": 0.02
+  },
+  "confidence": "low/model-sensitive",
+  "fair_values": {
+    "base": {
+      "discount_rate": 0.12,
+      "growth": 0.05,
+      "value": 23.705257540436726
+    },
+    "conservative": {
+      "discount_rate": 0.14,
+      "growth": 0.0,
+      "value": 16.14321439343259
+    },
+    "optimistic": {
+      "discount_rate": 0.1,
+      "growth": 0.08,
+      "value": 33.66602443736114
+    }
+  },
+  "formulas": "FCF_t=FCF_0*(1+g)^t; PV=sum(FCF_t/(1+r)^t)+FCF_5*(1+terminal)/(r-terminal)/(1+r)^5; per-share equity=PV/shares. FCF is an equity cash-flow proxy; no second net-debt deduction.",
+  "historical_fcf_growth": 0.08000000000000007,
+  "historical_pe": {
+    "historical_pe_max": null,
+    "historical_pe_median": null,
+    "historical_pe_min": null
+  },
+  "margin_of_safety": -5.70900589084744,
+  "metrics": {
+    "earnings_yield": {
+      "formula": "1 / trailing PE",
+      "freshness": "derived",
+      "inputs": [
+        "pe"
+      ],
+      "period": "2025-12-31",
+      "retrieved_at": "2026-10-20T12:19:25.227933+00:00",
+      "source": "calculated",
+      "unit": "ratio",
+      "value": null
+    },
+    "fcf_yield": {
+      "formula": "annual FCF / market cap",
+      "freshness": "derived",
+      "inputs": [
+        "fcf",
+        "market_cap"
+      ],
+      "period": "2025-12-31",
+      "retrieved_at": "2026-10-20T12:19:25.227948+00:00",
+      "source": "calculated",
+      "unit": "ratio",
+      "value": 0.012934330738761986
+    },
+    "peg": {
+      "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
+      "freshness": "derived",
+      "inputs": [
+        "pe",
+        "eps_growth_3y"
+      ],
+      "period": "2025-12-31",
+      "retrieved_at": "2026-10-20T12:19:25.227955+00:00",
+      "source": "calculated",
+      "unit": "ratio",
+      "value": null
+    }
+  },
+  "omission_reason": null,
+  "sector_relative_pe": null,
+  "verdict": "Overvalued"
+}</pre><h3>Technical scenarios</h3><p>Trend mixed · Weekly up · Support 153.53725205244325 · Resistance 161.06660269934446</p><p>Entry [153.53725205244325, 155.53725205244325] · Invalidation 149.53725205244325 · Reward/risk 0.21342931766678785</p><p>Confirmed 5-bar pivots in last 63 sessions; zones ±0.25 ATR; invalidation support - ATR. Swing scenarios, not price forecasts.</p>
+<h3>News · No material catalyst</h3><p>headline/snippet only; material catalysts not verified. No material catalyst means none confirmed in available feed, not absence of risk. News never adds score points.</p><p>No relevant items retrieved.</p>
+<h3>Risk and thesis review</h3><pre>{
+  "concerns": [],
+  "critical": [],
+  "note": "Unknown governance information is not a clean audit or low-risk finding.",
+  "unverified": [
+    "auditor qualifications",
+    "pledged promoter shares",
+    "business concentration",
+    "refinancing maturity schedule",
+    "litigation and regulatory exposure",
+    "material corporate actions"
+  ]
+}</pre><h3>Changes since previous report</h3><pre>{
+  "baseline": "First observation"
+}</pre>
+<h3>Metric evidence and formulas</h3><div class="scroll"><table><tr><th>Metric</th><th>Value/unit</th><th>Source</th><th>Observation / retrieval</th><th>Freshness / formula</th></tr><tr><td>price</td><td>159.03871248284568 USD</td><td>SYNTHETIC FIXTURE</td><td>2026-10-19T00:00:00+00:00<br>2026-10-20T12:19:25.186631+00:00</td><td>fresh<br>N/A</td></tr><tr><td>market_cap</td><td>15903871.248284569 USD</td><td>SYNTHETIC FIXTURE</td><td>2026-10-19T00:00:00+00:00<br>2026-10-20T12:19:25.186670+00:00</td><td>fresh<br>N/A</td></tr><tr><td>roe</td><td>0.16666666666666666 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>net_income / equity</td></tr><tr><td>roa</td><td>0.09375 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>net_income / assets</td></tr><tr><td>operating_margin</td><td>N/A ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>operating_income / revenue</td></tr><tr><td>net_margin</td><td>0.15 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>net_income / revenue</td></tr><tr><td>debt_equity</td><td>0.1512407104519451 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>debt / equity</td></tr><tr><td>current_ratio</td><td>2.0 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>current_assets / current_liabilities</td></tr><tr><td>fcf_conversion</td><td>0.9333333333333333 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>fcf / net_income</td></tr><tr><td>interest_coverage</td><td>29.386561536000013 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>ebit / interest</td></tr><tr><td>roce</td><td>0.1432844333215966 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>EBIT / (assets - current liabilities)</td></tr><tr><td>fcf</td><td>205705.93075200007 USD</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>eps</td><td>2.203992115200001 USD</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>equity</td><td>1322395.2691200005 USD</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>shares</td><td>100000.0 shares</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>debt</td><td>200000.0 USD</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>cash</td><td>300000.0 USD</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>revenue_growth_1y</td><td>0.0800000000000003 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>(revenue_latest / revenue_1y_ago)^(1/1) - 1</td></tr><tr><td>eps_growth_1y</td><td>0.0800000000000003 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>(eps_latest / eps_1y_ago)^(1/1) - 1</td></tr><tr><td>revenue_growth_3y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>(revenue_latest / revenue_3y_ago)^(1/3) - 1</td></tr><tr><td>eps_growth_3y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>(eps_latest / eps_3y_ago)^(1/3) - 1</td></tr><tr><td>revenue_growth_5y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>(revenue_latest / revenue_5y_ago)^(1/5) - 1</td></tr><tr><td>eps_growth_5y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>(eps_latest / eps_5y_ago)^(1/5) - 1</td></tr><tr><td>earnings_consistency</td><td>1.0 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>Profitable annual periods / observed annual periods</td></tr><tr><td>dividend_fcf_coverage</td><td>10.285296537600004 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>FCF / absolute cash dividends</td></tr><tr><td>earnings_volatility</td><td>0.13116459629492455 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.186489+00:00</td><td>fresh<br>std annual net income / abs mean</td></tr><tr><td>sma20</td><td>162.09059367831705 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>mean last 20 adjusted closes</td></tr><tr><td>sma50</td><td>159.3590016885118 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>mean last 50 adjusted closes</td></tr><tr><td>sma100</td><td>156.35929919160003 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>mean last 100 adjusted closes</td></tr><tr><td>sma200</td><td>150.35980734485275 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>mean last 200 adjusted closes</td></tr><tr><td>ema20</td><td>161.32196505080327 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>EMA span 20</td></tr><tr><td>ema50</td><td>159.553270923942 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>EMA span 50</td></tr><tr><td>rsi14</td><td>38.75682723385731 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>Wilder RSI 14; flat market = 50</td></tr><tr><td>macd</td><td>0.4128363861368314 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>EMA12 - EMA26</td></tr><tr><td>macd_signal</td><td>1.095586381076533 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>EMA9 of MACD</td></tr><tr><td>macd_histogram</td><td>-0.6827499949397016 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>MACD - signal</td></tr><tr><td>bollinger_lower</td><td>157.38941114207617 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>SMA20 - 2 population std20</td></tr><tr><td>bollinger_upper</td><td>166.79177621455793 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>SMA20 + 2 population std20</td></tr><tr><td>atr14</td><td>4.0 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>Wilder mean true range14</td></tr><tr><td>volume_ratio</td><td>1.0009991911309892 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>Latest volume / previous 20 sessions mean</td></tr><tr><td>high_52w</td><td>167.07951966276556 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>Maximum adjusted high last 252 sessions</td></tr><tr><td>low_52w</td><td>126.40391407986147 USD</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>Minimum adjusted low last 252 sessions</td></tr><tr><td>momentum_63</td><td>0.0074673223989394355 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>close / close63 sessions ago - 1</td></tr><tr><td>relative_strength_63</td><td>0.0 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.186446+00:00</td><td>fresh<br>stock 63-session return factor / benchmark factor - 1; aligned dates</td></tr><tr><td>gnpa</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227890+00:00</td><td>unknown<br>N/A</td></tr><tr><td>regulatory_exposure</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227896+00:00</td><td>unknown<br>N/A</td></tr><tr><td>capacity_utilization</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227898+00:00</td><td>unknown<br>N/A</td></tr><tr><td>capital_adequacy</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227900+00:00</td><td>unknown<br>N/A</td></tr><tr><td>concentration_risk</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227902+00:00</td><td>unknown<br>N/A</td></tr><tr><td>historical_pe_max</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227903+00:00</td><td>unknown<br>N/A</td></tr><tr><td>dilution_risk</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227905+00:00</td><td>unknown<br>N/A</td></tr><tr><td>funding_stability</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227907+00:00</td><td>unknown<br>N/A</td></tr><tr><td>historical_pe_min</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227909+00:00</td><td>unknown<br>N/A</td></tr><tr><td>pledge_ratio</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227910+00:00</td><td>unknown<br>N/A</td></tr><tr><td>recurring_revenue_ratio</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227912+00:00</td><td>unknown<br>N/A</td></tr><tr><td>normalized_roe</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227913+00:00</td><td>unknown<br>N/A</td></tr><tr><td>audit_clear</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227915+00:00</td><td>unknown<br>N/A</td></tr><tr><td>credit_cost</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227917+00:00</td><td>unknown<br>N/A</td></tr><tr><td>historical_pe_median</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227918+00:00</td><td>unknown<br>N/A</td></tr><tr><td>nim</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227920+00:00</td><td>unknown<br>N/A</td></tr><tr><td>promoter_ownership</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227922+00:00</td><td>unknown<br>N/A</td></tr><tr><td>competitive_advantage</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227923+00:00</td><td>unknown<br>N/A</td></tr><tr><td>nnpa</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.227925+00:00</td><td>unknown<br>N/A</td></tr><tr><td>earnings_yield</td><td>N/A ratio</td><td>calculated</td><td>2025-12-31<br>2026-10-20T12:19:25.227933+00:00</td><td>derived<br>1 / trailing PE</td></tr><tr><td>fcf_yield</td><td>0.012934330738761986 ratio</td><td>calculated</td><td>2025-12-31<br>2026-10-20T12:19:25.227948+00:00</td><td>derived<br>annual FCF / market cap</td></tr><tr><td>peg</td><td>N/A ratio</td><td>calculated</td><td>2025-12-31<br>2026-10-20T12:19:25.227955+00:00</td><td>derived<br>PE / historical EPS CAGR in percentage points; historical proxy, not forecast</td></tr><tr><td>margin_of_safety</td><td>-5.70900589084744 ratio</td><td>DCF scenarios</td><td>N/A<br>2026-10-20T12:19:25.228024+00:00</td><td>derived<br>1 - price/base fair value</td></tr><tr><td>above_sma50</td><td>0.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.228033+00:00</td><td>derived<br>price &gt; SMA50</td></tr><tr><td>above_sma200</td><td>1.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.228036+00:00</td><td>derived<br>price &gt; SMA200</td></tr><tr><td>macd_positive</td><td>0.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.228039+00:00</td><td>derived<br>MACD histogram &gt; 0</td></tr><tr><td>weekly_up</td><td>1.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.228042+00:00</td><td>derived<br>last completed weekly close &gt; weekly SMA20</td></tr></table></div>
+<p></p></section><section id="TCS.NS"><h2>Synthetic TCS · TCS.NS</h2><p>NSE · INSUFFICIENT DATA</p>
+
+<h3>Executive assessment</h3><p>Stale, undated, or insufficient essential evidence/category coverage</p><p>Obtain current statements, valuation evidence and risk disclosures; rerun</p><p>holiday/weekend · expected completed session None · stale: True</p>
+<table><tr><th>Category</th><th>Score</th><th>Coverage</th></tr><tr><td>fundamentals</td><td>23.32 / 30</td><td>82.3%</td></tr><tr><td>valuation</td><td>N/A / 30</td><td>25.0%</td></tr><tr><td>technicals</td><td>N/A / 25</td><td>0.0%</td></tr><tr><td>risk</td><td>14.27 / 15</td><td>71.4%</td></tr></table>
+<h3>Valuation and assumptions</h3><pre>{
+  "accumulation_range": [
+    12.107410795074443,
+    18.96420603234938
+  ],
+  "assumptions": {
+    "scenarios": {
+      "base": {
+        "discount_rate": 0.12,
+        "growth_cap": 0.05
+      },
+      "conservative": {
+        "discount_rate": 0.14,
+        "growth_cap": 0
+      },
+      "optimistic": {
+        "discount_rate": 0.1,
+        "growth_cap": 0.08
+      }
+    },
+    "source": "Explicit research policy; rates are sensitivity assumptions, not forecasts. Historical annual FCF CAGR caps growth. No DCF for financial companies.",
+    "terminal_growth": 0.02
+  },
+  "confidence": "low/model-sensitive",
+  "fair_values": {
+    "base": {
+      "discount_rate": 0.12,
+      "growth": 0.05,
+      "value": 23.705257540436726
+    },
+    "conservative": {
+      "discount_rate": 0.14,
+      "growth": 0.0,
+      "value": 16.14321439343259
+    },
+    "optimistic": {
+      "discount_rate": 0.1,
+      "growth": 0.08,
+      "value": 33.66602443736114
+    }
+  },
+  "formulas": "FCF_t=FCF_0*(1+g)^t; PV=sum(FCF_t/(1+r)^t)+FCF_5*(1+terminal)/(r-terminal)/(1+r)^5; per-share equity=PV/shares. FCF is an equity cash-flow proxy; no second net-debt deduction.",
+  "historical_fcf_growth": 0.08000000000000007,
+  "historical_pe": {
+    "historical_pe_max": null,
+    "historical_pe_median": null,
+    "historical_pe_min": null
+  },
+  "margin_of_safety": null,
+  "metrics": {
+    "earnings_yield": {
+      "formula": "1 / trailing PE",
+      "freshness": "derived",
+      "inputs": [
+        "pe"
+      ],
+      "period": "2025-12-31",
+      "retrieved_at": "2026-10-20T12:19:25.554835+00:00",
+      "source": "calculated",
+      "unit": "ratio",
+      "value": null
+    },
+    "fcf_yield": {
+      "formula": "annual FCF / market cap",
+      "freshness": "derived",
+      "inputs": [
+        "fcf",
+        "market_cap"
+      ],
+      "period": "2025-12-31",
+      "retrieved_at": "2026-10-20T12:19:25.554856+00:00",
+      "source": "calculated",
+      "unit": "ratio",
+      "value": 0.012934330738761986
+    },
+    "peg": {
+      "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
+      "freshness": "derived",
+      "inputs": [
+        "pe",
+        "eps_growth_3y"
+      ],
+      "period": "2025-12-31",
+      "retrieved_at": "2026-10-20T12:19:25.554864+00:00",
+      "source": "calculated",
+      "unit": "ratio",
+      "value": null
+    }
+  },
+  "omission_reason": null,
+  "sector_relative_pe": null,
+  "verdict": "Fairly Valued"
+}</pre><h3>Technical scenarios</h3><p>Trend mixed · Weekly up · Support 153.53725205244325 · Resistance 161.06660269934446</p><p>Entry [153.53725205244325, 155.53725205244325] · Invalidation 149.53725205244325 · Reward/risk 0.21342931766678785</p><p>Confirmed 5-bar pivots in last 63 sessions; zones ±0.25 ATR; invalidation support - ATR. Swing scenarios, not price forecasts.</p>
+<h3>News · No material catalyst</h3><p>headline/snippet only; material catalysts not verified. No material catalyst means none confirmed in available feed, not absence of risk. News never adds score points.</p><p>No relevant items retrieved.</p>
+<h3>Risk and thesis review</h3><pre>{
+  "concerns": [],
+  "critical": [],
+  "note": "Unknown governance information is not a clean audit or low-risk finding.",
+  "unverified": [
+    "auditor qualifications",
+    "pledged promoter shares",
+    "business concentration",
+    "refinancing maturity schedule",
+    "litigation and regulatory exposure",
+    "material corporate actions"
+  ]
+}</pre><h3>Changes since previous report</h3><pre>{
+  "baseline": "First observation"
+}</pre>
+<h3>Metric evidence and formulas</h3><div class="scroll"><table><tr><th>Metric</th><th>Value/unit</th><th>Source</th><th>Observation / retrieval</th><th>Freshness / formula</th></tr><tr><td>price</td><td>159.03871248284568 INR</td><td>SYNTHETIC FIXTURE</td><td>2026-10-19T00:00:00+00:00<br>2026-10-20T12:19:25.230884+00:00</td><td>stale<br>N/A</td></tr><tr><td>market_cap</td><td>15903871.248284569 INR</td><td>SYNTHETIC FIXTURE</td><td>2026-10-19T00:00:00+00:00<br>2026-10-20T12:19:25.230894+00:00</td><td>fresh<br>N/A</td></tr><tr><td>roe</td><td>0.16666666666666666 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>net_income / equity</td></tr><tr><td>roa</td><td>0.09375 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>net_income / assets</td></tr><tr><td>operating_margin</td><td>N/A ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>operating_income / revenue</td></tr><tr><td>net_margin</td><td>0.15 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>net_income / revenue</td></tr><tr><td>debt_equity</td><td>0.1512407104519451 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>debt / equity</td></tr><tr><td>current_ratio</td><td>2.0 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>current_assets / current_liabilities</td></tr><tr><td>fcf_conversion</td><td>0.9333333333333333 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>fcf / net_income</td></tr><tr><td>interest_coverage</td><td>29.386561536000013 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>ebit / interest</td></tr><tr><td>roce</td><td>0.1432844333215966 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>EBIT / (assets - current liabilities)</td></tr><tr><td>fcf</td><td>205705.93075200007 INR</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>eps</td><td>2.203992115200001 INR</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>equity</td><td>1322395.2691200005 INR</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>shares</td><td>100000.0 shares</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>debt</td><td>200000.0 INR</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>cash</td><td>300000.0 INR</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>revenue_growth_1y</td><td>0.0800000000000003 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>(revenue_latest / revenue_1y_ago)^(1/1) - 1</td></tr><tr><td>eps_growth_1y</td><td>0.0800000000000003 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>(eps_latest / eps_1y_ago)^(1/1) - 1</td></tr><tr><td>revenue_growth_3y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>(revenue_latest / revenue_3y_ago)^(1/3) - 1</td></tr><tr><td>eps_growth_3y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>(eps_latest / eps_3y_ago)^(1/3) - 1</td></tr><tr><td>revenue_growth_5y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>(revenue_latest / revenue_5y_ago)^(1/5) - 1</td></tr><tr><td>eps_growth_5y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>(eps_latest / eps_5y_ago)^(1/5) - 1</td></tr><tr><td>earnings_consistency</td><td>1.0 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>Profitable annual periods / observed annual periods</td></tr><tr><td>dividend_fcf_coverage</td><td>10.285296537600004 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>FCF / absolute cash dividends</td></tr><tr><td>earnings_volatility</td><td>0.13116459629492455 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.230856+00:00</td><td>fresh<br>std annual net income / abs mean</td></tr><tr><td>sma20</td><td>162.09059367831705 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>mean last 20 adjusted closes</td></tr><tr><td>sma50</td><td>159.3590016885118 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>mean last 50 adjusted closes</td></tr><tr><td>sma100</td><td>156.35929919160003 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>mean last 100 adjusted closes</td></tr><tr><td>sma200</td><td>150.35980734485275 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>mean last 200 adjusted closes</td></tr><tr><td>ema20</td><td>161.32196505080327 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>EMA span 20</td></tr><tr><td>ema50</td><td>159.553270923942 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>EMA span 50</td></tr><tr><td>rsi14</td><td>38.75682723385731 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>Wilder RSI 14; flat market = 50</td></tr><tr><td>macd</td><td>0.4128363861368314 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>EMA12 - EMA26</td></tr><tr><td>macd_signal</td><td>1.095586381076533 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>EMA9 of MACD</td></tr><tr><td>macd_histogram</td><td>-0.6827499949397016 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>MACD - signal</td></tr><tr><td>bollinger_lower</td><td>157.38941114207617 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>SMA20 - 2 population std20</td></tr><tr><td>bollinger_upper</td><td>166.79177621455793 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>SMA20 + 2 population std20</td></tr><tr><td>atr14</td><td>4.0 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>Wilder mean true range14</td></tr><tr><td>volume_ratio</td><td>1.0009991911309892 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>Latest volume / previous 20 sessions mean</td></tr><tr><td>high_52w</td><td>167.07951966276556 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>Maximum adjusted high last 252 sessions</td></tr><tr><td>low_52w</td><td>126.40391407986147 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>Minimum adjusted low last 252 sessions</td></tr><tr><td>momentum_63</td><td>0.0074673223989394355 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>close / close63 sessions ago - 1</td></tr><tr><td>relative_strength_63</td><td>0.0 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.230850+00:00</td><td>stale<br>stock 63-session return factor / benchmark factor - 1; aligned dates</td></tr><tr><td>gnpa</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554790+00:00</td><td>unknown<br>N/A</td></tr><tr><td>regulatory_exposure</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554796+00:00</td><td>unknown<br>N/A</td></tr><tr><td>capacity_utilization</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554798+00:00</td><td>unknown<br>N/A</td></tr><tr><td>capital_adequacy</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554800+00:00</td><td>unknown<br>N/A</td></tr><tr><td>concentration_risk</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554802+00:00</td><td>unknown<br>N/A</td></tr><tr><td>historical_pe_max</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554804+00:00</td><td>unknown<br>N/A</td></tr><tr><td>dilution_risk</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554805+00:00</td><td>unknown<br>N/A</td></tr><tr><td>funding_stability</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554807+00:00</td><td>unknown<br>N/A</td></tr><tr><td>historical_pe_min</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554809+00:00</td><td>unknown<br>N/A</td></tr><tr><td>pledge_ratio</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554811+00:00</td><td>unknown<br>N/A</td></tr><tr><td>recurring_revenue_ratio</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554813+00:00</td><td>unknown<br>N/A</td></tr><tr><td>normalized_roe</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554814+00:00</td><td>unknown<br>N/A</td></tr><tr><td>audit_clear</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554816+00:00</td><td>unknown<br>N/A</td></tr><tr><td>credit_cost</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554818+00:00</td><td>unknown<br>N/A</td></tr><tr><td>historical_pe_median</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554820+00:00</td><td>unknown<br>N/A</td></tr><tr><td>nim</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554821+00:00</td><td>unknown<br>N/A</td></tr><tr><td>promoter_ownership</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554823+00:00</td><td>unknown<br>N/A</td></tr><tr><td>competitive_advantage</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554825+00:00</td><td>unknown<br>N/A</td></tr><tr><td>nnpa</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.554827+00:00</td><td>unknown<br>N/A</td></tr><tr><td>earnings_yield</td><td>N/A ratio</td><td>calculated</td><td>2025-12-31<br>2026-10-20T12:19:25.554835+00:00</td><td>derived<br>1 / trailing PE</td></tr><tr><td>fcf_yield</td><td>0.012934330738761986 ratio</td><td>calculated</td><td>2025-12-31<br>2026-10-20T12:19:25.554856+00:00</td><td>derived<br>annual FCF / market cap</td></tr><tr><td>peg</td><td>N/A ratio</td><td>calculated</td><td>2025-12-31<br>2026-10-20T12:19:25.554864+00:00</td><td>derived<br>PE / historical EPS CAGR in percentage points; historical proxy, not forecast</td></tr><tr><td>margin_of_safety</td><td>N/A ratio</td><td>DCF scenarios</td><td>N/A<br>2026-10-20T12:19:25.554927+00:00</td><td>derived<br>1 - price/base fair value</td></tr><tr><td>above_sma50</td><td>0.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.554936+00:00</td><td>stale<br>price &gt; SMA50</td></tr><tr><td>above_sma200</td><td>1.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.554939+00:00</td><td>stale<br>price &gt; SMA200</td></tr><tr><td>macd_positive</td><td>0.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.554942+00:00</td><td>stale<br>MACD histogram &gt; 0</td></tr><tr><td>weekly_up</td><td>1.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.554945+00:00</td><td>stale<br>last completed weekly close &gt; weekly SMA20</td></tr></table></div>
+<p></p></section><section id="HDFCBANK.NS"><h2>Synthetic HDFC Bank · HDFCBANK.NS</h2><p>NSE · INSUFFICIENT DATA</p>
+
+<h3>Executive assessment</h3><p>Stale, undated, or insufficient essential evidence/category coverage</p><p>Obtain current statements, valuation evidence and risk disclosures; rerun</p><p>holiday/weekend · expected completed session None · stale: True</p>
+<table><tr><th>Category</th><th>Score</th><th>Coverage</th></tr><tr><td>fundamentals</td><td>N/A / 30</td><td>28.6%</td></tr><tr><td>valuation</td><td>N/A / 30</td><td>0.0%</td></tr><tr><td>technicals</td><td>N/A / 25</td><td>0.0%</td></tr><tr><td>risk</td><td>N/A / 15</td><td>0.0%</td></tr></table>
+<h3>Valuation and assumptions</h3><pre>{
+  "accumulation_range": null,
+  "assumptions": {
+    "scenarios": {
+      "base": {
+        "discount_rate": 0.12,
+        "growth_cap": 0.05
+      },
+      "conservative": {
+        "discount_rate": 0.14,
+        "growth_cap": 0
+      },
+      "optimistic": {
+        "discount_rate": 0.1,
+        "growth_cap": 0.08
+      }
+    },
+    "source": "Explicit research policy; rates are sensitivity assumptions, not forecasts. Historical annual FCF CAGR caps growth. No DCF for financial companies.",
+    "terminal_growth": 0.02
+  },
+  "confidence": "low",
+  "fair_values": null,
+  "formulas": "FCF_t=FCF_0*(1+g)^t; PV=sum(FCF_t/(1+r)^t)+FCF_5*(1+terminal)/(r-terminal)/(1+r)^5; per-share equity=PV/shares. FCF is an equity cash-flow proxy; no second net-debt deduction.",
+  "historical_pe": {
+    "historical_pe_max": null,
+    "historical_pe_median": null,
+    "historical_pe_min": null
+  },
+  "margin_of_safety": null,
+  "metrics": {
+    "earnings_yield": {
+      "formula": "1 / trailing PE",
+      "freshness": "derived",
+      "inputs": [
+        "pe"
+      ],
+      "period": "2025-12-31",
+      "retrieved_at": "2026-10-20T12:19:25.585423+00:00",
+      "source": "calculated",
+      "unit": "ratio",
+      "value": null
+    },
+    "fcf_yield": {
+      "formula": "annual FCF / market cap",
+      "freshness": "derived",
+      "inputs": [
+        "fcf",
+        "market_cap"
+      ],
+      "period": "2025-12-31",
+      "retrieved_at": "2026-10-20T12:19:25.585434+00:00",
+      "source": "calculated",
+      "unit": "ratio",
+      "value": 0.012934330738761986
+    },
+    "peg": {
+      "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
+      "freshness": "derived",
+      "inputs": [
+        "pe",
+        "eps_growth_3y"
+      ],
+      "period": "2025-12-31",
+      "retrieved_at": "2026-10-20T12:19:25.585444+00:00",
+      "source": "calculated",
+      "unit": "ratio",
+      "value": null
+    }
+  },
+  "omission_reason": "DCF requires \u003e=4 consistent positive annual FCF periods, shares, same-currency statements and a non-financial sector",
+  "sector_relative_pe": null,
+  "verdict": "N/A"
+}</pre><h3>Technical scenarios</h3><p>Trend mixed · Weekly up · Support 153.53725205244325 · Resistance 161.06660269934446</p><p>Entry [153.53725205244325, 155.53725205244325] · Invalidation 149.53725205244325 · Reward/risk 0.21342931766678785</p><p>Confirmed 5-bar pivots in last 63 sessions; zones ±0.25 ATR; invalidation support - ATR. Swing scenarios, not price forecasts.</p>
+<h3>News · No material catalyst</h3><p>headline/snippet only; material catalysts not verified. No material catalyst means none confirmed in available feed, not absence of risk. News never adds score points.</p><p>No relevant items retrieved.</p>
+<h3>Risk and thesis review</h3><pre>{
+  "concerns": [],
+  "critical": [],
+  "note": "Unknown governance information is not a clean audit or low-risk finding.",
+  "unverified": [
+    "auditor qualifications",
+    "pledged promoter shares",
+    "business concentration",
+    "refinancing maturity schedule",
+    "litigation and regulatory exposure",
+    "material corporate actions"
+  ]
+}</pre><h3>Changes since previous report</h3><pre>{
+  "baseline": "First observation"
+}</pre>
+<h3>Metric evidence and formulas</h3><div class="scroll"><table><tr><th>Metric</th><th>Value/unit</th><th>Source</th><th>Observation / retrieval</th><th>Freshness / formula</th></tr><tr><td>price</td><td>159.03871248284568 INR</td><td>SYNTHETIC FIXTURE</td><td>2026-10-19T00:00:00+00:00<br>2026-10-20T12:19:25.558467+00:00</td><td>stale<br>N/A</td></tr><tr><td>market_cap</td><td>15903871.248284569 INR</td><td>SYNTHETIC FIXTURE</td><td>2026-10-19T00:00:00+00:00<br>2026-10-20T12:19:25.558481+00:00</td><td>fresh<br>N/A</td></tr><tr><td>roe</td><td>0.16666666666666666 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>net_income / equity</td></tr><tr><td>roa</td><td>0.09375 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>net_income / assets</td></tr><tr><td>operating_margin</td><td>N/A ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>operating_income / revenue</td></tr><tr><td>net_margin</td><td>0.15 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>net_income / revenue</td></tr><tr><td>debt_equity</td><td>0.1512407104519451 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>debt / equity</td></tr><tr><td>current_ratio</td><td>2.0 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>current_assets / current_liabilities</td></tr><tr><td>fcf_conversion</td><td>0.9333333333333333 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>fcf / net_income</td></tr><tr><td>interest_coverage</td><td>29.386561536000013 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>ebit / interest</td></tr><tr><td>roce</td><td>0.1432844333215966 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>EBIT / (assets - current liabilities)</td></tr><tr><td>fcf</td><td>205705.93075200007 INR</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>eps</td><td>2.203992115200001 INR</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>equity</td><td>1322395.2691200005 INR</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>shares</td><td>100000.0 shares</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>debt</td><td>200000.0 INR</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>cash</td><td>300000.0 INR</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>Latest annual statement value</td></tr><tr><td>revenue_growth_1y</td><td>0.0800000000000003 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>(revenue_latest / revenue_1y_ago)^(1/1) - 1</td></tr><tr><td>eps_growth_1y</td><td>0.0800000000000003 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>(eps_latest / eps_1y_ago)^(1/1) - 1</td></tr><tr><td>revenue_growth_3y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>(revenue_latest / revenue_3y_ago)^(1/3) - 1</td></tr><tr><td>eps_growth_3y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>(eps_latest / eps_3y_ago)^(1/3) - 1</td></tr><tr><td>revenue_growth_5y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>(revenue_latest / revenue_5y_ago)^(1/5) - 1</td></tr><tr><td>eps_growth_5y</td><td>0.08000000000000007 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>(eps_latest / eps_5y_ago)^(1/5) - 1</td></tr><tr><td>earnings_consistency</td><td>1.0 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>Profitable annual periods / observed annual periods</td></tr><tr><td>dividend_fcf_coverage</td><td>10.285296537600004 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>FCF / absolute cash dividends</td></tr><tr><td>earnings_volatility</td><td>0.13116459629492455 ratio</td><td>SYNTHETIC FIXTURE</td><td>2025-12-31<br>2026-10-20T12:19:25.558423+00:00</td><td>fresh<br>std annual net income / abs mean</td></tr><tr><td>sma20</td><td>162.09059367831705 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>mean last 20 adjusted closes</td></tr><tr><td>sma50</td><td>159.3590016885118 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>mean last 50 adjusted closes</td></tr><tr><td>sma100</td><td>156.35929919160003 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>mean last 100 adjusted closes</td></tr><tr><td>sma200</td><td>150.35980734485275 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>mean last 200 adjusted closes</td></tr><tr><td>ema20</td><td>161.32196505080327 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>EMA span 20</td></tr><tr><td>ema50</td><td>159.553270923942 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>EMA span 50</td></tr><tr><td>rsi14</td><td>38.75682723385731 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>Wilder RSI 14; flat market = 50</td></tr><tr><td>macd</td><td>0.4128363861368314 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>EMA12 - EMA26</td></tr><tr><td>macd_signal</td><td>1.095586381076533 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>EMA9 of MACD</td></tr><tr><td>macd_histogram</td><td>-0.6827499949397016 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>MACD - signal</td></tr><tr><td>bollinger_lower</td><td>157.38941114207617 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>SMA20 - 2 population std20</td></tr><tr><td>bollinger_upper</td><td>166.79177621455793 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>SMA20 + 2 population std20</td></tr><tr><td>atr14</td><td>4.0 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>Wilder mean true range14</td></tr><tr><td>volume_ratio</td><td>1.0009991911309892 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>Latest volume / previous 20 sessions mean</td></tr><tr><td>high_52w</td><td>167.07951966276556 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>Maximum adjusted high last 252 sessions</td></tr><tr><td>low_52w</td><td>126.40391407986147 INR</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>Minimum adjusted low last 252 sessions</td></tr><tr><td>momentum_63</td><td>0.0074673223989394355 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>close / close63 sessions ago - 1</td></tr><tr><td>relative_strength_63</td><td>0.0 ratio</td><td>SYNTHETIC FIXTURE adjusted OHLCV</td><td>2026-10-19<br>2026-10-20T12:19:25.558405+00:00</td><td>stale<br>stock 63-session return factor / benchmark factor - 1; aligned dates</td></tr><tr><td>gnpa</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585379+00:00</td><td>unknown<br>N/A</td></tr><tr><td>regulatory_exposure</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585384+00:00</td><td>unknown<br>N/A</td></tr><tr><td>capacity_utilization</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585387+00:00</td><td>unknown<br>N/A</td></tr><tr><td>capital_adequacy</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585389+00:00</td><td>unknown<br>N/A</td></tr><tr><td>concentration_risk</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585391+00:00</td><td>unknown<br>N/A</td></tr><tr><td>historical_pe_max</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585393+00:00</td><td>unknown<br>N/A</td></tr><tr><td>dilution_risk</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585394+00:00</td><td>unknown<br>N/A</td></tr><tr><td>funding_stability</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585396+00:00</td><td>unknown<br>N/A</td></tr><tr><td>historical_pe_min</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585398+00:00</td><td>unknown<br>N/A</td></tr><tr><td>pledge_ratio</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585400+00:00</td><td>unknown<br>N/A</td></tr><tr><td>recurring_revenue_ratio</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585401+00:00</td><td>unknown<br>N/A</td></tr><tr><td>normalized_roe</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585403+00:00</td><td>unknown<br>N/A</td></tr><tr><td>audit_clear</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585405+00:00</td><td>unknown<br>N/A</td></tr><tr><td>credit_cost</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585407+00:00</td><td>unknown<br>N/A</td></tr><tr><td>historical_pe_median</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585409+00:00</td><td>unknown<br>N/A</td></tr><tr><td>nim</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585410+00:00</td><td>unknown<br>N/A</td></tr><tr><td>promoter_ownership</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585412+00:00</td><td>unknown<br>N/A</td></tr><tr><td>competitive_advantage</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585413+00:00</td><td>unknown<br>N/A</td></tr><tr><td>nnpa</td><td>N/A ratio</td><td>Not available from configured providers</td><td>N/A<br>2026-10-20T12:19:25.585415+00:00</td><td>unknown<br>N/A</td></tr><tr><td>earnings_yield</td><td>N/A ratio</td><td>calculated</td><td>2025-12-31<br>2026-10-20T12:19:25.585423+00:00</td><td>derived<br>1 / trailing PE</td></tr><tr><td>fcf_yield</td><td>0.012934330738761986 ratio</td><td>calculated</td><td>2025-12-31<br>2026-10-20T12:19:25.585434+00:00</td><td>derived<br>annual FCF / market cap</td></tr><tr><td>peg</td><td>N/A ratio</td><td>calculated</td><td>2025-12-31<br>2026-10-20T12:19:25.585444+00:00</td><td>derived<br>PE / historical EPS CAGR in percentage points; historical proxy, not forecast</td></tr><tr><td>margin_of_safety</td><td>N/A ratio</td><td>DCF scenarios</td><td>N/A<br>2026-10-20T12:19:25.585461+00:00</td><td>derived<br>1 - price/base fair value</td></tr><tr><td>above_sma50</td><td>0.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.585469+00:00</td><td>stale<br>price &gt; SMA50</td></tr><tr><td>above_sma200</td><td>1.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.585473+00:00</td><td>stale<br>price &gt; SMA200</td></tr><tr><td>macd_positive</td><td>0.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.585476+00:00</td><td>stale<br>MACD histogram &gt; 0</td></tr><tr><td>weekly_up</td><td>1.0 ratio</td><td>adjusted OHLCV derived</td><td>2026-10-19<br>2026-10-20T12:19:25.585478+00:00</td><td>stale<br>last completed weekly close &gt; weekly SMA20</td></tr></table></div>
+<p></p></section></main></body></html>

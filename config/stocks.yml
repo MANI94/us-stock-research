@@ -1,0 +1,16 @@
+settings:
+  base_currency: INR
+  reporting_currencies: [USD, INR]
+  investment_horizon: long_term
+  risk_profile: moderate
+  default_investment_inr: 50000
+  report_timezone: Asia/Kolkata
+  news_lookback_days: 7
+  enable_email: true
+  providers: [fmp, yahoo]
+  allow_yahoo: true
+stocks:
+  - {ticker: AAPL, exchange: NASDAQ}
+  - {ticker: MSFT, exchange: NASDAQ}
+  - {ticker: TCS.NS, exchange: NSE}
+  - {ticker: HDFCBANK.NS, exchange: NSE}

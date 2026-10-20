@@ -1,0 +1,111 @@
+name: Daily stock research
+on:
+  schedule:
+    - cron: '47 2 * * *'
+  workflow_dispatch:
+    inputs:
+      tickers:
+        description: 'Optional comma-separated TICKER:EXCHANGE; NSE/BSE suffixes auto-detected'
+        required: false
+        type: string
+      send_email:
+        description: 'Send Gmail report'
+        default: true
+        type: boolean
+permissions:
+  contents: read
+concurrency:
+  group: stock-research-daily
+  cancel-in-progress: false
+jobs:
+  analyze:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      TICKER_OVERRIDE: ${{ inputs.tickers }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - run: pip install --require-hashes -r requirements.lock
+      - run: python -m pytest -q
+      - name: Restore previous snapshots
+        run: |
+          python scripts/state.py load
+          mkdir -p run-output/history
+          if [ -z "$TICKER_OVERRIDE" ] && [ -d state/history ]; then
+            cp -R state/history/. run-output/history/
+          fi
+      - name: Generate research
+        env:
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          FINNHUB_API_KEY: ${{ secrets.FINNHUB_API_KEY }}
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_MODEL: ${{ vars.LLM_MODEL }}
+          REPORT_ARTIFACT_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python -m src.main --output run-output
+      - name: Upload immutable research
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: research-${{ github.run_id }}-${{ github.run_attempt }}
+          path: run-output/
+          if-no-files-found: warn
+          retention-days: 90
+  deliver:
+    needs: analyze
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+    env:
+      TICKER_OVERRIDE: ${{ inputs.tickers }}
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
+        with:
+          python-version: '3.12'
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4
+        with:
+          name: research-${{ github.run_id }}-${{ github.run_attempt }}
+          path: run-output
+      - name: Load durable delivery state
+        run: python scripts/state.py load
+      - name: Save snapshots
+        id: snapshot
+        run: |
+          python scripts/state.py snapshot
+          python scripts/state.py persist
+      - name: Reserve email before SMTP
+        id: reserve
+        if: steps.snapshot.outputs.email_enabled == 'true' && (github.event_name == 'schedule' || inputs.send_email)
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          REPORT_TO_EMAIL: ${{ secrets.REPORT_TO_EMAIL }}
+          DELIVERY_KEY: ${{ steps.snapshot.outputs.key }}
+        run: |
+          python -m src.email_sender reserve --report run-output/reports --key "$DELIVERY_KEY"
+          python scripts/state.py persist
+      - name: Send Gmail
+        if: steps.reserve.outputs.send == 'true' && success()
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          REPORT_TO_EMAIL: ${{ secrets.REPORT_TO_EMAIL }}
+          DELIVERY_KEY: ${{ steps.snapshot.outputs.key }}
+        run: python -m src.email_sender send --report run-output/reports --key "$DELIVERY_KEY"
+      - name: Persist final delivery state
+        if: always() && steps.snapshot.outcome == 'success'
+        run: python scripts/state.py persist
+      - name: Upload delivery audit
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: delivery-${{ github.run_id }}-${{ github.run_attempt }}
+          path: state/delivery.json
+          retention-days: 90

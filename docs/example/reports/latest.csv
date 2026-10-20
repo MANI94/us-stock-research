@@ -1,0 +1,5 @@
+ticker,name,exchange,currency,price,price_timestamp,score,verdict,fair_value,news_overlay,fundamentals_score,fundamentals_coverage,valuation_score,valuation_coverage,technicals_score,technicals_coverage,risk_score,risk_coverage
+AAPL,Synthetic Apple,NASDAQ,USD,159.03871248284568,2026-10-19T00:00:00+00:00,53.93,AVOID,23.705257540436726,No material catalyst,23.32,0.8235,1.82,0.6667,14.52,1.0,14.27,0.7143
+MSFT,Synthetic Technology Company,NASDAQ,USD,159.03871248284568,2026-10-19T00:00:00+00:00,53.93,AVOID,23.705257540436726,No material catalyst,23.32,0.8235,1.82,0.6667,14.52,1.0,14.27,0.7143
+TCS.NS,Synthetic TCS,NSE,INR,159.03871248284568,2026-10-19T00:00:00+00:00,,INSUFFICIENT DATA,23.705257540436726,No material catalyst,23.32,0.8235,,0.25,,0.0,14.27,0.7143
+HDFCBANK.NS,Synthetic HDFC Bank,NSE,INR,159.03871248284568,2026-10-19T00:00:00+00:00,,INSUFFICIENT DATA,,No material catalyst,,0.2857,,0.0,,0.0,,0.0
