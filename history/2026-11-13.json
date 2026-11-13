@@ -1,0 +1,5418 @@
+{
+  "generated_at": "2026-11-13T15:32:44.468739+05:30",
+  "report_date": "2026-11-13",
+  "mode": "Live provider research",
+  "settings": {
+    "base_currency": "INR",
+    "reporting_currencies": [
+      "USD",
+      "INR"
+    ],
+    "investment_horizon": "long_term",
+    "risk_profile": "moderate",
+    "default_investment_inr": 50000.0,
+    "report_timezone": "Asia/Kolkata",
+    "news_lookback_days": 7,
+    "enable_email": true,
+    "providers": [
+      "fmp",
+      "yahoo"
+    ],
+    "allow_yahoo": true
+  },
+  "fx": {
+    "value": 94.2300033569336,
+    "unit": "INR/USD",
+    "source": "Yahoo Finance INR=X",
+    "period": "2026-11-13",
+    "retrieved_at": "2026-11-13T10:02:44.740974+00:00",
+    "freshness": "fresh",
+    "formula": null,
+    "inputs": []
+  },
+  "artifact_url": "https://github.com/MANI94/us-stock-research/actions/runs/43405992165",
+  "stocks": [
+    {
+      "ticker": "AAPL",
+      "exchange": "NASDAQ",
+      "name": "Apple Inc.",
+      "price": 354.88,
+      "score": null,
+      "fair_value": 107.89030830441632,
+      "currency": "USD",
+      "price_timestamp": "2026-11-12T21:00:01+00:00",
+      "scores": {
+        "total": null,
+        "categories": {
+          "fundamentals": {
+            "score": 27.71,
+            "maximum": 30,
+            "coverage": 0.8235,
+            "details": {
+              "roe": {
+                "value": 1.17915480895328,
+                "quality": 1,
+                "weight": 2
+              },
+              "roce": {
+                "value": 0.6736605677803208,
+                "quality": 1,
+                "weight": 2
+              },
+              "revenue_growth_1y": {
+                "value": 0.1505979656911629,
+                "quality": 1,
+                "weight": 1
+              },
+              "revenue_growth_3y": {
+                "value": 0.07701326503022221,
+                "quality": 0.5134217668681481,
+                "weight": 2
+              },
+              "revenue_growth_5y": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "eps_growth_3y": {
+                "value": 0.13572177900514792,
+                "quality": 0.9048118600343196,
+                "weight": 1
+              },
+              "earnings_consistency": {
+                "value": 1.0,
+                "quality": 1,
+                "weight": 1
+              },
+              "operating_margin": {
+                "value": 0.3300997840587761,
+                "quality": 1,
+                "weight": 1
+              },
+              "net_margin": {
+                "value": 0.27603511864236874,
+                "quality": 1,
+                "weight": 1
+              },
+              "fcf_conversion": {
+                "value": 1.0293625874787213,
+                "quality": 1,
+                "weight": 2
+              },
+              "dividend_fcf_coverage": {
+                "value": 8.654411296991286,
+                "quality": 1,
+                "weight": 1
+              },
+              "recurring_revenue_ratio": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          },
+          "valuation": {
+            "score": 4.87,
+            "maximum": 30,
+            "coverage": 0.8333,
+            "details": {
+              "earnings_yield": {
+                "value": 0.025304327556220398,
+                "quality": 0.316304094452755,
+                "weight": 2
+              },
+              "fcf_yield": {
+                "value": 0.02638185508544949,
+                "quality": 0.3297731885681186,
+                "weight": 3
+              },
+              "margin_of_safety": {
+                "value": -2.2892667152149895,
+                "quality": 0,
+                "weight": 5
+              },
+              "peer_pe_discount": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          },
+          "technicals": {
+            "score": 25.0,
+            "maximum": 25,
+            "coverage": 1.0,
+            "details": {
+              "above_sma200": {
+                "value": 1.0,
+                "quality": 1,
+                "weight": 3
+              },
+              "above_sma50": {
+                "value": 1.0,
+                "quality": 1,
+                "weight": 2
+              },
+              "relative_strength_63": {
+                "value": 0.19045024917742515,
+                "quality": 1,
+                "weight": 3
+              },
+              "momentum_63": {
+                "value": 0.16088533780674918,
+                "quality": 1,
+                "weight": 2
+              },
+              "macd_positive": {
+                "value": 1.0,
+                "quality": 1,
+                "weight": 1
+              },
+              "weekly_up": {
+                "value": 1.0,
+                "quality": 1,
+                "weight": 2
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          },
+          "risk": {
+            "score": null,
+            "maximum": 15,
+            "coverage": 0.5,
+            "details": {
+              "debt_equity": {
+                "value": 0.7146833432952995,
+                "quality": 0.6426583283523503,
+                "weight": 3
+              },
+              "interest_coverage": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "current_ratio": {
+                "value": 1.0231998352117235,
+                "quality": 0.34879989014114904,
+                "weight": 2
+              },
+              "earnings_volatility": {
+                "value": 0.1397060680172402,
+                "quality": 0.8602939319827598,
+                "weight": 2
+              },
+              "audit_clear": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "pledge_ratio": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          }
+        },
+        "profile": "technology",
+        "interpretation": null
+      },
+      "verdict": "INSUFFICIENT DATA",
+      "decision": {
+        "verdict": "INSUFFICIENT DATA",
+        "reasons": [
+          "Stale, undated, or insufficient essential evidence/category coverage"
+        ],
+        "invalidation": "Obtain current statements, valuation evidence and risk disclosures; rerun"
+      },
+      "valuation": {
+        "metrics": {
+          "earnings_yield": {
+            "value": 0.025304327556220398,
+            "unit": "ratio",
+            "source": "calculated",
+            "period": "2026-09-30",
+            "retrieved_at": "2026-11-13T10:02:46.164870+00:00",
+            "freshness": "derived",
+            "formula": "1 / trailing PE",
+            "inputs": [
+              "pe"
+            ]
+          },
+          "fcf_yield": {
+            "value": 0.02638185508544949,
+            "unit": "ratio",
+            "source": "calculated",
+            "period": "2026-09-30",
+            "retrieved_at": "2026-11-13T10:02:46.164900+00:00",
+            "freshness": "derived",
+            "formula": "annual FCF / market cap",
+            "inputs": [
+              "fcf",
+              "market_cap"
+            ]
+          },
+          "peg": {
+            "value": 2.9117605361259704,
+            "unit": "ratio",
+            "source": "calculated",
+            "period": "2026-09-30",
+            "retrieved_at": "2026-11-13T10:02:46.164916+00:00",
+            "freshness": "derived",
+            "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
+            "inputs": [
+              "pe",
+              "eps_growth_3y"
+            ]
+          }
+        },
+        "fair_values": {
+          "conservative": {
+            "value": 73.47299960613066,
+            "growth": 0.0,
+            "discount_rate": 0.14
+          },
+          "base": {
+            "value": 107.89030830441632,
+            "growth": 0.05,
+            "discount_rate": 0.12
+          },
+          "optimistic": {
+            "value": 153.22498604940236,
+            "growth": 0.08,
+            "discount_rate": 0.1
+          }
+        },
+        "margin_of_safety": -2.2892667152149895,
+        "accumulation_range": [
+          55.10474970459799,
+          86.31224664353306
+        ],
+        "verdict": "Overvalued",
+        "confidence": "low/model-sensitive",
+        "historical_pe": {
+          "historical_pe_median": null,
+          "historical_pe_min": null,
+          "historical_pe_max": null
+        },
+        "sector_relative_pe": null,
+        "omission_reason": null,
+        "assumptions": {
+          "source": "Explicit research policy; rates are sensitivity assumptions, not forecasts. Historical annual FCF CAGR caps growth. No DCF for financial companies.",
+          "terminal_growth": 0.02,
+          "scenarios": {
+            "conservative": {
+              "growth_cap": 0,
+              "discount_rate": 0.14
+            },
+            "base": {
+              "growth_cap": 0.05,
+              "discount_rate": 0.12
+            },
+            "optimistic": {
+              "growth_cap": 0.08,
+              "discount_rate": 0.1
+            }
+          }
+        },
+        "formulas": "FCF_t=FCF_0*(1+g)^t; PV=sum(FCF_t/(1+r)^t)+FCF_5*(1+terminal)/(r-terminal)/(1+r)^5; per-share equity=PV/shares. FCF is an equity cash-flow proxy; no second net-debt deduction.",
+        "historical_fcf_growth": 0.10962451744460999
+      },
+      "technicals": {
+        "trend": "up",
+        "weekly_trend": "up",
+        "support": 340.7710769804186,
+        "resistance": 355.1101713190276,
+        "entry_range": [
+          340.7710769804186,
+          344.96387373717175
+        ],
+        "invalidation": 332.3854834669124,
+        "risk_reward": 0.01023211083087965,
+        "support_zone": [
+          338.6746786020421,
+          342.86747535879516
+        ],
+        "resistance_zone": [
+          353.01377294065105,
+          357.2065696974041
+        ],
+        "method": "Confirmed 5-bar pivots in last 63 sessions; zones ±0.25 ATR; invalidation support - ATR. Swing scenarios, not price forecasts."
+      },
+      "news": {
+        "items": [],
+        "overlay": "No material catalyst",
+        "critical": false,
+        "coverage": "headline/snippet only; material catalysts not verified",
+        "note": "No material catalyst means none confirmed in available feed, not absence of risk. News never adds score points.",
+        "errors": [
+          "Yahoo news unavailable"
+        ],
+        "llm": {
+          "status": "disabled"
+        }
+      },
+      "risk": {
+        "critical": [],
+        "concerns": [],
+        "unverified": [
+          "auditor qualifications",
+          "pledged promoter shares",
+          "business concentration",
+          "refinancing maturity schedule",
+          "litigation and regulatory exposure",
+          "material corporate actions"
+        ],
+        "note": "Unknown governance information is not a clean audit or low-risk finding."
+      },
+      "market": {
+        "expected_session": "2026-11-12",
+        "last_session": "2026-11-12",
+        "stale": false,
+        "condition": "closed",
+        "calendar": "XNYS",
+        "calendar_note": null
+      },
+      "metrics": {
+        "price": {
+          "value": 354.88,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-11-12T21:00:01+00:00",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": null,
+          "inputs": []
+        },
+        "pe": {
+          "value": 39.518932,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-12T21:00:01+00:00",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "forward_pe": {
+          "value": 33.652397,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-12T21:00:01+00:00",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "pb": {
+          "value": 46.01063,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-12T21:00:01+00:00",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "ev_ebitda": {
+          "value": 30.294,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-12T21:00:01+00:00",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "roe": {
+          "value": 1.17915480895328,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "net_income / equity",
+          "inputs": [
+            "net_income",
+            "equity"
+          ]
+        },
+        "roa": {
+          "value": 0.3267226633180735,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "net_income / assets",
+          "inputs": [
+            "net_income",
+            "assets"
+          ]
+        },
+        "operating_margin": {
+          "value": 0.3300997840587761,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "operating_income / revenue",
+          "inputs": [
+            "operating_income",
+            "revenue"
+          ]
+        },
+        "net_margin": {
+          "value": 0.27603511864236874,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "net_income / revenue",
+          "inputs": [
+            "net_income",
+            "revenue"
+          ]
+        },
+        "market_cap": {
+          "value": 5157180932096.0,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-11-12T21:00:01+00:00",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "shares": {
+          "value": 14532259000.0,
+          "unit": "shares",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "shares"
+          ]
+        },
+        "insider_ownership": {
+          "value": 0.0166,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "payout": {
+          "value": 0.118,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "eps": {
+          "value": 8.98,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "eps"
+          ]
+        },
+        "fcf": {
+          "value": 136056000000.0,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "fcf"
+          ]
+        },
+        "enterprise_value": {
+          "value": 5194937532416.0,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-11-12T21:00:01+00:00",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "debt": {
+          "value": 80111000000.0,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "debt"
+          ]
+        },
+        "cash": {
+          "value": 36305000000.0,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "cash"
+          ]
+        },
+        "debt_equity": {
+          "value": 0.7146833432952995,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "debt / equity",
+          "inputs": [
+            "debt",
+            "equity"
+          ]
+        },
+        "current_ratio": {
+          "value": 1.0231998352117235,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "current_assets / current_liabilities",
+          "inputs": [
+            "current_assets",
+            "current_liabilities"
+          ]
+        },
+        "fcf_conversion": {
+          "value": 1.0293625874787213,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "fcf / net_income",
+          "inputs": [
+            "fcf",
+            "net_income"
+          ]
+        },
+        "interest_coverage": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "ebit / interest",
+          "inputs": [
+            "ebit",
+            "interest"
+          ]
+        },
+        "roce": {
+          "value": 0.6736605677803208,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "EBIT / (assets - current liabilities)",
+          "inputs": [
+            "ebit",
+            "assets",
+            "current_liabilities"
+          ]
+        },
+        "equity": {
+          "value": 112093000000.0,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "equity"
+          ]
+        },
+        "revenue_growth_1y": {
+          "value": 0.1505979656911629,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "(revenue_latest / revenue_1y_ago)^(1/1) - 1",
+          "inputs": [
+            "revenue",
+            "2025-09-30"
+          ]
+        },
+        "eps_growth_1y": {
+          "value": 0.20375335120643445,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "(eps_latest / eps_1y_ago)^(1/1) - 1",
+          "inputs": [
+            "eps",
+            "2025-09-30"
+          ]
+        },
+        "revenue_growth_3y": {
+          "value": 0.07701326503022221,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "(revenue_latest / revenue_3y_ago)^(1/3) - 1",
+          "inputs": [
+            "revenue",
+            "2023-09-30"
+          ]
+        },
+        "eps_growth_3y": {
+          "value": 0.13572177900514792,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "(eps_latest / eps_3y_ago)^(1/3) - 1",
+          "inputs": [
+            "eps",
+            "2023-09-30"
+          ]
+        },
+        "revenue_growth_5y": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "(revenue_latest / revenue_5y_ago)^(1/5) - 1",
+          "inputs": [
+            "revenue",
+            "missing"
+          ]
+        },
+        "eps_growth_5y": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "(eps_latest / eps_5y_ago)^(1/5) - 1",
+          "inputs": [
+            "eps",
+            "missing"
+          ]
+        },
+        "earnings_consistency": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "Profitable annual periods / observed annual periods",
+          "inputs": [
+            "net_income_history"
+          ]
+        },
+        "dividend_fcf_coverage": {
+          "value": 8.654411296991286,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "FCF / absolute cash dividends",
+          "inputs": [
+            "fcf",
+            "dividends"
+          ]
+        },
+        "earnings_volatility": {
+          "value": 0.1397060680172402,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "std annual net income / abs mean",
+          "inputs": [
+            "net_income_history"
+          ]
+        },
+        "sma20": {
+          "value": 345.26114959716796,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "mean last 20 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "sma50": {
+          "value": 338.2236059570312,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "mean last 50 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "sma100": {
+          "value": 325.68232391357424,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "mean last 100 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "sma200": {
+          "value": 300.28016212463376,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "mean last 200 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "ema20": {
+          "value": 345.2904307750057,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "EMA span 20",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "ema50": {
+          "value": 337.76502874130216,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "EMA span 50",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "rsi14": {
+          "value": 59.951850828241916,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "Wilder RSI 14; flat market = 50",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "macd": {
+          "value": 3.7947803888316685,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "EMA12 - EMA26",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "macd_signal": {
+          "value": 3.0602078579314256,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "EMA9 of MACD",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "macd_histogram": {
+          "value": 0.7345725309002429,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "MACD - signal",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "bollinger_lower": {
+          "value": 334.5221716531332,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "SMA20 - 2 population std20",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "bollinger_upper": {
+          "value": 356.0001275412027,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "SMA20 + 2 population std20",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "atr14": {
+          "value": 8.385593513506228,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "Wilder mean true range14",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "volume_ratio": {
+          "value": 0.6542794347655835,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "Latest volume / previous 20 sessions mean",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "high_52w": {
+          "value": 359.3699951171875,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "Maximum adjusted high last 252 sessions",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "low_52w": {
+          "value": 242.57490960968966,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "Minimum adjusted low last 252 sessions",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "momentum_63": {
+          "value": 0.16088533780674918,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "close / close63 sessions ago - 1",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "relative_strength_63": {
+          "value": 0.19045024917742515,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "freshness": "fresh",
+          "formula": "stock 63-session return factor / benchmark factor - 1; aligned dates",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "pledge_ratio": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164764+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "promoter_ownership": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164778+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "nnpa": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164784+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "recurring_revenue_ratio": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164789+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "historical_pe_min": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164793+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "regulatory_exposure": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164797+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "concentration_risk": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164801+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "credit_cost": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164805+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "capacity_utilization": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164808+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "gnpa": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164812+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "nim": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164816+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "historical_pe_max": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164820+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "historical_pe_median": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164823+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "normalized_roe": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164828+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "capital_adequacy": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164832+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "competitive_advantage": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164836+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "audit_clear": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164840+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "dilution_risk": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164844+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "funding_stability": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.164848+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "earnings_yield": {
+          "value": 0.025304327556220398,
+          "unit": "ratio",
+          "source": "calculated",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:46.164870+00:00",
+          "freshness": "derived",
+          "formula": "1 / trailing PE",
+          "inputs": [
+            "pe"
+          ]
+        },
+        "fcf_yield": {
+          "value": 0.02638185508544949,
+          "unit": "ratio",
+          "source": "calculated",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:46.164900+00:00",
+          "freshness": "derived",
+          "formula": "annual FCF / market cap",
+          "inputs": [
+            "fcf",
+            "market_cap"
+          ]
+        },
+        "peg": {
+          "value": 2.9117605361259704,
+          "unit": "ratio",
+          "source": "calculated",
+          "period": "2026-09-30",
+          "retrieved_at": "2026-11-13T10:02:46.164916+00:00",
+          "freshness": "derived",
+          "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
+          "inputs": [
+            "pe",
+            "eps_growth_3y"
+          ]
+        },
+        "margin_of_safety": {
+          "value": -2.2892667152149895,
+          "unit": "ratio",
+          "source": "DCF scenarios",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.165062+00:00",
+          "freshness": "derived",
+          "formula": "1 - price/base fair value",
+          "inputs": [
+            "price",
+            "fcf",
+            "shares"
+          ]
+        },
+        "above_sma50": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.165081+00:00",
+          "freshness": "derived",
+          "formula": "price > SMA50",
+          "inputs": []
+        },
+        "above_sma200": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.165090+00:00",
+          "freshness": "derived",
+          "formula": "price > SMA200",
+          "inputs": []
+        },
+        "macd_positive": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.165097+00:00",
+          "freshness": "derived",
+          "formula": "MACD histogram > 0",
+          "inputs": []
+        },
+        "weekly_up": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.165103+00:00",
+          "freshness": "derived",
+          "formula": "last completed weekly close > weekly SMA20",
+          "inputs": []
+        }
+      },
+      "statements": [
+        {
+          "period": "2026-09-30",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "currency": "USD",
+          "revenue": 478834000000.0,
+          "net_income": 132175000000.0,
+          "eps": 8.98,
+          "ebit": 158063000000.0,
+          "equity": 112093000000.0,
+          "debt": 80111000000.0,
+          "cash": 36305000000.0,
+          "assets": 404548000000.0,
+          "current_liabilities": 169915000000.0,
+          "current_assets": 173857000000.0,
+          "ocf": 145097000000.0,
+          "capex": -9041000000.0,
+          "fcf": 136056000000.0,
+          "shares": 14532259000.0,
+          "dividends": -15721000000.0,
+          "operating_income": 158063000000.0,
+          "inventory": 14541000000.0,
+          "receivables": 83713000000.0
+        },
+        {
+          "period": "2025-09-30",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "currency": "USD",
+          "revenue": 416161000000.0,
+          "net_income": 112010000000.0,
+          "eps": 7.46,
+          "ebit": 133050000000.0,
+          "equity": 73733000000.0,
+          "debt": 98657000000.0,
+          "cash": 35934000000.0,
+          "assets": 359241000000.0,
+          "current_liabilities": 165631000000.0,
+          "current_assets": 147957000000.0,
+          "ocf": 111482000000.0,
+          "capex": -12715000000.0,
+          "fcf": 98767000000.0,
+          "shares": 14773260000.0,
+          "dividends": -15421000000.0,
+          "operating_income": 133050000000.0,
+          "inventory": 5718000000.0,
+          "receivables": 72957000000.0
+        },
+        {
+          "period": "2024-09-30",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "currency": "USD",
+          "revenue": 391035000000.0,
+          "net_income": 93736000000.0,
+          "eps": 6.08,
+          "ebit": 123216000000.0,
+          "equity": 56950000000.0,
+          "debt": 106629000000.0,
+          "cash": 29943000000.0,
+          "assets": 364980000000.0,
+          "current_liabilities": 176392000000.0,
+          "current_assets": 152987000000.0,
+          "ocf": 118254000000.0,
+          "capex": -9447000000.0,
+          "fcf": 108807000000.0,
+          "shares": 15116786000.0,
+          "dividends": -15234000000.0,
+          "operating_income": 123216000000.0,
+          "inventory": 7286000000.0,
+          "receivables": 66243000000.0
+        },
+        {
+          "period": "2023-09-30",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "currency": "USD",
+          "revenue": 383285000000.0,
+          "net_income": 96995000000.0,
+          "eps": 6.13,
+          "ebit": 114301000000.0,
+          "interest": 3933000000.0,
+          "equity": 62146000000.0,
+          "debt": 111088000000.0,
+          "cash": 29965000000.0,
+          "assets": 352583000000.0,
+          "current_liabilities": 145308000000.0,
+          "current_assets": 143566000000.0,
+          "ocf": 110543000000.0,
+          "capex": -10959000000.0,
+          "fcf": 99584000000.0,
+          "shares": 15550061000.0,
+          "dividends": -15025000000.0,
+          "operating_income": 114301000000.0,
+          "inventory": 6331000000.0,
+          "receivables": 60985000000.0
+        },
+        {
+          "period": "2022-09-30",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:44.890826+00:00",
+          "currency": "USD",
+          "interest": 2931000000.0
+        }
+      ],
+      "provider_conflicts": {},
+      "warnings": [
+        "Yahoo is an unofficial personal-use fallback; governance disclosures are incomplete"
+      ],
+      "news_ids": [],
+      "converted_prices": {
+        "USD": 354.88,
+        "INR": 33440.34359130859
+      },
+      "changes": {
+        "price": {
+          "previous": 355.63,
+          "current": 354.88,
+          "delta": -0.75
+        },
+        "new_news": []
+      }
+    },
+    {
+      "ticker": "MSFT",
+      "exchange": "NASDAQ",
+      "name": "Microsoft Corporation",
+      "price": 523.0,
+      "score": 66.49,
+      "fair_value": 99.97805431900618,
+      "currency": "USD",
+      "price_timestamp": "2026-11-12T21:00:01+00:00",
+      "scores": {
+        "total": 66.49,
+        "categories": {
+          "fundamentals": {
+            "score": 27.86,
+            "maximum": 30,
+            "coverage": 0.8235,
+            "details": {
+              "roe": {
+                "value": 0.30233483352811,
+                "quality": 1,
+                "weight": 2
+              },
+              "roce": {
+                "value": 0.2866333871030666,
+                "quality": 1,
+                "weight": 2
+              },
+              "revenue_growth_1y": {
+                "value": 0.17788686799846665,
+                "quality": 1,
+                "weight": 1
+              },
+              "revenue_growth_3y": {
+                "value": 0.1612397915820203,
+                "quality": 1,
+                "weight": 2
+              },
+              "revenue_growth_5y": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "eps_growth_3y": {
+                "value": 0.22855998285745227,
+                "quality": 1,
+                "weight": 1
+              },
+              "earnings_consistency": {
+                "value": 1.0,
+                "quality": 1,
+                "weight": 1
+              },
+              "operating_margin": {
+                "value": 0.4678081840892722,
+                "quality": 1,
+                "weight": 1
+              },
+              "net_margin": {
+                "value": 0.4030538905915218,
+                "quality": 1,
+                "weight": 1
+              },
+              "fcf_conversion": {
+                "value": 0.5008411277841329,
+                "quality": 0.5008411277841329,
+                "weight": 2
+              },
+              "dividend_fcf_coverage": {
+                "value": 2.5330686330119114,
+                "quality": 1,
+                "weight": 1
+              },
+              "recurring_revenue_ratio": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          },
+          "valuation": {
+            "score": 4.69,
+            "maximum": 30,
+            "coverage": 0.8333,
+            "details": {
+              "earnings_yield": {
+                "value": 0.036634797811818186,
+                "quality": 0.4579349726477273,
+                "weight": 2
+              },
+              "fcf_yield": {
+                "value": 0.017247355289770536,
+                "quality": 0.2155919411221317,
+                "weight": 3
+              },
+              "margin_of_safety": {
+                "value": -4.231148011054821,
+                "quality": 0,
+                "weight": 5
+              },
+              "peer_pe_discount": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          },
+          "technicals": {
+            "score": 21.45,
+            "maximum": 25,
+            "coverage": 1.0,
+            "details": {
+              "above_sma200": {
+                "value": 1.0,
+                "quality": 1,
+                "weight": 3
+              },
+              "above_sma50": {
+                "value": 1.0,
+                "quality": 1,
+                "weight": 2
+              },
+              "relative_strength_63": {
+                "value": 0.08463699888070275,
+                "quality": 0.9231849944035138,
+                "weight": 3
+              },
+              "momentum_63": {
+                "value": 0.057699966641496125,
+                "quality": 0.6923332221383204,
+                "weight": 2
+              },
+              "macd_positive": {
+                "value": 0.0,
+                "quality": 0,
+                "weight": 1
+              },
+              "weekly_up": {
+                "value": 1.0,
+                "quality": 1,
+                "weight": 2
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          },
+          "risk": {
+            "score": 12.49,
+            "maximum": 15,
+            "coverage": 0.7143,
+            "details": {
+              "debt_equity": {
+                "value": 0.12845314170624364,
+                "quality": 0.9357734291468782,
+                "weight": 3
+              },
+              "interest_coverage": {
+                "value": 55.38675843985578,
+                "quality": 1,
+                "weight": 3
+              },
+              "current_ratio": {
+                "value": 1.2303272619576484,
+                "quality": 0.48688484130509896,
+                "weight": 2
+              },
+              "earnings_volatility": {
+                "value": 0.22824538621011642,
+                "quality": 0.7717546137898836,
+                "weight": 2
+              },
+              "audit_clear": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "pledge_ratio": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          }
+        },
+        "profile": "technology",
+        "interpretation": "Watchlist"
+      },
+      "verdict": "HOLD / REVIEW",
+      "decision": {
+        "verdict": "HOLD / REVIEW",
+        "reasons": [
+          "Watchlist",
+          "Valuation: Overvalued",
+          "Review unresolved governance disclosures"
+        ],
+        "invalidation": "Deteriorating cash generation, leverage, governance, or valuation assumptions invalidate the thesis.",
+        "horizon": "long_term",
+        "note": "Technical entry/invalidation levels are swing scenarios; long-term thesis depends on company fundamentals."
+      },
+      "valuation": {
+        "metrics": {
+          "earnings_yield": {
+            "value": 0.036634797811818186,
+            "unit": "ratio",
+            "source": "calculated",
+            "period": "2026-06-30",
+            "retrieved_at": "2026-11-13T10:02:47.274840+00:00",
+            "freshness": "derived",
+            "formula": "1 / trailing PE",
+            "inputs": [
+              "pe"
+            ]
+          },
+          "fcf_yield": {
+            "value": 0.017247355289770536,
+            "unit": "ratio",
+            "source": "calculated",
+            "period": "2026-06-30",
+            "retrieved_at": "2026-11-13T10:02:47.274867+00:00",
+            "freshness": "derived",
+            "formula": "annual FCF / market cap",
+            "inputs": [
+              "fcf",
+              "market_cap"
+            ]
+          },
+          "peg": {
+            "value": 1.1942795785482792,
+            "unit": "ratio",
+            "source": "calculated",
+            "period": "2026-06-30",
+            "retrieved_at": "2026-11-13T10:02:47.274884+00:00",
+            "freshness": "derived",
+            "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
+            "inputs": [
+              "pe",
+              "eps_growth_3y"
+            ]
+          }
+        },
+        "fair_values": {
+          "conservative": {
+            "value": 70.76791813130608,
+            "growth": 0.0,
+            "discount_rate": 0.14
+          },
+          "base": {
+            "value": 99.97805431900618,
+            "growth": 0.040443958087982956,
+            "discount_rate": 0.12
+          },
+          "optimistic": {
+            "value": 125.3153383345392,
+            "growth": 0.040443958087982956,
+            "discount_rate": 0.1
+          }
+        },
+        "margin_of_safety": -4.231148011054821,
+        "accumulation_range": [
+          53.07593859847955,
+          79.98244345520494
+        ],
+        "verdict": "Overvalued",
+        "confidence": "low/model-sensitive",
+        "historical_pe": {
+          "historical_pe_median": null,
+          "historical_pe_min": null,
+          "historical_pe_max": null
+        },
+        "sector_relative_pe": null,
+        "omission_reason": null,
+        "assumptions": {
+          "source": "Explicit research policy; rates are sensitivity assumptions, not forecasts. Historical annual FCF CAGR caps growth. No DCF for financial companies.",
+          "terminal_growth": 0.02,
+          "scenarios": {
+            "conservative": {
+              "growth_cap": 0,
+              "discount_rate": 0.14
+            },
+            "base": {
+              "growth_cap": 0.05,
+              "discount_rate": 0.12
+            },
+            "optimistic": {
+              "growth_cap": 0.08,
+              "discount_rate": 0.1
+            }
+          }
+        },
+        "formulas": "FCF_t=FCF_0*(1+g)^t; PV=sum(FCF_t/(1+r)^t)+FCF_5*(1+terminal)/(r-terminal)/(1+r)^5; per-share equity=PV/shares. FCF is an equity cash-flow proxy; no second net-debt deduction.",
+        "historical_fcf_growth": 0.040443958087982956
+      },
+      "technicals": {
+        "trend": "up",
+        "weekly_trend": "up",
+        "support": 518.7899780273438,
+        "resistance": 535.6900024414062,
+        "entry_range": [
+          518.7899780273438,
+          526.4992288432596
+        ],
+        "invalidation": 503.3714763955121,
+        "risk_reward": 0.646508249785266,
+        "support_zone": [
+          514.9353526193859,
+          522.6446034353016
+        ],
+        "resistance_zone": [
+          531.8353770334484,
+          539.5446278493641
+        ],
+        "method": "Confirmed 5-bar pivots in last 63 sessions; zones ±0.25 ATR; invalidation support - ATR. Swing scenarios, not price forecasts."
+      },
+      "news": {
+        "items": [],
+        "overlay": "No material catalyst",
+        "critical": false,
+        "coverage": "headline/snippet only; material catalysts not verified",
+        "note": "No material catalyst means none confirmed in available feed, not absence of risk. News never adds score points.",
+        "errors": [
+          "Yahoo news unavailable"
+        ],
+        "llm": {
+          "status": "disabled"
+        }
+      },
+      "risk": {
+        "critical": [],
+        "concerns": [],
+        "unverified": [
+          "auditor qualifications",
+          "pledged promoter shares",
+          "business concentration",
+          "refinancing maturity schedule",
+          "litigation and regulatory exposure",
+          "material corporate actions"
+        ],
+        "note": "Unknown governance information is not a clean audit or low-risk finding."
+      },
+      "market": {
+        "expected_session": "2026-11-12",
+        "last_session": "2026-11-12",
+        "stale": false,
+        "condition": "closed",
+        "calendar": "XNYS",
+        "calendar_note": null
+      },
+      "metrics": {
+        "price": {
+          "value": 523.0,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-11-12T21:00:01+00:00",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": null,
+          "inputs": []
+        },
+        "pe": {
+          "value": 27.296452,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-12T21:00:01+00:00",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "forward_pe": {
+          "value": 21.61542,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-12T21:00:01+00:00",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "pb": {
+          "value": 8.255591,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-12T21:00:01+00:00",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "ev_ebitda": {
+          "value": 19.22,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-12T21:00:01+00:00",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "roe": {
+          "value": 0.30233483352811,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "net_income / equity",
+          "inputs": [
+            "net_income",
+            "equity"
+          ]
+        },
+        "roa": {
+          "value": 0.17636238488559763,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "net_income / assets",
+          "inputs": [
+            "net_income",
+            "assets"
+          ]
+        },
+        "operating_margin": {
+          "value": 0.4678081840892722,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "operating_income / revenue",
+          "inputs": [
+            "operating_income",
+            "revenue"
+          ]
+        },
+        "net_margin": {
+          "value": 0.4030538905915218,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "net_income / revenue",
+          "inputs": [
+            "net_income",
+            "revenue"
+          ]
+        },
+        "market_cap": {
+          "value": 3883899813888.0,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-11-12T21:00:01+00:00",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "shares": {
+          "value": 7428434704.0,
+          "unit": "shares",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "shares"
+          ]
+        },
+        "insider_ownership": {
+          "value": 0.00081,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "payout": {
+          "value": 0.19,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "eps": {
+          "value": 17.95,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "eps"
+          ]
+        },
+        "fcf": {
+          "value": 66987000000.0,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "fcf"
+          ]
+        },
+        "enterprise_value": {
+          "value": 3953321836544.0,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-11-12T21:00:01+00:00",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "debt": {
+          "value": 56826000000.0,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "debt"
+          ]
+        },
+        "cash": {
+          "value": 20935000000.0,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "cash"
+          ]
+        },
+        "debt_equity": {
+          "value": 0.12845314170624364,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "debt / equity",
+          "inputs": [
+            "debt",
+            "equity"
+          ]
+        },
+        "current_ratio": {
+          "value": 1.2303272619576484,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "current_assets / current_liabilities",
+          "inputs": [
+            "current_assets",
+            "current_liabilities"
+          ]
+        },
+        "fcf_conversion": {
+          "value": 0.5008411277841329,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "fcf / net_income",
+          "inputs": [
+            "fcf",
+            "net_income"
+          ]
+        },
+        "interest_coverage": {
+          "value": 55.38675843985578,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "ebit / interest",
+          "inputs": [
+            "ebit",
+            "interest"
+          ]
+        },
+        "roce": {
+          "value": 0.2866333871030666,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "EBIT / (assets - current liabilities)",
+          "inputs": [
+            "ebit",
+            "assets",
+            "current_liabilities"
+          ]
+        },
+        "equity": {
+          "value": 442387000000.0,
+          "unit": "USD",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "equity"
+          ]
+        },
+        "revenue_growth_1y": {
+          "value": 0.17788686799846665,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "(revenue_latest / revenue_1y_ago)^(1/1) - 1",
+          "inputs": [
+            "revenue",
+            "2025-06-30"
+          ]
+        },
+        "eps_growth_1y": {
+          "value": 0.31598240469208205,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "(eps_latest / eps_1y_ago)^(1/1) - 1",
+          "inputs": [
+            "eps",
+            "2025-06-30"
+          ]
+        },
+        "revenue_growth_3y": {
+          "value": 0.1612397915820203,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "(revenue_latest / revenue_3y_ago)^(1/3) - 1",
+          "inputs": [
+            "revenue",
+            "2023-06-30"
+          ]
+        },
+        "eps_growth_3y": {
+          "value": 0.22855998285745227,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "(eps_latest / eps_3y_ago)^(1/3) - 1",
+          "inputs": [
+            "eps",
+            "2023-06-30"
+          ]
+        },
+        "revenue_growth_5y": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "(revenue_latest / revenue_5y_ago)^(1/5) - 1",
+          "inputs": [
+            "revenue",
+            "missing"
+          ]
+        },
+        "eps_growth_5y": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "(eps_latest / eps_5y_ago)^(1/5) - 1",
+          "inputs": [
+            "eps",
+            "missing"
+          ]
+        },
+        "earnings_consistency": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "Profitable annual periods / observed annual periods",
+          "inputs": [
+            "net_income_history"
+          ]
+        },
+        "dividend_fcf_coverage": {
+          "value": 2.5330686330119114,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "FCF / absolute cash dividends",
+          "inputs": [
+            "fcf",
+            "dividends"
+          ]
+        },
+        "earnings_volatility": {
+          "value": 0.22824538621011642,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "std annual net income / abs mean",
+          "inputs": [
+            "net_income_history"
+          ]
+        },
+        "sma20": {
+          "value": 529.644497680664,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "mean last 20 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "sma50": {
+          "value": 518.7219995117188,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "mean last 50 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "sma100": {
+          "value": 478.2132452392578,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "mean last 100 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "sma200": {
+          "value": 440.02617401123047,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "mean last 200 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "ema20": {
+          "value": 528.7532719662292,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "EMA span 20",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "ema50": {
+          "value": 515.6677060221317,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "EMA span 50",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "rsi14": {
+          "value": 48.44570058694821,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "Wilder RSI 14; flat market = 50",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "macd": {
+          "value": 2.693264798882524,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "EMA12 - EMA26",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "macd_signal": {
+          "value": 4.312930128697464,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "EMA9 of MACD",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "macd_histogram": {
+          "value": -1.6196653298149402,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "MACD - signal",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "bollinger_lower": {
+          "value": 510.245355290835,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "SMA20 - 2 population std20",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "bollinger_upper": {
+          "value": 549.0436400704931,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "SMA20 + 2 population std20",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "atr14": {
+          "value": 15.418501631831647,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "Wilder mean true range14",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "volume_ratio": {
+          "value": 0.7027684922510121,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "Latest volume / previous 20 sessions mean",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "high_52w": {
+          "value": 559.1500244140625,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "Maximum adjusted high last 252 sessions",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "low_52w": {
+          "value": 348.54386902384044,
+          "unit": "USD",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "Minimum adjusted low last 252 sessions",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "momentum_63": {
+          "value": 0.057699966641496125,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "close / close63 sessions ago - 1",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "relative_strength_63": {
+          "value": 0.08463699888070275,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "freshness": "fresh",
+          "formula": "stock 63-session return factor / benchmark factor - 1; aligned dates",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "pledge_ratio": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274735+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "promoter_ownership": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274749+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "nnpa": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274754+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "recurring_revenue_ratio": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274759+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "historical_pe_min": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274763+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "regulatory_exposure": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274767+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "concentration_risk": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274771+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "credit_cost": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274775+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "capacity_utilization": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274779+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "gnpa": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274783+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "nim": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274787+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "historical_pe_max": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274791+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "historical_pe_median": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274795+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "normalized_roe": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274800+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "capital_adequacy": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274804+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "competitive_advantage": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274808+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "audit_clear": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274813+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "dilution_risk": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274817+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "funding_stability": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.274821+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "earnings_yield": {
+          "value": 0.036634797811818186,
+          "unit": "ratio",
+          "source": "calculated",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:47.274840+00:00",
+          "freshness": "derived",
+          "formula": "1 / trailing PE",
+          "inputs": [
+            "pe"
+          ]
+        },
+        "fcf_yield": {
+          "value": 0.017247355289770536,
+          "unit": "ratio",
+          "source": "calculated",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:47.274867+00:00",
+          "freshness": "derived",
+          "formula": "annual FCF / market cap",
+          "inputs": [
+            "fcf",
+            "market_cap"
+          ]
+        },
+        "peg": {
+          "value": 1.1942795785482792,
+          "unit": "ratio",
+          "source": "calculated",
+          "period": "2026-06-30",
+          "retrieved_at": "2026-11-13T10:02:47.274884+00:00",
+          "freshness": "derived",
+          "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
+          "inputs": [
+            "pe",
+            "eps_growth_3y"
+          ]
+        },
+        "margin_of_safety": {
+          "value": -4.231148011054821,
+          "unit": "ratio",
+          "source": "DCF scenarios",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.275011+00:00",
+          "freshness": "derived",
+          "formula": "1 - price/base fair value",
+          "inputs": [
+            "price",
+            "fcf",
+            "shares"
+          ]
+        },
+        "above_sma50": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:47.275032+00:00",
+          "freshness": "derived",
+          "formula": "price > SMA50",
+          "inputs": []
+        },
+        "above_sma200": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:47.275040+00:00",
+          "freshness": "derived",
+          "formula": "price > SMA200",
+          "inputs": []
+        },
+        "macd_positive": {
+          "value": 0.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:47.275047+00:00",
+          "freshness": "derived",
+          "formula": "MACD histogram > 0",
+          "inputs": []
+        },
+        "weekly_up": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-12",
+          "retrieved_at": "2026-11-13T10:02:47.275054+00:00",
+          "freshness": "derived",
+          "formula": "last completed weekly close > weekly SMA20",
+          "inputs": []
+        }
+      },
+      "statements": [
+        {
+          "period": "2026-06-30",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "currency": "USD",
+          "revenue": 331839000000.0,
+          "net_income": 133749000000.0,
+          "eps": 17.95,
+          "ebit": 168985000000.0,
+          "interest": 3051000000.0,
+          "equity": 442387000000.0,
+          "debt": 56826000000.0,
+          "cash": 20935000000.0,
+          "assets": 758376000000.0,
+          "current_liabilities": 168825000000.0,
+          "current_assets": 207710000000.0,
+          "ocf": 182935000000.0,
+          "capex": -115948000000.0,
+          "fcf": 66987000000.0,
+          "shares": 7428434704.0,
+          "dividends": -26445000000.0,
+          "operating_income": 155237000000.0,
+          "inventory": 1397000000.0,
+          "receivables": 80876000000.0
+        },
+        {
+          "period": "2025-06-30",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "currency": "USD",
+          "revenue": 281724000000.0,
+          "net_income": 101832000000.0,
+          "eps": 13.64,
+          "ebit": 126012000000.0,
+          "interest": 2385000000.0,
+          "equity": 343479000000.0,
+          "debt": 60588000000.0,
+          "cash": 30242000000.0,
+          "assets": 619003000000.0,
+          "current_liabilities": 141218000000.0,
+          "current_assets": 191131000000.0,
+          "ocf": 136162000000.0,
+          "capex": -64551000000.0,
+          "fcf": 71611000000.0,
+          "shares": 7434158655.0,
+          "dividends": -24082000000.0,
+          "operating_income": 128528000000.0,
+          "inventory": 938000000.0,
+          "receivables": 69905000000.0
+        },
+        {
+          "period": "2024-06-30",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "currency": "USD",
+          "revenue": 245122000000.0,
+          "net_income": 88136000000.0,
+          "eps": 11.8,
+          "ebit": 110722000000.0,
+          "interest": 2935000000.0,
+          "equity": 268477000000.0,
+          "debt": 67127000000.0,
+          "cash": 18315000000.0,
+          "assets": 512163000000.0,
+          "current_liabilities": 125286000000.0,
+          "current_assets": 159734000000.0,
+          "ocf": 118548000000.0,
+          "capex": -44477000000.0,
+          "fcf": 74071000000.0,
+          "shares": 7434138859.0,
+          "dividends": -21771000000.0,
+          "operating_income": 109433000000.0,
+          "inventory": 1246000000.0,
+          "receivables": 56924000000.0
+        },
+        {
+          "period": "2023-06-30",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "currency": "USD",
+          "revenue": 211915000000.0,
+          "net_income": 72361000000.0,
+          "eps": 9.68,
+          "ebit": 91279000000.0,
+          "interest": 1968000000.0,
+          "equity": 206223000000.0,
+          "debt": 59965000000.0,
+          "cash": 34704000000.0,
+          "assets": 411976000000.0,
+          "current_liabilities": 104149000000.0,
+          "current_assets": 184257000000.0,
+          "ocf": 87582000000.0,
+          "capex": -28107000000.0,
+          "fcf": 59475000000.0,
+          "shares": 7432000000.0,
+          "dividends": -19800000000.0,
+          "operating_income": 88523000000.0,
+          "inventory": 2500000000.0,
+          "receivables": 48688000000.0
+        },
+        {
+          "period": "2022-06-30",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:46.321560+00:00",
+          "currency": "USD"
+        }
+      ],
+      "provider_conflicts": {},
+      "warnings": [
+        "Yahoo is an unofficial personal-use fallback; governance disclosures are incomplete"
+      ],
+      "news_ids": [],
+      "converted_prices": {
+        "USD": 523.0,
+        "INR": 49282.29175567627
+      },
+      "changes": {
+        "price": {
+          "previous": 521.125,
+          "current": 523.0,
+          "delta": 1.875
+        },
+        "score": {
+          "previous": 66.15,
+          "current": 66.49,
+          "delta": 0.3399999999999892
+        },
+        "new_news": []
+      }
+    },
+    {
+      "ticker": "TCS.NS",
+      "exchange": "NSE",
+      "name": "Tata Consultancy Services Limited",
+      "price": 2407.5,
+      "score": null,
+      "fair_value": 1527.17671499812,
+      "currency": "INR",
+      "price_timestamp": "2026-11-13T09:58:09+00:00",
+      "scores": {
+        "total": null,
+        "categories": {
+          "fundamentals": {
+            "score": 23.14,
+            "maximum": 30,
+            "coverage": 0.8235,
+            "details": {
+              "roe": {
+                "value": 0.45887728459530025,
+                "quality": 1,
+                "weight": 2
+              },
+              "roce": {
+                "value": 0.5492762930395693,
+                "quality": 1,
+                "weight": 2
+              },
+              "revenue_growth_1y": {
+                "value": 0.04581237956478823,
+                "quality": 0.47906189782394115,
+                "weight": 1
+              },
+              "revenue_growth_3y": {
+                "value": 0.05801848619364591,
+                "quality": 0.38678990795763946,
+                "weight": 2
+              },
+              "revenue_growth_5y": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "eps_growth_3y": {
+                "value": 0.0569441047959276,
+                "quality": 0.379627365306184,
+                "weight": 1
+              },
+              "earnings_consistency": {
+                "value": 1.0,
+                "quality": 1,
+                "weight": 1
+              },
+              "operating_margin": {
+                "value": 0.2509989850985503,
+                "quality": 1,
+                "weight": 1
+              },
+              "net_margin": {
+                "value": 0.1842926211796076,
+                "quality": 1,
+                "weight": 1
+              },
+              "fcf_conversion": {
+                "value": 0.9743548059337533,
+                "quality": 0.9743548059337533,
+                "weight": 2
+              },
+              "dividend_fcf_coverage": {
+                "value": 1.2158125618074398,
+                "quality": 0.2158125618074398,
+                "weight": 1
+              },
+              "recurring_revenue_ratio": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          },
+          "valuation": {
+            "score": null,
+            "maximum": 30,
+            "coverage": 0.4167,
+            "details": {
+              "earnings_yield": {
+                "value": 0.05925649220054199,
+                "quality": 0.7407061525067749,
+                "weight": 2
+              },
+              "fcf_yield": {
+                "value": 0.05504592122924279,
+                "quality": 0.6880740153655348,
+                "weight": 3
+              },
+              "margin_of_safety": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "peer_pe_discount": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          },
+          "technicals": {
+            "score": null,
+            "maximum": 25,
+            "coverage": 0.0,
+            "details": {
+              "above_sma200": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "above_sma50": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "relative_strength_63": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "momentum_63": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "macd_positive": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "weekly_up": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          },
+          "risk": {
+            "score": 14.58,
+            "maximum": 15,
+            "coverage": 0.7143,
+            "details": {
+              "debt_equity": {
+                "value": 0.10521260723610593,
+                "quality": 0.947393696381947,
+                "weight": 3
+              },
+              "interest_coverage": {
+                "value": 54.37163814180929,
+                "quality": 1,
+                "weight": 3
+              },
+              "current_ratio": {
+                "value": 2.2278129822372525,
+                "quality": 1,
+                "weight": 2
+              },
+              "earnings_volatility": {
+                "value": 0.059781621958506406,
+                "quality": 0.9402183780414936,
+                "weight": 2
+              },
+              "audit_clear": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "pledge_ratio": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          }
+        },
+        "profile": "technology",
+        "interpretation": null
+      },
+      "verdict": "INSUFFICIENT DATA",
+      "decision": {
+        "verdict": "INSUFFICIENT DATA",
+        "reasons": [
+          "Stale, undated, or insufficient essential evidence/category coverage"
+        ],
+        "invalidation": "Obtain current statements, valuation evidence and risk disclosures; rerun"
+      },
+      "valuation": {
+        "metrics": {
+          "earnings_yield": {
+            "value": 0.05925649220054199,
+            "unit": "ratio",
+            "source": "calculated",
+            "period": "2026-03-31",
+            "retrieved_at": "2026-11-13T10:02:49.417292+00:00",
+            "freshness": "derived",
+            "formula": "1 / trailing PE",
+            "inputs": [
+              "pe"
+            ]
+          },
+          "fcf_yield": {
+            "value": 0.05504592122924279,
+            "unit": "ratio",
+            "source": "calculated",
+            "period": "2026-03-31",
+            "retrieved_at": "2026-11-13T10:02:49.417323+00:00",
+            "freshness": "derived",
+            "formula": "annual FCF / market cap",
+            "inputs": [
+              "fcf",
+              "market_cap"
+            ]
+          },
+          "peg": {
+            "value": 2.9635706910273325,
+            "unit": "ratio",
+            "source": "calculated",
+            "period": "2026-03-31",
+            "retrieved_at": "2026-11-13T10:02:49.417339+00:00",
+            "freshness": "derived",
+            "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
+            "inputs": [
+              "pe",
+              "eps_growth_3y"
+            ]
+          }
+        },
+        "fair_values": {
+          "conservative": {
+            "value": 1040.0030915006273,
+            "growth": 0.0,
+            "discount_rate": 0.14
+          },
+          "base": {
+            "value": 1527.17671499812,
+            "growth": 0.05,
+            "discount_rate": 0.12
+          },
+          "optimistic": {
+            "value": 2103.4464451809217,
+            "growth": 0.07251639943779664,
+            "discount_rate": 0.1
+          }
+        },
+        "margin_of_safety": null,
+        "accumulation_range": [
+          780.0023186254705,
+          1221.7413719984959
+        ],
+        "verdict": "Fairly Valued",
+        "confidence": "low/model-sensitive",
+        "historical_pe": {
+          "historical_pe_median": null,
+          "historical_pe_min": null,
+          "historical_pe_max": null
+        },
+        "sector_relative_pe": null,
+        "omission_reason": null,
+        "assumptions": {
+          "source": "Explicit research policy; rates are sensitivity assumptions, not forecasts. Historical annual FCF CAGR caps growth. No DCF for financial companies.",
+          "terminal_growth": 0.02,
+          "scenarios": {
+            "conservative": {
+              "growth_cap": 0,
+              "discount_rate": 0.14
+            },
+            "base": {
+              "growth_cap": 0.05,
+              "discount_rate": 0.12
+            },
+            "optimistic": {
+              "growth_cap": 0.08,
+              "discount_rate": 0.1
+            }
+          }
+        },
+        "formulas": "FCF_t=FCF_0*(1+g)^t; PV=sum(FCF_t/(1+r)^t)+FCF_5*(1+terminal)/(r-terminal)/(1+r)^5; per-share equity=PV/shares. FCF is an equity cash-flow proxy; no second net-debt deduction.",
+        "historical_fcf_growth": 0.07251639943779664
+      },
+      "technicals": {
+        "trend": "mixed",
+        "weekly_trend": "up",
+        "support": 2246.35838320449,
+        "resistance": 2549.89990234375,
+        "entry_range": [
+          2246.35838320449,
+          2279.8091541187855
+        ],
+        "invalidation": 2179.4568413758993,
+        "risk_reward": 0.6244427730387546,
+        "support_zone": [
+          2229.6329977473424,
+          2263.083768661638
+        ],
+        "resistance_zone": [
+          2533.1745168866023,
+          2566.6252878008977
+        ],
+        "method": "Confirmed 5-bar pivots in last 63 sessions; zones ±0.25 ATR; invalidation support - ATR. Swing scenarios, not price forecasts."
+      },
+      "news": {
+        "items": [],
+        "overlay": "No material catalyst",
+        "critical": false,
+        "coverage": "headline/snippet only; material catalysts not verified",
+        "note": "No material catalyst means none confirmed in available feed, not absence of risk. News never adds score points.",
+        "errors": [
+          "Yahoo news unavailable"
+        ],
+        "llm": {
+          "status": "disabled"
+        }
+      },
+      "risk": {
+        "critical": [],
+        "concerns": [],
+        "unverified": [
+          "auditor qualifications",
+          "pledged promoter shares",
+          "business concentration",
+          "refinancing maturity schedule",
+          "litigation and regulatory exposure",
+          "material corporate actions"
+        ],
+        "note": "Unknown governance information is not a clean audit or low-risk finding."
+      },
+      "market": {
+        "expected_session": null,
+        "last_session": "2026-11-13",
+        "stale": true,
+        "condition": "holiday/weekend",
+        "calendar": "XBOM",
+        "calendar_note": "XBOM proxy for NSE; verify exceptional NSE-only sessions"
+      },
+      "metrics": {
+        "price": {
+          "value": 2407.5,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-11-13T09:58:09+00:00",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": null,
+          "inputs": []
+        },
+        "pe": {
+          "value": 16.875788,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-13T09:58:09+00:00",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "forward_pe": {
+          "value": 14.977854,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-13T09:58:09+00:00",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "pb": {
+          "value": 7.320655,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-13T09:58:09+00:00",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "ev_ebitda": {
+          "value": 11.607,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-13T09:58:09+00:00",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "roe": {
+          "value": 0.45887728459530025,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "net_income / equity",
+          "inputs": [
+            "net_income",
+            "equity"
+          ]
+        },
+        "roa": {
+          "value": 0.26983308841269493,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "net_income / assets",
+          "inputs": [
+            "net_income",
+            "assets"
+          ]
+        },
+        "operating_margin": {
+          "value": 0.2509989850985503,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "operating_income / revenue",
+          "inputs": [
+            "operating_income",
+            "revenue"
+          ]
+        },
+        "net_margin": {
+          "value": 0.1842926211796076,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "net_income / revenue",
+          "inputs": [
+            "net_income",
+            "revenue"
+          ]
+        },
+        "market_cap": {
+          "value": 8710545473536.0,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-11-13T09:58:09+00:00",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "shares": {
+          "value": 3618087518.0,
+          "unit": "shares",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "shares"
+          ]
+        },
+        "insider_ownership": {
+          "value": 0.71794,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "payout": {
+          "value": 0.4557,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "eps": {
+          "value": 136.01,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "eps"
+          ]
+        },
+        "fcf": {
+          "value": 479480000000.0,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "fcf"
+          ]
+        },
+        "enterprise_value": {
+          "value": 8455996833792.0,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-11-13T09:58:09+00:00",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "debt": {
+          "value": 112830000000.0,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "debt"
+          ]
+        },
+        "cash": {
+          "value": 64050000000.0,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "cash"
+          ]
+        },
+        "debt_equity": {
+          "value": 0.10521260723610593,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "debt / equity",
+          "inputs": [
+            "debt",
+            "equity"
+          ]
+        },
+        "current_ratio": {
+          "value": 2.2278129822372525,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "current_assets / current_liabilities",
+          "inputs": [
+            "current_assets",
+            "current_liabilities"
+          ]
+        },
+        "fcf_conversion": {
+          "value": 0.9743548059337533,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "fcf / net_income",
+          "inputs": [
+            "fcf",
+            "net_income"
+          ]
+        },
+        "interest_coverage": {
+          "value": 54.37163814180929,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "ebit / interest",
+          "inputs": [
+            "ebit",
+            "interest"
+          ]
+        },
+        "roce": {
+          "value": 0.5492762930395693,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "EBIT / (assets - current liabilities)",
+          "inputs": [
+            "ebit",
+            "assets",
+            "current_liabilities"
+          ]
+        },
+        "equity": {
+          "value": 1072400000000.0,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "equity"
+          ]
+        },
+        "revenue_growth_1y": {
+          "value": 0.04581237956478823,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "(revenue_latest / revenue_1y_ago)^(1/1) - 1",
+          "inputs": [
+            "revenue",
+            "2025-03-31"
+          ]
+        },
+        "eps_growth_1y": {
+          "value": 0.013562858633281216,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "(eps_latest / eps_1y_ago)^(1/1) - 1",
+          "inputs": [
+            "eps",
+            "2025-03-31"
+          ]
+        },
+        "revenue_growth_3y": {
+          "value": 0.05801848619364591,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "(revenue_latest / revenue_3y_ago)^(1/3) - 1",
+          "inputs": [
+            "revenue",
+            "2023-03-31"
+          ]
+        },
+        "eps_growth_3y": {
+          "value": 0.0569441047959276,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "(eps_latest / eps_3y_ago)^(1/3) - 1",
+          "inputs": [
+            "eps",
+            "2023-03-31"
+          ]
+        },
+        "revenue_growth_5y": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "(revenue_latest / revenue_5y_ago)^(1/5) - 1",
+          "inputs": [
+            "revenue",
+            "missing"
+          ]
+        },
+        "eps_growth_5y": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "(eps_latest / eps_5y_ago)^(1/5) - 1",
+          "inputs": [
+            "eps",
+            "missing"
+          ]
+        },
+        "earnings_consistency": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "Profitable annual periods / observed annual periods",
+          "inputs": [
+            "net_income_history"
+          ]
+        },
+        "dividend_fcf_coverage": {
+          "value": 1.2158125618074398,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "FCF / absolute cash dividends",
+          "inputs": [
+            "fcf",
+            "dividends"
+          ]
+        },
+        "earnings_volatility": {
+          "value": 0.059781621958506406,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "fresh",
+          "formula": "std annual net income / abs mean",
+          "inputs": [
+            "net_income_history"
+          ]
+        },
+        "sma20": {
+          "value": 2477.1349853515626,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "mean last 20 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "sma50": {
+          "value": 2287.430390625,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "mean last 50 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "sma100": {
+          "value": 2261.977424316406,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "mean last 100 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "sma200": {
+          "value": 2366.052375488281,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "mean last 200 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "ema20": {
+          "value": 2428.0863903011045,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "EMA span 20",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "ema50": {
+          "value": 2346.5896537268013,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "EMA span 50",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "rsi14": {
+          "value": 50.7024440046632,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "Wilder RSI 14; flat market = 50",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "macd": {
+          "value": 49.34980909267051,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "EMA12 - EMA26",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "macd_signal": {
+          "value": 66.56974211376574,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "EMA9 of MACD",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "macd_histogram": {
+          "value": -17.21993302109523,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "MACD - signal",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "bollinger_lower": {
+          "value": 2390.7756775861876,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "SMA20 - 2 population std20",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "bollinger_upper": {
+          "value": 2563.4942931169376,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "SMA20 + 2 population std20",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "atr14": {
+          "value": 66.9015418285909,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "Wilder mean true range14",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "volume_ratio": {
+          "value": 0.6430838240960547,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "Latest volume / previous 20 sessions mean",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "high_52w": {
+          "value": 3269.7790009998616,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "Maximum adjusted high last 252 sessions",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "low_52w": {
+          "value": 1955.6242634941125,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "Minimum adjusted low last 252 sessions",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "momentum_63": {
+          "value": 0.030045715882984325,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "close / close63 sessions ago - 1",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "relative_strength_63": {
+          "value": 0.0010278283449769443,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "freshness": "stale",
+          "formula": "stock 63-session return factor / benchmark factor - 1; aligned dates",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "pledge_ratio": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417181+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "promoter_ownership": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417195+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "nnpa": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417201+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "recurring_revenue_ratio": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417206+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "historical_pe_min": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417211+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "regulatory_exposure": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417215+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "concentration_risk": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417219+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "credit_cost": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417223+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "capacity_utilization": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417228+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "gnpa": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417232+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "nim": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417236+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "historical_pe_max": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417240+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "historical_pe_median": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417245+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "normalized_roe": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417249+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "capital_adequacy": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417253+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "competitive_advantage": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417257+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "audit_clear": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417262+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "dilution_risk": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417266+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "funding_stability": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417270+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "earnings_yield": {
+          "value": 0.05925649220054199,
+          "unit": "ratio",
+          "source": "calculated",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.417292+00:00",
+          "freshness": "derived",
+          "formula": "1 / trailing PE",
+          "inputs": [
+            "pe"
+          ]
+        },
+        "fcf_yield": {
+          "value": 0.05504592122924279,
+          "unit": "ratio",
+          "source": "calculated",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.417323+00:00",
+          "freshness": "derived",
+          "formula": "annual FCF / market cap",
+          "inputs": [
+            "fcf",
+            "market_cap"
+          ]
+        },
+        "peg": {
+          "value": 2.9635706910273325,
+          "unit": "ratio",
+          "source": "calculated",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.417339+00:00",
+          "freshness": "derived",
+          "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
+          "inputs": [
+            "pe",
+            "eps_growth_3y"
+          ]
+        },
+        "margin_of_safety": {
+          "value": null,
+          "unit": "ratio",
+          "source": "DCF scenarios",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.417462+00:00",
+          "freshness": "derived",
+          "formula": "1 - price/base fair value",
+          "inputs": [
+            "price",
+            "fcf",
+            "shares"
+          ]
+        },
+        "above_sma50": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.417483+00:00",
+          "freshness": "stale",
+          "formula": "price > SMA50",
+          "inputs": []
+        },
+        "above_sma200": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.417491+00:00",
+          "freshness": "stale",
+          "formula": "price > SMA200",
+          "inputs": []
+        },
+        "macd_positive": {
+          "value": 0.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.417498+00:00",
+          "freshness": "stale",
+          "formula": "MACD histogram > 0",
+          "inputs": []
+        },
+        "weekly_up": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.417505+00:00",
+          "freshness": "stale",
+          "formula": "last completed weekly close > weekly SMA20",
+          "inputs": []
+        }
+      },
+      "statements": [
+        {
+          "period": "2026-03-31",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "currency": "INR",
+          "revenue": 2670210000000.0,
+          "net_income": 492100000000.0,
+          "eps": 136.01,
+          "ebit": 667140000000.0,
+          "interest": 12270000000.0,
+          "equity": 1072400000000.0,
+          "debt": 112830000000.0,
+          "cash": 64050000000.0,
+          "assets": 1823720000000.0,
+          "current_liabilities": 609140000000.0,
+          "current_assets": 1357050000000.0,
+          "ocf": 520940000000.0,
+          "capex": -41460000000.0,
+          "fcf": 479480000000.0,
+          "shares": 3618087518.0,
+          "dividends": -394370000000.0,
+          "operating_income": 670220000000.0,
+          "inventory": 290000000.0
+        },
+        {
+          "period": "2025-03-31",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "currency": "INR",
+          "revenue": 2553240000000.0,
+          "net_income": 485530000000.0,
+          "eps": 134.19,
+          "ebit": 661270000000.0,
+          "interest": 7960000000.0,
+          "equity": 947560000000.0,
+          "debt": 93920000000.0,
+          "cash": 83310000000.0,
+          "assets": 1596290000000.0,
+          "current_liabilities": 530010000000.0,
+          "current_assets": 1230110000000.0,
+          "ocf": 489080000000.0,
+          "capex": -39370000000.0,
+          "fcf": 449710000000.0,
+          "shares": 3618087518.0,
+          "dividends": -448640000000.0,
+          "operating_income": 622930000000.0,
+          "inventory": 210000000.0
+        },
+        {
+          "period": "2024-03-31",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "currency": "INR",
+          "revenue": 2408930000000.0,
+          "net_income": 459080000000.0,
+          "eps": 125.88,
+          "ebit": 627750000000.0,
+          "interest": 7780000000.0,
+          "equity": 904890000000.0,
+          "debt": 80210000000.0,
+          "cash": 90070000000.0,
+          "assets": 1464490000000.0,
+          "current_liabilities": 461040000000.0,
+          "current_assets": 1129840000000.0,
+          "ocf": 443380000000.0,
+          "capex": -26740000000.0,
+          "fcf": 416640000000.0,
+          "shares": 3618087518.0,
+          "dividends": -251370000000.0,
+          "operating_income": 594250000000.0,
+          "inventory": 280000000.0
+        },
+        {
+          "period": "2023-03-31",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "currency": "INR",
+          "revenue": 2254580000000.0,
+          "net_income": 421470000000.0,
+          "eps": 115.19,
+          "ebit": 576860000000.0,
+          "interest": 7790000000.0,
+          "equity": 904240000000.0,
+          "debt": 76880000000.0,
+          "cash": 71150000000.0,
+          "assets": 1436510000000.0,
+          "current_liabilities": 435580000000.0,
+          "current_assets": 1102700000000.0,
+          "ocf": 419650000000.0,
+          "capex": -31000000000.0,
+          "fcf": 388650000000.0,
+          "shares": 3659051373.0,
+          "dividends": -413470000000.0,
+          "operating_income": 543770000000.0,
+          "inventory": 280000000.0
+        },
+        {
+          "period": "2022-03-31",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:47.429522+00:00",
+          "currency": "INR"
+        }
+      ],
+      "provider_conflicts": {},
+      "warnings": [
+        "Yahoo is an unofficial personal-use fallback; governance disclosures are incomplete"
+      ],
+      "news_ids": [],
+      "converted_prices": {
+        "USD": 25.54918724645097,
+        "INR": 2407.5
+      },
+      "changes": {
+        "price": {
+          "previous": 2442.4,
+          "current": 2407.5,
+          "delta": -34.90000000000009
+        },
+        "new_news": []
+      }
+    },
+    {
+      "ticker": "HDFCBANK.NS",
+      "exchange": "NSE",
+      "name": "HDFC Bank Limited",
+      "price": 804.0,
+      "score": null,
+      "fair_value": null,
+      "currency": "INR",
+      "price_timestamp": "2026-11-13T09:58:04+00:00",
+      "scores": {
+        "total": null,
+        "categories": {
+          "fundamentals": {
+            "score": null,
+            "maximum": 30,
+            "coverage": 0.2857,
+            "details": {
+              "roe": {
+                "value": 0.0862935303390961,
+                "quality": 0.47940850188386724,
+                "weight": 2
+              },
+              "roa": {
+                "value": 0.013393717571573425,
+                "quality": 0.6696858785786712,
+                "weight": 2
+              },
+              "nim": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "gnpa": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "nnpa": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "capital_adequacy": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "credit_cost": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "funding_stability": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          },
+          "valuation": {
+            "score": null,
+            "maximum": 30,
+            "coverage": 0.0,
+            "details": {
+              "pb_discount_to_peers": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "normalized_roe": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          },
+          "technicals": {
+            "score": null,
+            "maximum": 25,
+            "coverage": 0.0,
+            "details": {
+              "above_sma200": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "above_sma50": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "relative_strength_63": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "momentum_63": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "macd_positive": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "weekly_up": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          },
+          "risk": {
+            "score": null,
+            "maximum": 15,
+            "coverage": 0.0,
+            "details": {
+              "capital_adequacy": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "nnpa": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "funding_stability": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "audit_clear": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              },
+              "pledge_ratio": {
+                "value": null,
+                "points": null,
+                "reason": "missing, stale, or undated"
+              }
+            },
+            "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
+          }
+        },
+        "profile": "financial",
+        "interpretation": null
+      },
+      "verdict": "INSUFFICIENT DATA",
+      "decision": {
+        "verdict": "INSUFFICIENT DATA",
+        "reasons": [
+          "Stale, undated, or insufficient essential evidence/category coverage"
+        ],
+        "invalidation": "Obtain current statements, valuation evidence and risk disclosures; rerun"
+      },
+      "valuation": {
+        "metrics": {
+          "earnings_yield": {
+            "value": 0.056902986667061194,
+            "unit": "ratio",
+            "source": "calculated",
+            "period": "2026-03-31",
+            "retrieved_at": "2026-11-13T10:02:50.558799+00:00",
+            "freshness": "derived",
+            "formula": "1 / trailing PE",
+            "inputs": [
+              "pe"
+            ]
+          },
+          "fcf_yield": {
+            "value": 0.08589730509914052,
+            "unit": "ratio",
+            "source": "calculated",
+            "period": "2026-03-31",
+            "retrieved_at": "2026-11-13T10:02:50.558832+00:00",
+            "freshness": "derived",
+            "formula": "annual FCF / market cap",
+            "inputs": [
+              "fcf",
+              "market_cap"
+            ]
+          },
+          "peg": {
+            "value": null,
+            "unit": "ratio",
+            "source": "calculated",
+            "period": "2026-03-31",
+            "retrieved_at": "2026-11-13T10:02:50.558849+00:00",
+            "freshness": "derived",
+            "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
+            "inputs": [
+              "pe",
+              "eps_growth_3y"
+            ]
+          }
+        },
+        "fair_values": null,
+        "margin_of_safety": null,
+        "accumulation_range": null,
+        "verdict": "N/A",
+        "confidence": "low",
+        "historical_pe": {
+          "historical_pe_median": null,
+          "historical_pe_min": null,
+          "historical_pe_max": null
+        },
+        "sector_relative_pe": null,
+        "omission_reason": "DCF requires >=4 consistent positive annual FCF periods, shares, same-currency statements and a non-financial sector",
+        "assumptions": {
+          "source": "Explicit research policy; rates are sensitivity assumptions, not forecasts. Historical annual FCF CAGR caps growth. No DCF for financial companies.",
+          "terminal_growth": 0.02,
+          "scenarios": {
+            "conservative": {
+              "growth_cap": 0,
+              "discount_rate": 0.14
+            },
+            "base": {
+              "growth_cap": 0.05,
+              "discount_rate": 0.12
+            },
+            "optimistic": {
+              "growth_cap": 0.08,
+              "discount_rate": 0.1
+            }
+          }
+        },
+        "formulas": "FCF_t=FCF_0*(1+g)^t; PV=sum(FCF_t/(1+r)^t)+FCF_5*(1+terminal)/(r-terminal)/(1+r)^5; per-share equity=PV/shares. FCF is an equity cash-flow proxy; no second net-debt deduction."
+      },
+      "technicals": {
+        "trend": "mixed",
+        "weekly_trend": "up",
+        "support": 715.0999755859375,
+        "resistance": 817.8499755859375,
+        "entry_range": [
+          715.0999755859375,
+          723.7251564667632
+        ],
+        "invalidation": 697.8496138242859,
+        "risk_reward": 0.13047503720816617,
+        "support_zone": [
+          710.7873851455246,
+          719.4125660263504
+        ],
+        "resistance_zone": [
+          813.5373851455246,
+          822.1625660263504
+        ],
+        "method": "Confirmed 5-bar pivots in last 63 sessions; zones ±0.25 ATR; invalidation support - ATR. Swing scenarios, not price forecasts."
+      },
+      "news": {
+        "items": [],
+        "overlay": "No material catalyst",
+        "critical": false,
+        "coverage": "headline/snippet only; material catalysts not verified",
+        "note": "No material catalyst means none confirmed in available feed, not absence of risk. News never adds score points.",
+        "errors": [
+          "Yahoo news unavailable"
+        ],
+        "llm": {
+          "status": "disabled"
+        }
+      },
+      "risk": {
+        "critical": [],
+        "concerns": [],
+        "unverified": [
+          "auditor qualifications",
+          "pledged promoter shares",
+          "business concentration",
+          "refinancing maturity schedule",
+          "litigation and regulatory exposure",
+          "material corporate actions"
+        ],
+        "note": "Unknown governance information is not a clean audit or low-risk finding."
+      },
+      "market": {
+        "expected_session": null,
+        "last_session": "2026-11-13",
+        "stale": true,
+        "condition": "holiday/weekend",
+        "calendar": "XBOM",
+        "calendar_note": "XBOM proxy for NSE; verify exceptional NSE-only sessions"
+      },
+      "metrics": {
+        "price": {
+          "value": 804.0,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-11-13T09:58:04+00:00",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": null,
+          "inputs": []
+        },
+        "pe": {
+          "value": 17.57377,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-13T09:58:04+00:00",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "forward_pe": {
+          "value": 12.843451,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-13T09:58:04+00:00",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "pb": {
+          "value": 2.036273,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-13T09:58:04+00:00",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "ev_ebitda": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-11-13T09:58:04+00:00",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "roe": {
+          "value": 0.0862935303390961,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "net_income / equity",
+          "inputs": [
+            "net_income",
+            "equity"
+          ]
+        },
+        "roa": {
+          "value": 0.013393717571573425,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "net_income / assets",
+          "inputs": [
+            "net_income",
+            "assets"
+          ]
+        },
+        "operating_margin": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "operating_income / revenue",
+          "inputs": [
+            "operating_income",
+            "revenue"
+          ]
+        },
+        "net_margin": {
+          "value": 0.282412428988016,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "net_income / revenue",
+          "inputs": [
+            "net_income",
+            "revenue"
+          ]
+        },
+        "market_cap": {
+          "value": 12407563878400.0,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-11-13T09:58:04+00:00",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "shares": {
+          "value": 15393260762.0,
+          "unit": "shares",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "shares"
+          ]
+        },
+        "insider_ownership": {
+          "value": 0.0030899998,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "payout": {
+          "value": 0.24040002,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "eps": {
+          "value": 45.75,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "eps"
+          ]
+        },
+        "fcf": {
+          "value": 1065776300000.0,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "fcf"
+          ]
+        },
+        "enterprise_value": {
+          "value": 16059480408064.0,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-11-13T09:58:04+00:00",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "snapshot",
+          "formula": null,
+          "inputs": []
+        },
+        "debt": {
+          "value": 6643640400000.0,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "debt"
+          ]
+        },
+        "cash": {
+          "value": 3650673900000.0,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "cash"
+          ]
+        },
+        "debt_equity": {
+          "value": 0.8134343829261803,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "debt / equity",
+          "inputs": [
+            "debt",
+            "equity"
+          ]
+        },
+        "current_ratio": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "current_assets / current_liabilities",
+          "inputs": [
+            "current_assets",
+            "current_liabilities"
+          ]
+        },
+        "fcf_conversion": {
+          "value": 1.5121825771921247,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "fcf / net_income",
+          "inputs": [
+            "fcf",
+            "net_income"
+          ]
+        },
+        "interest_coverage": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "ebit / interest",
+          "inputs": [
+            "ebit",
+            "interest"
+          ]
+        },
+        "roce": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "EBIT / (assets - current liabilities)",
+          "inputs": [
+            "ebit",
+            "assets",
+            "current_liabilities"
+          ]
+        },
+        "equity": {
+          "value": 8167395600000.0,
+          "unit": "INR",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "Latest annual statement value",
+          "inputs": [
+            "equity"
+          ]
+        },
+        "revenue_growth_1y": {
+          "value": 0.0523334897176404,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "(revenue_latest / revenue_1y_ago)^(1/1) - 1",
+          "inputs": [
+            "revenue",
+            "2025-03-31"
+          ]
+        },
+        "eps_growth_1y": {
+          "value": 0.020749665327978617,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "(eps_latest / eps_1y_ago)^(1/1) - 1",
+          "inputs": [
+            "eps",
+            "2025-03-31"
+          ]
+        },
+        "revenue_growth_3y": {
+          "value": 0.27453553237474115,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "(revenue_latest / revenue_3y_ago)^(1/3) - 1",
+          "inputs": [
+            "revenue",
+            "2023-03-31"
+          ]
+        },
+        "eps_growth_3y": {
+          "value": -0.19797395587817435,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "(eps_latest / eps_3y_ago)^(1/3) - 1",
+          "inputs": [
+            "eps",
+            "2023-03-31"
+          ]
+        },
+        "revenue_growth_5y": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "(revenue_latest / revenue_5y_ago)^(1/5) - 1",
+          "inputs": [
+            "revenue",
+            "missing"
+          ]
+        },
+        "eps_growth_5y": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "(eps_latest / eps_5y_ago)^(1/5) - 1",
+          "inputs": [
+            "eps",
+            "missing"
+          ]
+        },
+        "earnings_consistency": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "Profitable annual periods / observed annual periods",
+          "inputs": [
+            "net_income_history"
+          ]
+        },
+        "dividend_fcf_coverage": {
+          "value": 4.864998982061458,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "FCF / absolute cash dividends",
+          "inputs": [
+            "fcf",
+            "dividends"
+          ]
+        },
+        "earnings_volatility": {
+          "value": 0.12794953761896946,
+          "unit": "ratio",
+          "source": "Yahoo Finance",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "fresh",
+          "formula": "std annual net income / abs mean",
+          "inputs": [
+            "net_income_history"
+          ]
+        },
+        "sma20": {
+          "value": 731.1324951171875,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "mean last 20 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "sma50": {
+          "value": 720.767998046875,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "mean last 50 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "sma100": {
+          "value": 741.5335003662109,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "mean last 100 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "sma200": {
+          "value": 775.5461596679687,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "mean last 200 adjusted closes",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "ema20": {
+          "value": 747.5203844916424,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "EMA span 20",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "ema50": {
+          "value": 732.5321567612827,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "EMA span 50",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "rsi14": {
+          "value": 73.39951243312072,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "Wilder RSI 14; flat market = 50",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "macd": {
+          "value": 24.125444078589,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "EMA12 - EMA26",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "macd_signal": {
+          "value": 11.628599804035163,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "EMA9 of MACD",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "macd_histogram": {
+          "value": 12.496844274553835,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "MACD - signal",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "bollinger_lower": {
+          "value": 640.2047449866773,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "SMA20 - 2 population std20",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "bollinger_upper": {
+          "value": 822.0602452476978,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "SMA20 + 2 population std20",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "atr14": {
+          "value": 17.250361761651522,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "Wilder mean true range14",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "volume_ratio": {
+          "value": 0.629203548634605,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "Latest volume / previous 20 sessions mean",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "high_52w": {
+          "value": 1000.9449320171519,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "Maximum adjusted high last 252 sessions",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "low_52w": {
+          "value": 669.2000122070312,
+          "unit": "INR",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "Minimum adjusted low last 252 sessions",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "momentum_63": {
+          "value": 0.10288065843621408,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "close / close63 sessions ago - 1",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "relative_strength_63": {
+          "value": 0.07181090452057215,
+          "unit": "ratio",
+          "source": "Yahoo Finance auto_adjust=True",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "freshness": "stale",
+          "formula": "stock 63-session return factor / benchmark factor - 1; aligned dates",
+          "inputs": [
+            "adjusted OHLCV"
+          ]
+        },
+        "pledge_ratio": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558682+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "promoter_ownership": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558699+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "nnpa": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558705+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "recurring_revenue_ratio": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558709+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "historical_pe_min": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558714+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "regulatory_exposure": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558718+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "concentration_risk": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558723+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "credit_cost": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558727+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "capacity_utilization": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558731+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "gnpa": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558736+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "nim": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558740+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "historical_pe_max": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558745+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "historical_pe_median": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558749+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "normalized_roe": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558754+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "capital_adequacy": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558759+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "competitive_advantage": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558763+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "audit_clear": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558767+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "dilution_risk": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558772+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "funding_stability": {
+          "value": null,
+          "unit": "ratio",
+          "source": "Not available from configured providers",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558777+00:00",
+          "freshness": "unknown",
+          "formula": null,
+          "inputs": []
+        },
+        "earnings_yield": {
+          "value": 0.056902986667061194,
+          "unit": "ratio",
+          "source": "calculated",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:50.558799+00:00",
+          "freshness": "derived",
+          "formula": "1 / trailing PE",
+          "inputs": [
+            "pe"
+          ]
+        },
+        "fcf_yield": {
+          "value": 0.08589730509914052,
+          "unit": "ratio",
+          "source": "calculated",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:50.558832+00:00",
+          "freshness": "derived",
+          "formula": "annual FCF / market cap",
+          "inputs": [
+            "fcf",
+            "market_cap"
+          ]
+        },
+        "peg": {
+          "value": null,
+          "unit": "ratio",
+          "source": "calculated",
+          "period": "2026-03-31",
+          "retrieved_at": "2026-11-13T10:02:50.558849+00:00",
+          "freshness": "derived",
+          "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
+          "inputs": [
+            "pe",
+            "eps_growth_3y"
+          ]
+        },
+        "margin_of_safety": {
+          "value": null,
+          "unit": "ratio",
+          "source": "DCF scenarios",
+          "period": null,
+          "retrieved_at": "2026-11-13T10:02:50.558891+00:00",
+          "freshness": "derived",
+          "formula": "1 - price/base fair value",
+          "inputs": [
+            "price",
+            "fcf",
+            "shares"
+          ]
+        },
+        "above_sma50": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:50.558911+00:00",
+          "freshness": "stale",
+          "formula": "price > SMA50",
+          "inputs": []
+        },
+        "above_sma200": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:50.558919+00:00",
+          "freshness": "stale",
+          "formula": "price > SMA200",
+          "inputs": []
+        },
+        "macd_positive": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:50.558927+00:00",
+          "freshness": "stale",
+          "formula": "MACD histogram > 0",
+          "inputs": []
+        },
+        "weekly_up": {
+          "value": 1.0,
+          "unit": "ratio",
+          "source": "adjusted OHLCV derived",
+          "period": "2026-11-13",
+          "retrieved_at": "2026-11-13T10:02:50.558933+00:00",
+          "freshness": "stale",
+          "formula": "last completed weekly close > weekly SMA20",
+          "inputs": []
+        }
+      },
+      "statements": [
+        {
+          "period": "2026-03-31",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "currency": "INR",
+          "revenue": 2495617500000.0,
+          "net_income": 704793400000.0,
+          "eps": 45.75,
+          "interest": 1860495500000.0,
+          "equity": 8167395600000.0,
+          "debt": 6643640400000.0,
+          "cash": 3650673900000.0,
+          "assets": 52621193200000.0,
+          "ocf": 1118559900000.0,
+          "capex": -52783600000.0,
+          "fcf": 1065776300000.0,
+          "shares": 15393260762.0,
+          "dividends": -219070200000.0,
+          "receivables": 458840400000.0
+        },
+        {
+          "period": "2025-03-31",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "currency": "INR",
+          "revenue": 2371508200000.0,
+          "net_income": 673508300000.0,
+          "eps": 44.82,
+          "interest": 1823477000000.0,
+          "equity": 7676891400000.0,
+          "debt": 7326106100000.0,
+          "cash": 3222323100000.0,
+          "assets": 48187671100000.0,
+          "ocf": 1195617400000.0,
+          "capex": -66397300000.0,
+          "fcf": 1129220100000.0,
+          "shares": 15304409210.0,
+          "dividends": -158058100000.0,
+          "receivables": 454645400000.0
+        },
+        {
+          "period": "2024-03-31",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "currency": "INR",
+          "revenue": 1986934300000.0,
+          "net_income": 622656600000.0,
+          "eps": 44.16,
+          "interest": 1533922800000.0,
+          "equity": 6947327400000.0,
+          "debt": 8093552100000.0,
+          "cash": 3425973300000.0,
+          "assets": 44118573000000.0,
+          "ocf": 1022322400000.0,
+          "capex": -53838000000.0,
+          "fcf": 968484400000.0,
+          "shares": 15193797254.0,
+          "dividends": -86617100000.0,
+          "receivables": 379127800000.0
+        },
+        {
+          "period": "2023-03-31",
+          "source": "Yahoo Finance",
+          "retrieved_at": "2026-11-13T10:02:49.574559+00:00",
+          "currency": "INR",
+          "revenue": 1205375000000.0,
+          "net_income": 495446900000.0,
+          "eps": 88.68,
+          "interest": 775538200000.0,
+          "equity": 2912200700000.0,
+          "debt": 3151792800000.0,
+          "cash": 2363920200000.0,
+          "assets": 25755624000000.0,
+          "ocf": 477200600000.0,
+          "capex": -43620300000.0,
+          "fcf": 433580300000.0,
+          "shares": 11159485572.0,
+          "dividends": -86394300000.0,
+          "receivables": 278751200000.0
+        }
+      ],
+      "provider_conflicts": {},
+      "warnings": [
+        "Yahoo is an unofficial personal-use fallback; governance disclosures are incomplete"
+      ],
+      "news_ids": [],
+      "converted_prices": {
+        "USD": 8.532314245543752,
+        "INR": 804.0
+      },
+      "changes": {
+        "price": {
+          "previous": 812.3,
+          "current": 804.0,
+          "delta": -8.299999999999955
+        },
+        "new_news": []
+      }
+    }
+  ]
+}
