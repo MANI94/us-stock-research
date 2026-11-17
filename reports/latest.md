@@ -1,19 +1,19 @@
 # Daily equity research
-2026-11-16T15:41:38.750008+05:30
+2026-11-17T16:43:38.593612+05:30
 Research and decision support; no order execution.
 
 ## AAPL — INSUFFICIENT DATA
-Price: 356.27 USD | Score: N/A / 100
+Price: 352.78 USD | Score: N/A / 100
 ```json
 {
   "ticker": "AAPL",
   "exchange": "NASDAQ",
   "name": "Apple Inc.",
-  "price": 356.27,
+  "price": 352.78,
   "score": null,
   "fair_value": 107.89030830441632,
   "currency": "USD",
-  "price_timestamp": "2026-11-13T21:00:01+00:00",
+  "price_timestamp": "2026-11-16T21:00:01+00:00",
   "scores": {
     "total": null,
     "categories": {
@@ -86,22 +86,22 @@ Price: 356.27 USD | Score: N/A / 100
         "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
       },
       "valuation": {
-        "score": 4.85,
+        "score": 4.89,
         "maximum": 30,
         "coverage": 0.8333,
         "details": {
           "earnings_yield": {
-            "value": 0.025205602096299514,
-            "quality": 0.3150700262037439,
+            "value": 0.025454956436387555,
+            "quality": 0.31818695545484443,
             "weight": 2
           },
           "fcf_yield": {
-            "value": 0.02627892783189034,
-            "quality": 0.3284865978986292,
+            "value": 0.02653889973342468,
+            "quality": 0.3317362466678085,
             "weight": 3
           },
           "margin_of_safety": {
-            "value": -2.302150170845481,
+            "value": -2.2698025016725203,
             "quality": 0,
             "weight": 5
           },
@@ -114,7 +114,7 @@ Price: 356.27 USD | Score: N/A / 100
         "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
       },
       "technicals": {
-        "score": 25.0,
+        "score": 24.86,
         "maximum": 25,
         "coverage": 1.0,
         "details": {
@@ -129,13 +129,13 @@ Price: 356.27 USD | Score: N/A / 100
             "weight": 2
           },
           "relative_strength_63": {
-            "value": 0.19502517068576264,
+            "value": 0.18100445846010138,
             "quality": 1,
             "weight": 3
           },
           "momentum_63": {
-            "value": 0.1667289628092028,
-            "quality": 1,
+            "value": 0.13875445137838804,
+            "quality": 0.9625148379279602,
             "weight": 2
           },
           "macd_positive": {
@@ -204,11 +204,11 @@ Price: 356.27 USD | Score: N/A / 100
   "valuation": {
     "metrics": {
       "earnings_yield": {
-        "value": 0.025205602096299514,
+        "value": 0.025454956436387555,
         "unit": "ratio",
         "source": "calculated",
         "period": "2026-09-30",
-        "retrieved_at": "2026-11-16T10:11:41.624058+00:00",
+        "retrieved_at": "2026-11-17T11:13:40.952697+00:00",
         "freshness": "derived",
         "formula": "1 / trailing PE",
         "inputs": [
@@ -216,11 +216,11 @@ Price: 356.27 USD | Score: N/A / 100
         ]
       },
       "fcf_yield": {
-        "value": 0.02627892783189034,
+        "value": 0.02653889973342468,
         "unit": "ratio",
         "source": "calculated",
         "period": "2026-09-30",
-        "retrieved_at": "2026-11-16T10:11:41.624080+00:00",
+        "retrieved_at": "2026-11-17T11:13:40.952722+00:00",
         "freshness": "derived",
         "formula": "annual FCF / market cap",
         "inputs": [
@@ -229,11 +229,11 @@ Price: 356.27 USD | Score: N/A / 100
         ]
       },
       "peg": {
-        "value": 2.9231653380033564,
+        "value": 2.8945302874721324,
         "unit": "ratio",
         "source": "calculated",
         "period": "2026-09-30",
-        "retrieved_at": "2026-11-16T10:11:41.624089+00:00",
+        "retrieved_at": "2026-11-17T11:13:40.952734+00:00",
         "freshness": "derived",
         "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
         "inputs": [
@@ -259,7 +259,7 @@ Price: 356.27 USD | Score: N/A / 100
         "discount_rate": 0.1
       }
     },
-    "margin_of_safety": -2.302150170845481,
+    "margin_of_safety": -2.2698025016725203,
     "accumulation_range": [
       55.10474970459799,
       86.31224664353306
@@ -298,18 +298,21 @@ Price: 356.27 USD | Score: N/A / 100
     "trend": "up",
     "weekly_trend": "up",
     "support": 340.7710769804186,
-    "resistance": null,
+    "resistance": 355.1101713190276,
     "entry_range": [
       340.7710769804186,
-      344.8768875904778
+      344.7914728178791
     ],
-    "invalidation": 332.55945576030035,
-    "risk_reward": null,
+    "invalidation": 332.73028530549766,
+    "risk_reward": 0.11621974263002607,
     "support_zone": [
-      338.71817167538904,
-      342.8239822854482
+      338.7608790616884,
+      342.78127489914885
     ],
-    "resistance_zone": null,
+    "resistance_zone": [
+      353.09997340029736,
+      357.1203692377578
+    ],
     "method": "Confirmed 5-bar pivots in last 63 sessions; zones ±0.25 ATR; invalidation support - ATR. Swing scenarios, not price forecasts."
   },
   "news": {
@@ -339,8 +342,8 @@ Price: 356.27 USD | Score: N/A / 100
     "note": "Unknown governance information is not a clean audit or low-risk finding."
   },
   "market": {
-    "expected_session": "2026-11-13",
-    "last_session": "2026-11-13",
+    "expected_session": "2026-11-16",
+    "last_session": "2026-11-16",
     "stale": false,
     "condition": "closed",
     "calendar": "XNYS",
@@ -348,51 +351,51 @@ Price: 356.27 USD | Score: N/A / 100
   },
   "metrics": {
     "price": {
-      "value": 356.27,
+      "value": 352.78,
       "unit": "USD",
       "source": "Yahoo Finance",
-      "period": "2026-11-13T21:00:01+00:00",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16T21:00:01+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": null,
       "inputs": []
     },
     "pe": {
-      "value": 39.67372,
+      "value": 39.28508,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-13T21:00:01+00:00",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16T21:00:01+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
     },
     "forward_pe": {
-      "value": 33.700924,
+      "value": 33.370792,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-13T21:00:01+00:00",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16T21:00:01+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
     },
     "pb": {
-      "value": 46.190845,
+      "value": 45.738365,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-13T21:00:01+00:00",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16T21:00:01+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
     },
     "ev_ebitda": {
-      "value": 30.411,
+      "value": 30.116,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-13T21:00:01+00:00",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16T21:00:01+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
@@ -402,7 +405,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "net_income / equity",
       "inputs": [
@@ -415,7 +418,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "net_income / assets",
       "inputs": [
@@ -428,7 +431,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "operating_income / revenue",
       "inputs": [
@@ -441,7 +444,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "net_income / revenue",
       "inputs": [
@@ -450,11 +453,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "market_cap": {
-      "value": 5177380175872.0,
+      "value": 5126663176192.0,
       "unit": "USD",
       "source": "Yahoo Finance",
-      "period": "2026-11-13T21:00:01+00:00",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16T21:00:01+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
@@ -464,7 +467,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "shares",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -472,11 +475,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "insider_ownership": {
-      "value": 0.01781,
+      "value": 0.01687,
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -486,7 +489,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -496,7 +499,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "USD",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -508,7 +511,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "USD",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -516,11 +519,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "enterprise_value": {
-      "value": 5215137300480.0,
+      "value": 5164420300800.0,
       "unit": "USD",
       "source": "Yahoo Finance",
-      "period": "2026-11-13T21:00:01+00:00",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16T21:00:01+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
@@ -530,7 +533,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "USD",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -542,7 +545,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "USD",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -554,7 +557,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "debt / equity",
       "inputs": [
@@ -567,7 +570,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "current_assets / current_liabilities",
       "inputs": [
@@ -580,7 +583,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "fcf / net_income",
       "inputs": [
@@ -593,7 +596,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "ebit / interest",
       "inputs": [
@@ -606,7 +609,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "EBIT / (assets - current liabilities)",
       "inputs": [
@@ -620,7 +623,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "USD",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -632,7 +635,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "(revenue_latest / revenue_1y_ago)^(1/1) - 1",
       "inputs": [
@@ -645,7 +648,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "(eps_latest / eps_1y_ago)^(1/1) - 1",
       "inputs": [
@@ -658,7 +661,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "(revenue_latest / revenue_3y_ago)^(1/3) - 1",
       "inputs": [
@@ -671,7 +674,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "(eps_latest / eps_3y_ago)^(1/3) - 1",
       "inputs": [
@@ -684,7 +687,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "(revenue_latest / revenue_5y_ago)^(1/5) - 1",
       "inputs": [
@@ -697,7 +700,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "(eps_latest / eps_5y_ago)^(1/5) - 1",
       "inputs": [
@@ -710,7 +713,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "Profitable annual periods / observed annual periods",
       "inputs": [
@@ -722,7 +725,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "FCF / absolute cash dividends",
       "inputs": [
@@ -735,7 +738,7 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "std annual net income / abs mean",
       "inputs": [
@@ -743,11 +746,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "sma20": {
-      "value": 345.91468811035156,
+      "value": 346.4197067260742,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "mean last 20 adjusted closes",
       "inputs": [
@@ -755,11 +758,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "sma50": {
-      "value": 338.7897900390625,
+      "value": 339.45084899902344,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "mean last 50 adjusted closes",
       "inputs": [
@@ -767,11 +770,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "sma100": {
-      "value": 326.3189724731445,
+      "value": 327.09973083496095,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "mean last 100 adjusted closes",
       "inputs": [
@@ -779,11 +782,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "sma200": {
-      "value": 300.7745964050293,
+      "value": 301.2455997467041,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "mean last 200 adjusted closes",
       "inputs": [
@@ -791,11 +794,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "ema20": {
-      "value": 346.3361029889939,
+      "value": 346.9498073492677,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "EMA span 20",
       "inputs": [
@@ -803,11 +806,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "ema50": {
-      "value": 338.4907134999323,
+      "value": 339.05107759379746,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "EMA span 50",
       "inputs": [
@@ -815,11 +818,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "rsi14": {
-      "value": 60.90279971419289,
+      "value": 57.22840853007414,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "Wilder RSI 14; flat market = 50",
       "inputs": [
@@ -827,11 +830,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "macd": {
-      "value": 4.209031464167651,
+      "value": 4.207217204561573,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "EMA12 - EMA26",
       "inputs": [
@@ -839,11 +842,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "macd_signal": {
-      "value": 3.289972575982118,
+      "value": 3.4734215046616956,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "EMA9 of MACD",
       "inputs": [
@@ -851,11 +854,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "macd_histogram": {
-      "value": 0.9190588881855333,
+      "value": 0.7337956998998774,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "MACD - signal",
       "inputs": [
@@ -863,11 +866,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "bollinger_lower": {
-      "value": 334.20974068521696,
+      "value": 334.4481156721441,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "SMA20 - 2 population std20",
       "inputs": [
@@ -875,11 +878,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "bollinger_upper": {
-      "value": 357.61963553548617,
+      "value": 358.39129778000427,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "SMA20 + 2 population std20",
       "inputs": [
@@ -887,11 +890,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "atr14": {
-      "value": 8.211621220118293,
+      "value": 8.040791674920948,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "Wilder mean true range14",
       "inputs": [
@@ -899,11 +902,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "volume_ratio": {
-      "value": 0.8295141772006155,
+      "value": 0.9732704645655664,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "Latest volume / previous 20 sessions mean",
       "inputs": [
@@ -914,8 +917,8 @@ Price: 356.27 USD | Score: N/A / 100
       "value": 360.8299865722656,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "Maximum adjusted high last 252 sessions",
       "inputs": [
@@ -923,11 +926,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "low_52w": {
-      "value": 242.5748945537738,
+      "value": 242.57490960968966,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "Minimum adjusted low last 252 sessions",
       "inputs": [
@@ -935,11 +938,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "momentum_63": {
-      "value": 0.1667289628092028,
+      "value": 0.13875445137838804,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "close / close63 sessions ago - 1",
       "inputs": [
@@ -947,183 +950,23 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "relative_strength_63": {
-      "value": 0.19502517068576264,
+      "value": 0.18100445846010138,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "freshness": "fresh",
       "formula": "stock 63-session return factor / benchmark factor - 1; aligned dates",
       "inputs": [
         "adjusted OHLCV"
       ]
     },
-    "credit_cost": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.623994+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
     "competitive_advantage": {
       "value": null,
       "unit": "ratio",
       "source": "Not available from configured providers",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624004+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "promoter_ownership": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624007+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "historical_pe_min": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624009+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "funding_stability": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624011+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "historical_pe_max": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624013+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "gnpa": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624016+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "normalized_roe": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624018+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "nnpa": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624020+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "dilution_risk": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624024+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "capacity_utilization": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624026+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "regulatory_exposure": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624028+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "historical_pe_median": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624031+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "recurring_revenue_ratio": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624033+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "capital_adequacy": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624035+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "pledge_ratio": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624037+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "concentration_risk": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624039+00:00",
+      "retrieved_at": "2026-11-17T11:13:40.952611+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -1133,7 +976,157 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Not available from configured providers",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624041+00:00",
+      "retrieved_at": "2026-11-17T11:13:40.952623+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "credit_cost": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952628+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "concentration_risk": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952631+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "regulatory_exposure": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952634+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "historical_pe_median": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952638+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "promoter_ownership": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952643+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "nnpa": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952646+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "capital_adequacy": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952649+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "funding_stability": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952652+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "dilution_risk": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952655+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "recurring_revenue_ratio": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952658+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "historical_pe_min": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952662+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "historical_pe_max": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952664+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "normalized_roe": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952667+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "pledge_ratio": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952670+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "gnpa": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952673+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -1143,17 +1136,27 @@ Price: 356.27 USD | Score: N/A / 100
       "unit": "ratio",
       "source": "Not available from configured providers",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624043+00:00",
+      "retrieved_at": "2026-11-17T11:13:40.952676+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "capacity_utilization": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:40.952679+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
     },
     "earnings_yield": {
-      "value": 0.025205602096299514,
+      "value": 0.025454956436387555,
       "unit": "ratio",
       "source": "calculated",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:41.624058+00:00",
+      "retrieved_at": "2026-11-17T11:13:40.952697+00:00",
       "freshness": "derived",
       "formula": "1 / trailing PE",
       "inputs": [
@@ -1161,11 +1164,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "fcf_yield": {
-      "value": 0.02627892783189034,
+      "value": 0.02653889973342468,
       "unit": "ratio",
       "source": "calculated",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:41.624080+00:00",
+      "retrieved_at": "2026-11-17T11:13:40.952722+00:00",
       "freshness": "derived",
       "formula": "annual FCF / market cap",
       "inputs": [
@@ -1174,11 +1177,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "peg": {
-      "value": 2.9231653380033564,
+      "value": 2.8945302874721324,
       "unit": "ratio",
       "source": "calculated",
       "period": "2026-09-30",
-      "retrieved_at": "2026-11-16T10:11:41.624089+00:00",
+      "retrieved_at": "2026-11-17T11:13:40.952734+00:00",
       "freshness": "derived",
       "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
       "inputs": [
@@ -1187,11 +1190,11 @@ Price: 356.27 USD | Score: N/A / 100
       ]
     },
     "margin_of_safety": {
-      "value": -2.302150170845481,
+      "value": -2.2698025016725203,
       "unit": "ratio",
       "source": "DCF scenarios",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.624187+00:00",
+      "retrieved_at": "2026-11-17T11:13:40.952844+00:00",
       "freshness": "derived",
       "formula": "1 - price/base fair value",
       "inputs": [
@@ -1204,8 +1207,8 @@ Price: 356.27 USD | Score: N/A / 100
       "value": 1.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.624197+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:40.952857+00:00",
       "freshness": "derived",
       "formula": "price > SMA50",
       "inputs": []
@@ -1214,8 +1217,8 @@ Price: 356.27 USD | Score: N/A / 100
       "value": 1.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.624201+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:40.952864+00:00",
       "freshness": "derived",
       "formula": "price > SMA200",
       "inputs": []
@@ -1224,8 +1227,8 @@ Price: 356.27 USD | Score: N/A / 100
       "value": 1.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.624205+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:40.952869+00:00",
       "freshness": "derived",
       "formula": "MACD histogram > 0",
       "inputs": []
@@ -1234,8 +1237,8 @@ Price: 356.27 USD | Score: N/A / 100
       "value": 1.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.624208+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:40.952874+00:00",
       "freshness": "derived",
       "formula": "last completed weekly close > weekly SMA20",
       "inputs": []
@@ -1245,7 +1248,7 @@ Price: 356.27 USD | Score: N/A / 100
     {
       "period": "2026-09-30",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "currency": "USD",
       "revenue": 478834000000.0,
       "net_income": 132175000000.0,
@@ -1269,7 +1272,7 @@ Price: 356.27 USD | Score: N/A / 100
     {
       "period": "2025-09-30",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "currency": "USD",
       "revenue": 416161000000.0,
       "net_income": 112010000000.0,
@@ -1293,7 +1296,7 @@ Price: 356.27 USD | Score: N/A / 100
     {
       "period": "2024-09-30",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "currency": "USD",
       "revenue": 391035000000.0,
       "net_income": 93736000000.0,
@@ -1317,7 +1320,7 @@ Price: 356.27 USD | Score: N/A / 100
     {
       "period": "2023-09-30",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "currency": "USD",
       "revenue": 383285000000.0,
       "net_income": 96995000000.0,
@@ -1342,7 +1345,7 @@ Price: 356.27 USD | Score: N/A / 100
     {
       "period": "2022-09-30",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:39.851583+00:00",
+      "retrieved_at": "2026-11-17T11:13:39.363643+00:00",
       "currency": "USD",
       "interest": 2931000000.0
     }
@@ -1353,29 +1356,34 @@ Price: 356.27 USD | Score: N/A / 100
   ],
   "news_ids": [],
   "converted_prices": {
-    "USD": 356.27,
-    "INR": 33461.76929244995
+    "USD": 352.78,
+    "INR": 32970.818477020264
   },
   "changes": {
+    "price": {
+      "previous": 356.27,
+      "current": 352.78,
+      "delta": -3.490000000000009
+    },
     "new_news": []
   }
 }
 ```
 
 ## MSFT — HOLD / REVIEW
-Price: 523.88 USD | Score: 67.37 / 100
+Price: 517.99 USD | Score: 63.38 / 100
 ```json
 {
   "ticker": "MSFT",
   "exchange": "NASDAQ",
   "name": "Microsoft Corporation",
-  "price": 523.88,
-  "score": 67.37,
-  "fair_value": 99.99736748912113,
+  "price": 517.99,
+  "score": 63.38,
+  "fair_value": 99.97805431900618,
   "currency": "USD",
-  "price_timestamp": "2026-11-13T21:00:01+00:00",
+  "price_timestamp": "2026-11-16T21:00:01+00:00",
   "scores": {
-    "total": 67.37,
+    "total": 63.38,
     "categories": {
       "fundamentals": {
         "score": 27.86,
@@ -1446,22 +1454,22 @@ Price: 523.88 USD | Score: 67.37 / 100
         "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
       },
       "valuation": {
-        "score": 4.68,
+        "score": 4.73,
         "maximum": 30,
         "coverage": 0.8333,
         "details": {
           "earnings_yield": {
-            "value": 0.03657326099629952,
-            "quality": 0.45716576245374396,
+            "value": 0.036989129264800365,
+            "quality": 0.46236411581000453,
             "weight": 2
           },
           "fcf_yield": {
-            "value": 0.01721838391208834,
-            "quality": 0.21522979890110425,
+            "value": 0.017414172078964417,
+            "quality": 0.2176771509870552,
             "weight": 3
           },
           "margin_of_safety": {
-            "value": -4.238937915610566,
+            "value": -4.181037013855232,
             "quality": 0,
             "weight": 5
           },
@@ -1474,7 +1482,7 @@ Price: 523.88 USD | Score: 67.37 / 100
         "method": "Linear clamp between bad/good thresholds; weights redistributed only within category"
       },
       "technicals": {
-        "score": 22.34,
+        "score": 18.3,
         "maximum": 25,
         "coverage": 1.0,
         "details": {
@@ -1484,18 +1492,18 @@ Price: 523.88 USD | Score: 67.37 / 100
             "weight": 3
           },
           "above_sma50": {
-            "value": 1.0,
-            "quality": 1,
+            "value": 0.0,
+            "quality": 0,
             "weight": 2
           },
           "relative_strength_63": {
-            "value": 0.11917470241606254,
+            "value": 0.11749625331504143,
             "quality": 1,
             "weight": 3
           },
           "momentum_63": {
-            "value": 0.09267450743558436,
-            "quality": 0.8089150247852812,
+            "value": 0.07751822928801055,
+            "quality": 0.7583940976267018,
             "weight": 2
           },
           "macd_positive": {
@@ -1568,11 +1576,11 @@ Price: 523.88 USD | Score: 67.37 / 100
   "valuation": {
     "metrics": {
       "earnings_yield": {
-        "value": 0.03657326099629952,
+        "value": 0.036989129264800365,
         "unit": "ratio",
         "source": "calculated",
         "period": "2026-06-30",
-        "retrieved_at": "2026-11-16T10:11:43.295709+00:00",
+        "retrieved_at": "2026-11-17T11:13:42.029788+00:00",
         "freshness": "derived",
         "formula": "1 / trailing PE",
         "inputs": [
@@ -1580,11 +1588,11 @@ Price: 523.88 USD | Score: 67.37 / 100
         ]
       },
       "fcf_yield": {
-        "value": 0.01721838391208834,
+        "value": 0.017414172078964417,
         "unit": "ratio",
         "source": "calculated",
         "period": "2026-06-30",
-        "retrieved_at": "2026-11-16T10:11:43.295720+00:00",
+        "retrieved_at": "2026-11-17T11:13:42.029805+00:00",
         "freshness": "derived",
         "formula": "annual FCF / market cap",
         "inputs": [
@@ -1593,11 +1601,11 @@ Price: 523.88 USD | Score: 67.37 / 100
         ]
       },
       "peg": {
-        "value": 1.1962890291715162,
+        "value": 1.182839168169745,
         "unit": "ratio",
         "source": "calculated",
         "period": "2026-06-30",
-        "retrieved_at": "2026-11-16T10:11:43.295729+00:00",
+        "retrieved_at": "2026-11-17T11:13:42.029817+00:00",
         "freshness": "derived",
         "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
         "inputs": [
@@ -1608,25 +1616,25 @@ Price: 523.88 USD | Score: 67.37 / 100
     },
     "fair_values": {
       "conservative": {
-        "value": 70.78158865981216,
+        "value": 70.76791813130608,
         "growth": 0.0,
         "discount_rate": 0.14
       },
       "base": {
-        "value": 99.99736748912113,
+        "value": 99.97805431900618,
         "growth": 0.040443958087982956,
         "discount_rate": 0.12
       },
       "optimistic": {
-        "value": 125.33954601155143,
+        "value": 125.3153383345392,
         "growth": 0.040443958087982956,
         "discount_rate": 0.1
       }
     },
-    "margin_of_safety": -4.238937915610566,
+    "margin_of_safety": -4.181037013855232,
     "accumulation_range": [
-      53.08619149485912,
-      79.9978939912969
+      53.07593859847955,
+      79.98244345520494
     ],
     "verdict": "Overvalued",
     "confidence": "low/model-sensitive",
@@ -1659,23 +1667,23 @@ Price: 523.88 USD | Score: 67.37 / 100
     "historical_fcf_growth": 0.040443958087982956
   },
   "technicals": {
-    "trend": "up",
+    "trend": "mixed",
     "weekly_trend": "up",
-    "support": 518.7899780273438,
-    "resistance": 535.6900024414062,
+    "support": 515.7000122070312,
+    "resistance": 519.4000244140625,
     "entry_range": [
-      518.7899780273438,
-      526.398567198763
+      515.7000122070312,
+      523.1626308977837
     ],
-    "invalidation": 503.5727996845052,
-    "risk_reward": 0.5815668598049208,
+    "invalidation": 500.77477482552626,
+    "risk_reward": 0.0819062757101914,
     "support_zone": [
-      514.9856834416341,
-      522.5942726130534
+      511.968702861655,
+      519.4313215524076
     ],
     "resistance_zone": [
-      531.8857078556966,
-      539.4942970271159
+      515.6687150686862,
+      523.1313337594388
     ],
     "method": "Confirmed 5-bar pivots in last 63 sessions; zones ±0.25 ATR; invalidation support - ATR. Swing scenarios, not price forecasts."
   },
@@ -1706,8 +1714,8 @@ Price: 523.88 USD | Score: 67.37 / 100
     "note": "Unknown governance information is not a clean audit or low-risk finding."
   },
   "market": {
-    "expected_session": "2026-11-13",
-    "last_session": "2026-11-13",
+    "expected_session": "2026-11-16",
+    "last_session": "2026-11-16",
     "stale": false,
     "condition": "closed",
     "calendar": "XNYS",
@@ -1715,51 +1723,51 @@ Price: 523.88 USD | Score: 67.37 / 100
   },
   "metrics": {
     "price": {
-      "value": 523.88,
+      "value": 517.99,
       "unit": "USD",
       "source": "Yahoo Finance",
-      "period": "2026-11-13T21:00:01+00:00",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16T21:00:01+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": null,
       "inputs": []
     },
     "pe": {
-      "value": 27.34238,
+      "value": 27.03497,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-13T21:00:01+00:00",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16T21:00:01+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
     },
     "forward_pe": {
-      "value": 21.65179,
+      "value": 21.407288,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-13T21:00:01+00:00",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16T21:00:01+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
     },
     "pb": {
-      "value": 8.269483,
+      "value": 8.176508,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-13T21:00:01+00:00",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16T21:00:01+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
     },
     "ev_ebitda": {
-      "value": 19.251,
+      "value": 19.039,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-13T21:00:01+00:00",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16T21:00:01+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
@@ -1769,7 +1777,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "net_income / equity",
       "inputs": [
@@ -1782,7 +1790,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "net_income / assets",
       "inputs": [
@@ -1795,7 +1803,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "operating_income / revenue",
       "inputs": [
@@ -1808,7 +1816,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "net_income / revenue",
       "inputs": [
@@ -1817,21 +1825,21 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "market_cap": {
-      "value": 3890434801664.0,
+      "value": 3846694502400.0,
       "unit": "USD",
       "source": "Yahoo Finance",
-      "period": "2026-11-13T21:00:01+00:00",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16T21:00:01+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
     },
     "shares": {
-      "value": 7427000000.0,
+      "value": 7428434704.0,
       "unit": "shares",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -1839,11 +1847,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "insider_ownership": {
-      "value": 0.00223,
+      "value": 0.00116,
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -1853,7 +1861,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -1863,7 +1871,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "USD",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -1875,7 +1883,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "USD",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -1883,11 +1891,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "enterprise_value": {
-      "value": 3959856824320.0,
+      "value": 3916116525056.0,
       "unit": "USD",
       "source": "Yahoo Finance",
-      "period": "2026-11-13T21:00:01+00:00",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16T21:00:01+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
@@ -1897,7 +1905,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "USD",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -1909,7 +1917,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "USD",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -1921,7 +1929,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "debt / equity",
       "inputs": [
@@ -1934,7 +1942,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "current_assets / current_liabilities",
       "inputs": [
@@ -1947,7 +1955,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "fcf / net_income",
       "inputs": [
@@ -1960,7 +1968,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "ebit / interest",
       "inputs": [
@@ -1973,7 +1981,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "EBIT / (assets - current liabilities)",
       "inputs": [
@@ -1987,7 +1995,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "USD",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -1999,7 +2007,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "(revenue_latest / revenue_1y_ago)^(1/1) - 1",
       "inputs": [
@@ -2012,7 +2020,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "(eps_latest / eps_1y_ago)^(1/1) - 1",
       "inputs": [
@@ -2025,7 +2033,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "(revenue_latest / revenue_3y_ago)^(1/3) - 1",
       "inputs": [
@@ -2038,7 +2046,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "(eps_latest / eps_3y_ago)^(1/3) - 1",
       "inputs": [
@@ -2051,7 +2059,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "(revenue_latest / revenue_5y_ago)^(1/5) - 1",
       "inputs": [
@@ -2064,7 +2072,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "(eps_latest / eps_5y_ago)^(1/5) - 1",
       "inputs": [
@@ -2077,7 +2085,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "Profitable annual periods / observed annual periods",
       "inputs": [
@@ -2089,7 +2097,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "FCF / absolute cash dividends",
       "inputs": [
@@ -2102,7 +2110,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "std annual net income / abs mean",
       "inputs": [
@@ -2110,11 +2118,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "sma20": {
-      "value": 529.3859985351562,
+      "value": 528.6094970703125,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "mean last 20 adjusted closes",
       "inputs": [
@@ -2122,11 +2130,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "sma50": {
-      "value": 518.9971997070312,
+      "value": 519.3629992675782,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "mean last 50 adjusted closes",
       "inputs": [
@@ -2134,11 +2142,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "sma100": {
-      "value": 479.80431213378904,
+      "value": 481.46254180908204,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "mean last 100 adjusted closes",
       "inputs": [
@@ -2146,11 +2154,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "sma200": {
-      "value": 440.49173858642575,
+      "value": 440.94380111694335,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "mean last 200 adjusted closes",
       "inputs": [
@@ -2158,11 +2166,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "ema20": {
-      "value": 528.2891512916182,
+      "value": 527.3082788099657,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "EMA span 20",
       "inputs": [
@@ -2170,11 +2178,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "ema50": {
-      "value": 515.9897569630521,
+      "value": 516.0681974477501,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "EMA span 50",
       "inputs": [
@@ -2182,11 +2190,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "rsi14": {
-      "value": 48.82346669235426,
+      "value": 46.37412270238981,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "Wilder RSI 14; flat market = 50",
       "inputs": [
@@ -2194,11 +2202,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "macd": {
-      "value": 2.0257974044395723,
+      "value": 1.009908136105878,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "EMA12 - EMA26",
       "inputs": [
@@ -2206,11 +2214,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "macd_signal": {
-      "value": 3.855503583842993,
+      "value": 3.286384494512858,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "EMA9 of MACD",
       "inputs": [
@@ -2218,11 +2226,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "macd_histogram": {
-      "value": -1.8297061794034208,
+      "value": -2.2764763584069803,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "MACD - signal",
       "inputs": [
@@ -2230,11 +2238,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "bollinger_lower": {
-      "value": 509.8249498600283,
+      "value": 508.54015272901427,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "SMA20 - 2 population std20",
       "inputs": [
@@ -2242,11 +2250,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "bollinger_upper": {
-      "value": 548.947047210284,
+      "value": 548.6788414116107,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "SMA20 + 2 population std20",
       "inputs": [
@@ -2254,11 +2262,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "atr14": {
-      "value": 15.217178342838542,
+      "value": 14.925237381504985,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "Wilder mean true range14",
       "inputs": [
@@ -2266,11 +2274,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "volume_ratio": {
-      "value": 0.9993615462882762,
+      "value": 1.1508783322729206,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "Latest volume / previous 20 sessions mean",
       "inputs": [
@@ -2281,8 +2289,8 @@ Price: 523.88 USD | Score: 67.37 / 100
       "value": 559.1500244140625,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "Maximum adjusted high last 252 sessions",
       "inputs": [
@@ -2293,8 +2301,8 @@ Price: 523.88 USD | Score: 67.37 / 100
       "value": 348.54386902384044,
       "unit": "USD",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "Minimum adjusted low last 252 sessions",
       "inputs": [
@@ -2302,11 +2310,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "momentum_63": {
-      "value": 0.09267450743558436,
+      "value": 0.07751822928801055,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "close / close63 sessions ago - 1",
       "inputs": [
@@ -2314,183 +2322,23 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "relative_strength_63": {
-      "value": 0.11917470241606254,
+      "value": 0.11749625331504143,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "freshness": "fresh",
       "formula": "stock 63-session return factor / benchmark factor - 1; aligned dates",
       "inputs": [
         "adjusted OHLCV"
       ]
     },
-    "credit_cost": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295652+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
     "competitive_advantage": {
       "value": null,
       "unit": "ratio",
       "source": "Not available from configured providers",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295658+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "promoter_ownership": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295662+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "historical_pe_min": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295664+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "funding_stability": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295666+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "historical_pe_max": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295668+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "gnpa": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295671+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "normalized_roe": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295673+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "nnpa": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295675+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "dilution_risk": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295677+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "capacity_utilization": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295680+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "regulatory_exposure": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295682+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "historical_pe_median": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295684+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "recurring_revenue_ratio": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295686+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "capital_adequacy": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295689+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "pledge_ratio": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295691+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "concentration_risk": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295693+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.029706+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -2500,7 +2348,157 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Not available from configured providers",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295695+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.029716+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "credit_cost": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029721+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "concentration_risk": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029724+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "regulatory_exposure": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029727+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "historical_pe_median": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029731+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "promoter_ownership": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029734+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "nnpa": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029737+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "capital_adequacy": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029741+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "funding_stability": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029744+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "dilution_risk": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029747+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "recurring_revenue_ratio": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029750+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "historical_pe_min": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029754+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "historical_pe_max": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029757+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "normalized_roe": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029760+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "pledge_ratio": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029764+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "gnpa": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029767+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -2510,17 +2508,27 @@ Price: 523.88 USD | Score: 67.37 / 100
       "unit": "ratio",
       "source": "Not available from configured providers",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295698+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.029770+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "capacity_utilization": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:42.029773+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
     },
     "earnings_yield": {
-      "value": 0.03657326099629952,
+      "value": 0.036989129264800365,
       "unit": "ratio",
       "source": "calculated",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:43.295709+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.029788+00:00",
       "freshness": "derived",
       "formula": "1 / trailing PE",
       "inputs": [
@@ -2528,11 +2536,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "fcf_yield": {
-      "value": 0.01721838391208834,
+      "value": 0.017414172078964417,
       "unit": "ratio",
       "source": "calculated",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:43.295720+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.029805+00:00",
       "freshness": "derived",
       "formula": "annual FCF / market cap",
       "inputs": [
@@ -2541,11 +2549,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "peg": {
-      "value": 1.1962890291715162,
+      "value": 1.182839168169745,
       "unit": "ratio",
       "source": "calculated",
       "period": "2026-06-30",
-      "retrieved_at": "2026-11-16T10:11:43.295729+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.029817+00:00",
       "freshness": "derived",
       "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
       "inputs": [
@@ -2554,11 +2562,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "margin_of_safety": {
-      "value": -4.238937915610566,
+      "value": -4.181037013855232,
       "unit": "ratio",
       "source": "DCF scenarios",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.295816+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.029915+00:00",
       "freshness": "derived",
       "formula": "1 - price/base fair value",
       "inputs": [
@@ -2568,11 +2576,11 @@ Price: 523.88 USD | Score: 67.37 / 100
       ]
     },
     "above_sma50": {
-      "value": 1.0,
+      "value": 0.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:43.295826+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:42.029929+00:00",
       "freshness": "derived",
       "formula": "price > SMA50",
       "inputs": []
@@ -2581,8 +2589,8 @@ Price: 523.88 USD | Score: 67.37 / 100
       "value": 1.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:43.295830+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:42.029935+00:00",
       "freshness": "derived",
       "formula": "price > SMA200",
       "inputs": []
@@ -2591,8 +2599,8 @@ Price: 523.88 USD | Score: 67.37 / 100
       "value": 0.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:43.295834+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:42.029940+00:00",
       "freshness": "derived",
       "formula": "MACD histogram > 0",
       "inputs": []
@@ -2601,8 +2609,8 @@ Price: 523.88 USD | Score: 67.37 / 100
       "value": 1.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-13",
-      "retrieved_at": "2026-11-16T10:11:43.295837+00:00",
+      "period": "2026-11-16",
+      "retrieved_at": "2026-11-17T11:13:42.029945+00:00",
       "freshness": "derived",
       "formula": "last completed weekly close > weekly SMA20",
       "inputs": []
@@ -2612,7 +2620,7 @@ Price: 523.88 USD | Score: 67.37 / 100
     {
       "period": "2026-06-30",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "currency": "USD",
       "revenue": 331839000000.0,
       "net_income": 133749000000.0,
@@ -2628,7 +2636,7 @@ Price: 523.88 USD | Score: 67.37 / 100
       "ocf": 182935000000.0,
       "capex": -115948000000.0,
       "fcf": 66987000000.0,
-      "shares": 7427000000.0,
+      "shares": 7428434704.0,
       "dividends": -26445000000.0,
       "operating_income": 155237000000.0,
       "inventory": 1397000000.0,
@@ -2637,7 +2645,7 @@ Price: 523.88 USD | Score: 67.37 / 100
     {
       "period": "2025-06-30",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "currency": "USD",
       "revenue": 281724000000.0,
       "net_income": 101832000000.0,
@@ -2662,7 +2670,7 @@ Price: 523.88 USD | Score: 67.37 / 100
     {
       "period": "2024-06-30",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "currency": "USD",
       "revenue": 245122000000.0,
       "net_income": 88136000000.0,
@@ -2687,7 +2695,7 @@ Price: 523.88 USD | Score: 67.37 / 100
     {
       "period": "2023-06-30",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "currency": "USD",
       "revenue": 211915000000.0,
       "net_income": 72361000000.0,
@@ -2712,7 +2720,7 @@ Price: 523.88 USD | Score: 67.37 / 100
     {
       "period": "2022-06-30",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:41.926897+00:00",
+      "retrieved_at": "2026-11-17T11:13:41.177202+00:00",
       "currency": "USD"
     }
   ],
@@ -2722,14 +2730,24 @@ Price: 523.88 USD | Score: 67.37 / 100
   ],
   "news_ids": [],
   "converted_prices": {
-    "USD": 523.88,
-    "INR": 49204.11961975098
+    "USD": 517.99,
+    "INR": 48411.34492576599
   },
   "changes": {
+    "price": {
+      "previous": 523.88,
+      "current": 517.99,
+      "delta": -5.889999999999986
+    },
+    "score": {
+      "previous": 67.37,
+      "current": 63.38,
+      "delta": -3.990000000000002
+    },
     "fair_value": {
-      "previous": 99.97805431900618,
-      "current": 99.99736748912113,
-      "delta": 0.01931317011495537
+      "previous": 99.99736748912113,
+      "current": 99.97805431900618,
+      "delta": -0.01931317011495537
     },
     "new_news": []
   }
@@ -2737,17 +2755,17 @@ Price: 523.88 USD | Score: 67.37 / 100
 ```
 
 ## TCS.NS — INSUFFICIENT DATA
-Price: 2405.0 INR | Score: N/A / 100
+Price: 2406.6 INR | Score: N/A / 100
 ```json
 {
   "ticker": "TCS.NS",
   "exchange": "NSE",
   "name": "Tata Consultancy Services Limited",
-  "price": 2405.0,
+  "price": 2406.6,
   "score": null,
   "fair_value": 1527.17671499812,
   "currency": "INR",
-  "price_timestamp": "2026-11-16T09:59:13+00:00",
+  "price_timestamp": "2026-11-17T09:58:11+00:00",
   "scores": {
     "total": null,
     "categories": {
@@ -2822,17 +2840,17 @@ Price: 2405.0 INR | Score: N/A / 100
       "valuation": {
         "score": null,
         "maximum": 30,
-        "coverage": 0.1667,
+        "coverage": 0.4167,
         "details": {
           "earnings_yield": {
-            "value": 0.059318085224072586,
-            "quality": 0.7414760653009073,
+            "value": 0.059278649964314256,
+            "quality": 0.7409831245539282,
             "weight": 2
           },
           "fcf_yield": {
-            "value": null,
-            "points": null,
-            "reason": "missing, stale, or undated"
+            "value": 0.055066503992117544,
+            "quality": 0.6883312999014692,
+            "weight": 3
           },
           "margin_of_safety": {
             "value": null,
@@ -2938,11 +2956,11 @@ Price: 2405.0 INR | Score: N/A / 100
   "valuation": {
     "metrics": {
       "earnings_yield": {
-        "value": 0.059318085224072586,
+        "value": 0.059278649964314256,
         "unit": "ratio",
         "source": "calculated",
         "period": "2026-03-31",
-        "retrieved_at": "2026-11-16T10:11:45.439561+00:00",
+        "retrieved_at": "2026-11-17T11:13:43.883191+00:00",
         "freshness": "derived",
         "formula": "1 / trailing PE",
         "inputs": [
@@ -2950,11 +2968,11 @@ Price: 2405.0 INR | Score: N/A / 100
         ]
       },
       "fcf_yield": {
-        "value": null,
+        "value": 0.055066503992117544,
         "unit": "ratio",
         "source": "calculated",
         "period": "2026-03-31",
-        "retrieved_at": "2026-11-16T10:11:45.439580+00:00",
+        "retrieved_at": "2026-11-17T11:13:43.883222+00:00",
         "freshness": "derived",
         "formula": "annual FCF / market cap",
         "inputs": [
@@ -2963,11 +2981,11 @@ Price: 2405.0 INR | Score: N/A / 100
         ]
       },
       "peg": {
-        "value": 2.9604934629169253,
+        "value": 2.962462938078611,
         "unit": "ratio",
         "source": "calculated",
         "period": "2026-03-31",
-        "retrieved_at": "2026-11-16T10:11:45.439590+00:00",
+        "retrieved_at": "2026-11-17T11:13:43.883234+00:00",
         "freshness": "derived",
         "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
         "inputs": [
@@ -3035,17 +3053,17 @@ Price: 2405.0 INR | Score: N/A / 100
     "resistance": 2549.89990234375,
     "entry_range": [
       2246.35838320449,
-      2279.6340990534845
+      2279.5429764928344
     ],
-    "invalidation": 2179.806951506501,
-    "risk_reward": 0.6434474923320421,
+    "invalidation": 2179.989196627801,
+    "risk_reward": 0.6323605971166849,
     "support_zone": [
-      2229.7205252799927,
-      2262.9962411289875
+      2229.766086560318,
+      2262.9506798486623
     ],
     "resistance_zone": [
-      2533.2620444192526,
-      2566.5377602682474
+      2533.307605699578,
+      2566.492198987922
     ],
     "method": "Confirmed 5-bar pivots in last 63 sessions; zones ±0.25 ATR; invalidation support - ATR. Swing scenarios, not price forecasts."
   },
@@ -3077,7 +3095,7 @@ Price: 2405.0 INR | Score: N/A / 100
   },
   "market": {
     "expected_session": null,
-    "last_session": "2026-11-16",
+    "last_session": "2026-11-17",
     "stale": true,
     "condition": "holiday/weekend",
     "calendar": "XBOM",
@@ -3085,51 +3103,51 @@ Price: 2405.0 INR | Score: N/A / 100
   },
   "metrics": {
     "price": {
-      "value": 2405.0,
+      "value": 2406.6,
       "unit": "INR",
       "source": "Yahoo Finance",
-      "period": "2026-11-16T09:59:13+00:00",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17T09:58:11+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": null,
       "inputs": []
     },
     "pe": {
-      "value": 16.858265,
+      "value": 16.86948,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-16T09:59:13+00:00",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17T09:58:11+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
     },
     "forward_pe": {
-      "value": 14.9623,
+      "value": 14.972255,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-16T09:59:13+00:00",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17T09:58:11+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
     },
     "pb": {
-      "value": 7.313053,
+      "value": 7.317919,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-16T09:59:13+00:00",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17T09:58:11+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
     },
     "ev_ebitda": {
-      "value": 11.434,
+      "value": 11.422,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-16T09:59:13+00:00",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17T09:58:11+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
@@ -3139,7 +3157,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "net_income / equity",
       "inputs": [
@@ -3152,7 +3170,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "net_income / assets",
       "inputs": [
@@ -3165,7 +3183,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "operating_income / revenue",
       "inputs": [
@@ -3178,7 +3196,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "net_income / revenue",
       "inputs": [
@@ -3187,11 +3205,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "market_cap": {
-      "value": null,
+      "value": 8707289645056.0,
       "unit": "INR",
       "source": "Yahoo Finance",
-      "period": "2026-11-16T09:59:13+00:00",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17T09:58:11+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
@@ -3201,7 +3219,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "shares",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -3213,7 +3231,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -3223,7 +3241,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -3233,7 +3251,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "INR",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -3245,7 +3263,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "INR",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -3253,11 +3271,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "enterprise_value": {
-      "value": 8329725739008.0,
+      "value": 8320680722432.0,
       "unit": "INR",
       "source": "Yahoo Finance",
-      "period": "2026-11-16T09:59:13+00:00",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17T09:58:11+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
@@ -3267,7 +3285,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "INR",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -3279,7 +3297,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "INR",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -3291,7 +3309,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "debt / equity",
       "inputs": [
@@ -3304,7 +3322,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "current_assets / current_liabilities",
       "inputs": [
@@ -3317,7 +3335,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "fcf / net_income",
       "inputs": [
@@ -3330,7 +3348,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "ebit / interest",
       "inputs": [
@@ -3343,7 +3361,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "EBIT / (assets - current liabilities)",
       "inputs": [
@@ -3357,7 +3375,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "INR",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -3369,7 +3387,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "(revenue_latest / revenue_1y_ago)^(1/1) - 1",
       "inputs": [
@@ -3382,7 +3400,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "(eps_latest / eps_1y_ago)^(1/1) - 1",
       "inputs": [
@@ -3395,7 +3413,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "(revenue_latest / revenue_3y_ago)^(1/3) - 1",
       "inputs": [
@@ -3408,7 +3426,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "(eps_latest / eps_3y_ago)^(1/3) - 1",
       "inputs": [
@@ -3421,7 +3439,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "(revenue_latest / revenue_5y_ago)^(1/5) - 1",
       "inputs": [
@@ -3434,7 +3452,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "(eps_latest / eps_5y_ago)^(1/5) - 1",
       "inputs": [
@@ -3447,7 +3465,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "Profitable annual periods / observed annual periods",
       "inputs": [
@@ -3459,7 +3477,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "FCF / absolute cash dividends",
       "inputs": [
@@ -3472,7 +3490,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "fresh",
       "formula": "std annual net income / abs mean",
       "inputs": [
@@ -3480,11 +3498,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "sma20": {
-      "value": 2479.8849853515626,
+      "value": 2476.964990234375,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "mean last 20 adjusted closes",
       "inputs": [
@@ -3492,11 +3510,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "sma50": {
-      "value": 2288.4009326171877,
+      "value": 2289.8212548828124,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "mean last 50 adjusted closes",
       "inputs": [
@@ -3504,11 +3522,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "sma100": {
-      "value": 2264.9773583984374,
+      "value": 2268.6679870605467,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "mean last 100 adjusted closes",
       "inputs": [
@@ -3516,11 +3534,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "sma200": {
-      "value": 2362.838253173828,
+      "value": 2359.4964599609375,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "mean last 200 adjusted closes",
       "inputs": [
@@ -3528,11 +3546,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "ema20": {
-      "value": 2425.8876864629037,
+      "value": 2424.0507732432225,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "EMA span 20",
       "inputs": [
@@ -3540,11 +3558,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "ema50": {
-      "value": 2348.880255220234,
+      "value": 2351.1437784608984,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "EMA span 50",
       "inputs": [
@@ -3552,11 +3570,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "rsi14": {
-      "value": 50.381763313750064,
+      "value": 50.59713431241914,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "Wilder RSI 14; flat market = 50",
       "inputs": [
@@ -3564,11 +3582,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "macd": {
-      "value": 41.719185227761045,
+      "value": 35.39298702437145,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "EMA12 - EMA26",
       "inputs": [
@@ -3576,11 +3594,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "macd_signal": {
-      "value": 61.59963073656979,
+      "value": 56.35830199412189,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "EMA9 of MACD",
       "inputs": [
@@ -3588,11 +3606,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "macd_histogram": {
-      "value": -19.880445508808748,
+      "value": -20.965314969750438,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "MACD - signal",
       "inputs": [
@@ -3600,11 +3618,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "bollinger_lower": {
-      "value": 2407.526776694991,
+      "value": 2398.025600389042,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "SMA20 - 2 population std20",
       "inputs": [
@@ -3612,11 +3630,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "bollinger_upper": {
-      "value": 2552.243194008134,
+      "value": 2555.9043800797076,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "SMA20 + 2 population std20",
       "inputs": [
@@ -3624,11 +3642,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "atr14": {
-      "value": 66.55143169798919,
+      "value": 66.36918657668892,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "Wilder mean true range14",
       "inputs": [
@@ -3636,11 +3654,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "volume_ratio": {
-      "value": 0.3681401133431414,
+      "value": 0.6682163577448417,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "Latest volume / previous 20 sessions mean",
       "inputs": [
@@ -3651,8 +3669,8 @@ Price: 2405.0 INR | Score: N/A / 100
       "value": 3269.7790009998616,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "Maximum adjusted high last 252 sessions",
       "inputs": [
@@ -3663,8 +3681,8 @@ Price: 2405.0 INR | Score: N/A / 100
       "value": 1955.6242634941125,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "Minimum adjusted low last 252 sessions",
       "inputs": [
@@ -3672,11 +3690,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "momentum_63": {
-      "value": 0.01801477157324216,
+      "value": 0.024732632133959376,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "close / close63 sessions ago - 1",
       "inputs": [
@@ -3684,183 +3702,23 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "relative_strength_63": {
-      "value": -0.018020740457761364,
+      "value": -0.01649499632122986,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "freshness": "stale",
       "formula": "stock 63-session return factor / benchmark factor - 1; aligned dates",
       "inputs": [
         "adjusted OHLCV"
       ]
     },
-    "credit_cost": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439497+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
     "competitive_advantage": {
       "value": null,
       "unit": "ratio",
       "source": "Not available from configured providers",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439506+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "promoter_ownership": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439509+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "historical_pe_min": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439512+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "funding_stability": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439514+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "historical_pe_max": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439516+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "gnpa": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439519+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "normalized_roe": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439521+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "nnpa": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439524+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "dilution_risk": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439526+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "capacity_utilization": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439529+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "regulatory_exposure": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439531+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "historical_pe_median": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439534+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "recurring_revenue_ratio": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439536+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "capital_adequacy": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439538+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "pledge_ratio": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439541+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "concentration_risk": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439543+00:00",
+      "retrieved_at": "2026-11-17T11:13:43.883103+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -3870,7 +3728,157 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Not available from configured providers",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439545+00:00",
+      "retrieved_at": "2026-11-17T11:13:43.883114+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "credit_cost": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883119+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "concentration_risk": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883123+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "regulatory_exposure": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883126+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "historical_pe_median": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883130+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "promoter_ownership": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883133+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "nnpa": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883136+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "capital_adequacy": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883139+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "funding_stability": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883142+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "dilution_risk": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883146+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "recurring_revenue_ratio": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883150+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "historical_pe_min": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883153+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "historical_pe_max": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883156+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "normalized_roe": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883159+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "pledge_ratio": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883162+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "gnpa": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883166+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -3880,17 +3888,27 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Not available from configured providers",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439547+00:00",
+      "retrieved_at": "2026-11-17T11:13:43.883169+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "capacity_utilization": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:43.883172+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
     },
     "earnings_yield": {
-      "value": 0.059318085224072586,
+      "value": 0.059278649964314256,
       "unit": "ratio",
       "source": "calculated",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.439561+00:00",
+      "retrieved_at": "2026-11-17T11:13:43.883191+00:00",
       "freshness": "derived",
       "formula": "1 / trailing PE",
       "inputs": [
@@ -3898,11 +3916,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "fcf_yield": {
-      "value": null,
+      "value": 0.055066503992117544,
       "unit": "ratio",
       "source": "calculated",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.439580+00:00",
+      "retrieved_at": "2026-11-17T11:13:43.883222+00:00",
       "freshness": "derived",
       "formula": "annual FCF / market cap",
       "inputs": [
@@ -3911,11 +3929,11 @@ Price: 2405.0 INR | Score: N/A / 100
       ]
     },
     "peg": {
-      "value": 2.9604934629169253,
+      "value": 2.962462938078611,
       "unit": "ratio",
       "source": "calculated",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.439590+00:00",
+      "retrieved_at": "2026-11-17T11:13:43.883234+00:00",
       "freshness": "derived",
       "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
       "inputs": [
@@ -3928,7 +3946,7 @@ Price: 2405.0 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "DCF scenarios",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.439682+00:00",
+      "retrieved_at": "2026-11-17T11:13:43.883340+00:00",
       "freshness": "derived",
       "formula": "1 - price/base fair value",
       "inputs": [
@@ -3941,8 +3959,8 @@ Price: 2405.0 INR | Score: N/A / 100
       "value": 1.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.439694+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:43.883355+00:00",
       "freshness": "stale",
       "formula": "price > SMA50",
       "inputs": []
@@ -3951,8 +3969,8 @@ Price: 2405.0 INR | Score: N/A / 100
       "value": 1.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.439699+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:43.883361+00:00",
       "freshness": "stale",
       "formula": "price > SMA200",
       "inputs": []
@@ -3961,8 +3979,8 @@ Price: 2405.0 INR | Score: N/A / 100
       "value": 0.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.439703+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:43.883367+00:00",
       "freshness": "stale",
       "formula": "MACD histogram > 0",
       "inputs": []
@@ -3971,8 +3989,8 @@ Price: 2405.0 INR | Score: N/A / 100
       "value": 1.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.439707+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:43.883372+00:00",
       "freshness": "stale",
       "formula": "last completed weekly close > weekly SMA20",
       "inputs": []
@@ -3982,7 +4000,7 @@ Price: 2405.0 INR | Score: N/A / 100
     {
       "period": "2026-03-31",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "currency": "INR",
       "revenue": 2670210000000.0,
       "net_income": 492100000000.0,
@@ -4006,7 +4024,7 @@ Price: 2405.0 INR | Score: N/A / 100
     {
       "period": "2025-03-31",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "currency": "INR",
       "revenue": 2553240000000.0,
       "net_income": 485530000000.0,
@@ -4030,7 +4048,7 @@ Price: 2405.0 INR | Score: N/A / 100
     {
       "period": "2024-03-31",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "currency": "INR",
       "revenue": 2408930000000.0,
       "net_income": 459080000000.0,
@@ -4054,7 +4072,7 @@ Price: 2405.0 INR | Score: N/A / 100
     {
       "period": "2023-03-31",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "currency": "INR",
       "revenue": 2254580000000.0,
       "net_income": 421470000000.0,
@@ -4078,7 +4096,7 @@ Price: 2405.0 INR | Score: N/A / 100
     {
       "period": "2022-03-31",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:43.604657+00:00",
+      "retrieved_at": "2026-11-17T11:13:42.250116+00:00",
       "currency": "INR"
     }
   ],
@@ -4088,14 +4106,14 @@ Price: 2405.0 INR | Score: N/A / 100
   ],
   "news_ids": [],
   "converted_prices": {
-    "USD": 25.60621772601033,
-    "INR": 2405.0
+    "USD": 25.750053751068673,
+    "INR": 2406.6
   },
   "changes": {
     "price": {
-      "previous": 2407.5,
-      "current": 2405.0,
-      "delta": -2.5
+      "previous": 2405.0,
+      "current": 2406.6,
+      "delta": 1.599999999999909
     },
     "new_news": []
   }
@@ -4103,17 +4121,17 @@ Price: 2405.0 INR | Score: N/A / 100
 ```
 
 ## HDFCBANK.NS — INSUFFICIENT DATA
-Price: 816.5 INR | Score: N/A / 100
+Price: 814.95 INR | Score: N/A / 100
 ```json
 {
   "ticker": "HDFCBANK.NS",
   "exchange": "NSE",
   "name": "HDFC Bank Limited",
-  "price": 816.5,
+  "price": 814.95,
   "score": null,
   "fair_value": null,
   "currency": "INR",
-  "price_timestamp": "2026-11-16T09:59:13+00:00",
+  "price_timestamp": "2026-11-17T09:58:11+00:00",
   "scores": {
     "total": null,
     "categories": {
@@ -4269,11 +4287,11 @@ Price: 816.5 INR | Score: N/A / 100
   "valuation": {
     "metrics": {
       "earnings_yield": {
-        "value": 0.0560318449146114,
+        "value": 0.05613841577615234,
         "unit": "ratio",
         "source": "calculated",
         "period": "2026-03-31",
-        "retrieved_at": "2026-11-16T10:11:46.897447+00:00",
+        "retrieved_at": "2026-11-17T11:13:45.190979+00:00",
         "freshness": "derived",
         "formula": "1 / trailing PE",
         "inputs": [
@@ -4281,11 +4299,11 @@ Price: 816.5 INR | Score: N/A / 100
         ]
       },
       "fcf_yield": {
-        "value": 0.08458228397884239,
+        "value": 0.08474314920975304,
         "unit": "ratio",
         "source": "calculated",
         "period": "2026-03-31",
-        "retrieved_at": "2026-11-16T10:11:46.897458+00:00",
+        "retrieved_at": "2026-11-17T11:13:45.190996+00:00",
         "freshness": "derived",
         "formula": "annual FCF / market cap",
         "inputs": [
@@ -4298,7 +4316,7 @@ Price: 816.5 INR | Score: N/A / 100
         "unit": "ratio",
         "source": "calculated",
         "period": "2026-03-31",
-        "retrieved_at": "2026-11-16T10:11:46.897467+00:00",
+        "retrieved_at": "2026-11-17T11:13:45.191008+00:00",
         "freshness": "derived",
         "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
         "inputs": [
@@ -4342,21 +4360,21 @@ Price: 816.5 INR | Score: N/A / 100
   "technicals": {
     "trend": "mixed",
     "weekly_trend": "up",
-    "support": 715.0999755859375,
+    "support": 798.0,
     "resistance": 817.8499755859375,
     "entry_range": [
-      715.0999755859375,
-      723.6590708102367
+      798.0,
+      806.3102321516371
     ],
-    "invalidation": 697.9817851373392,
-    "risk_reward": 0.011390448189772815,
+    "invalidation": 781.3795356967257,
+    "risk_reward": 0.08638433767885344,
     "support_zone": [
-      710.8204279737879,
-      719.3795231980871
+      793.8448839241814,
+      802.1551160758186
     ],
     "resistance_zone": [
-      813.5704279737879,
-      822.1295231980871
+      813.6948595101189,
+      822.0050916617561
     ],
     "method": "Confirmed 5-bar pivots in last 63 sessions; zones ±0.25 ATR; invalidation support - ATR. Swing scenarios, not price forecasts."
   },
@@ -4388,7 +4406,7 @@ Price: 816.5 INR | Score: N/A / 100
   },
   "market": {
     "expected_session": null,
-    "last_session": "2026-11-16",
+    "last_session": "2026-11-17",
     "stale": true,
     "condition": "holiday/weekend",
     "calendar": "XBOM",
@@ -4396,41 +4414,41 @@ Price: 816.5 INR | Score: N/A / 100
   },
   "metrics": {
     "price": {
-      "value": 816.5,
+      "value": 814.95,
       "unit": "INR",
       "source": "Yahoo Finance",
-      "period": "2026-11-16T09:59:13+00:00",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17T09:58:11+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": null,
       "inputs": []
     },
     "pe": {
-      "value": 17.846994,
+      "value": 17.813114,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-16T09:59:13+00:00",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17T09:58:11+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
     },
     "forward_pe": {
-      "value": 13.043131,
+      "value": 13.018372,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-16T09:59:13+00:00",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17T09:58:11+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
     },
     "pb": {
-      "value": 2.0679317,
+      "value": 2.0640059,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-16T09:59:13+00:00",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17T09:58:11+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
@@ -4439,8 +4457,8 @@ Price: 816.5 INR | Score: N/A / 100
       "value": null,
       "unit": "ratio",
       "source": "Yahoo Finance",
-      "period": "2026-11-16T09:59:13+00:00",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17T09:58:11+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
@@ -4450,7 +4468,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "net_income / equity",
       "inputs": [
@@ -4463,7 +4481,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "net_income / assets",
       "inputs": [
@@ -4476,7 +4494,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "operating_income / revenue",
       "inputs": [
@@ -4489,7 +4507,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "net_income / revenue",
       "inputs": [
@@ -4498,11 +4516,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "market_cap": {
-      "value": 12600467259392.0,
+      "value": 12576548192256.0,
       "unit": "INR",
       "source": "Yahoo Finance",
-      "period": "2026-11-16T09:59:13+00:00",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17T09:58:11+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
@@ -4512,7 +4530,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "shares",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -4524,7 +4542,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -4534,7 +4552,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -4544,7 +4562,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "INR",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -4556,7 +4574,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "INR",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -4564,11 +4582,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "enterprise_value": {
-      "value": 15931549941760.0,
+      "value": 16124216344576.0,
       "unit": "INR",
       "source": "Yahoo Finance",
-      "period": "2026-11-16T09:59:13+00:00",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17T09:58:11+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "snapshot",
       "formula": null,
       "inputs": []
@@ -4578,7 +4596,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "INR",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -4590,7 +4608,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "INR",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -4602,7 +4620,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "debt / equity",
       "inputs": [
@@ -4615,7 +4633,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "current_assets / current_liabilities",
       "inputs": [
@@ -4628,7 +4646,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "fcf / net_income",
       "inputs": [
@@ -4641,7 +4659,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "ebit / interest",
       "inputs": [
@@ -4654,7 +4672,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "EBIT / (assets - current liabilities)",
       "inputs": [
@@ -4668,7 +4686,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "INR",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "Latest annual statement value",
       "inputs": [
@@ -4680,7 +4698,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "(revenue_latest / revenue_1y_ago)^(1/1) - 1",
       "inputs": [
@@ -4693,7 +4711,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "(eps_latest / eps_1y_ago)^(1/1) - 1",
       "inputs": [
@@ -4706,7 +4724,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "(revenue_latest / revenue_3y_ago)^(1/3) - 1",
       "inputs": [
@@ -4719,7 +4737,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "(eps_latest / eps_3y_ago)^(1/3) - 1",
       "inputs": [
@@ -4732,7 +4750,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "(revenue_latest / revenue_5y_ago)^(1/5) - 1",
       "inputs": [
@@ -4745,7 +4763,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "(eps_latest / eps_5y_ago)^(1/5) - 1",
       "inputs": [
@@ -4758,7 +4776,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "Profitable annual periods / observed annual periods",
       "inputs": [
@@ -4770,7 +4788,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "FCF / absolute cash dividends",
       "inputs": [
@@ -4783,7 +4801,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Yahoo Finance",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "fresh",
       "formula": "std annual net income / abs mean",
       "inputs": [
@@ -4791,11 +4809,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "sma20": {
-      "value": 735.6149963378906,
+      "value": 739.9199981689453,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "mean last 20 adjusted closes",
       "inputs": [
@@ -4803,11 +4821,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "sma50": {
-      "value": 722.8599975585937,
+      "value": 725.142998046875,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "mean last 50 adjusted closes",
       "inputs": [
@@ -4815,11 +4833,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "sma100": {
-      "value": 741.8345001220703,
+      "value": 742.2375,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "mean last 100 adjusted closes",
       "inputs": [
@@ -4827,11 +4845,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "sma200": {
-      "value": 775.1017819213868,
+      "value": 774.6577697753906,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "mean last 200 adjusted closes",
       "inputs": [
@@ -4839,11 +4857,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "ema20": {
-      "value": 754.0898716829145,
+      "value": 759.8860755423541,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "EMA span 20",
       "inputs": [
@@ -4851,11 +4869,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "ema50": {
-      "value": 735.8250133884297,
+      "value": 738.9279545185968,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "EMA span 50",
       "inputs": [
@@ -4863,11 +4881,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "rsi14": {
-      "value": 75.62331310021949,
+      "value": 74.78839586640287,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "Wilder RSI 14; flat market = 50",
       "inputs": [
@@ -4875,11 +4893,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "macd": {
-      "value": 26.459970537238064,
+      "value": 27.863831607826228,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "EMA12 - EMA26",
       "inputs": [
@@ -4887,11 +4905,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "macd_signal": {
-      "value": 14.594873950675744,
+      "value": 17.248665482105842,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "EMA9 of MACD",
       "inputs": [
@@ -4899,11 +4917,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "macd_histogram": {
-      "value": 11.86509658656232,
+      "value": 10.615166125720386,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "MACD - signal",
       "inputs": [
@@ -4911,11 +4929,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "bollinger_lower": {
-      "value": 637.4246777810041,
+      "value": 635.9158523733399,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "SMA20 - 2 population std20",
       "inputs": [
@@ -4923,11 +4941,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "bollinger_upper": {
-      "value": 833.8053148947771,
+      "value": 843.9241439645507,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "SMA20 + 2 population std20",
       "inputs": [
@@ -4935,11 +4953,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "atr14": {
-      "value": 17.118190448598288,
+      "value": 16.620464303274304,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "Wilder mean true range14",
       "inputs": [
@@ -4947,11 +4965,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "volume_ratio": {
-      "value": 0.6891035324612137,
+      "value": 0.897880423262696,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "Latest volume / previous 20 sessions mean",
       "inputs": [
@@ -4962,8 +4980,8 @@ Price: 816.5 INR | Score: N/A / 100
       "value": 1000.9449320171519,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "Maximum adjusted high last 252 sessions",
       "inputs": [
@@ -4974,8 +4992,8 @@ Price: 816.5 INR | Score: N/A / 100
       "value": 669.2000122070312,
       "unit": "INR",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "Minimum adjusted low last 252 sessions",
       "inputs": [
@@ -4983,11 +5001,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "momentum_63": {
-      "value": 0.12620689655172423,
+      "value": 0.1209766330220512,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "close / close63 sessions ago - 1",
       "inputs": [
@@ -4995,183 +5013,23 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "relative_strength_63": {
-      "value": 0.08634161826369802,
+      "value": 0.07587686096059065,
       "unit": "ratio",
       "source": "Yahoo Finance auto_adjust=True",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "freshness": "stale",
       "formula": "stock 63-session return factor / benchmark factor - 1; aligned dates",
       "inputs": [
         "adjusted OHLCV"
       ]
     },
-    "credit_cost": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897385+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
     "competitive_advantage": {
       "value": null,
       "unit": "ratio",
       "source": "Not available from configured providers",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897392+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "promoter_ownership": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897395+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "historical_pe_min": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897398+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "funding_stability": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897401+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "historical_pe_max": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897403+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "gnpa": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897406+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "normalized_roe": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897408+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "nnpa": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897410+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "dilution_risk": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897413+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "capacity_utilization": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897415+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "regulatory_exposure": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897418+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "historical_pe_median": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897420+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "recurring_revenue_ratio": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897423+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "capital_adequacy": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897425+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "pledge_ratio": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897427+00:00",
-      "freshness": "unknown",
-      "formula": null,
-      "inputs": []
-    },
-    "concentration_risk": {
-      "value": null,
-      "unit": "ratio",
-      "source": "Not available from configured providers",
-      "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897430+00:00",
+      "retrieved_at": "2026-11-17T11:13:45.190901+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -5181,7 +5039,157 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Not available from configured providers",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897432+00:00",
+      "retrieved_at": "2026-11-17T11:13:45.190910+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "credit_cost": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190914+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "concentration_risk": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190918+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "regulatory_exposure": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190921+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "historical_pe_median": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190925+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "promoter_ownership": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190928+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "nnpa": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190931+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "capital_adequacy": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190934+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "funding_stability": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190937+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "dilution_risk": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190940+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "recurring_revenue_ratio": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190944+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "historical_pe_min": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190947+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "historical_pe_max": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190950+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "normalized_roe": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190953+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "pledge_ratio": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190956+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "gnpa": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190959+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
@@ -5191,17 +5199,27 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "Not available from configured providers",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897435+00:00",
+      "retrieved_at": "2026-11-17T11:13:45.190963+00:00",
+      "freshness": "unknown",
+      "formula": null,
+      "inputs": []
+    },
+    "capacity_utilization": {
+      "value": null,
+      "unit": "ratio",
+      "source": "Not available from configured providers",
+      "period": null,
+      "retrieved_at": "2026-11-17T11:13:45.190966+00:00",
       "freshness": "unknown",
       "formula": null,
       "inputs": []
     },
     "earnings_yield": {
-      "value": 0.0560318449146114,
+      "value": 0.05613841577615234,
       "unit": "ratio",
       "source": "calculated",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:46.897447+00:00",
+      "retrieved_at": "2026-11-17T11:13:45.190979+00:00",
       "freshness": "derived",
       "formula": "1 / trailing PE",
       "inputs": [
@@ -5209,11 +5227,11 @@ Price: 816.5 INR | Score: N/A / 100
       ]
     },
     "fcf_yield": {
-      "value": 0.08458228397884239,
+      "value": 0.08474314920975304,
       "unit": "ratio",
       "source": "calculated",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:46.897458+00:00",
+      "retrieved_at": "2026-11-17T11:13:45.190996+00:00",
       "freshness": "derived",
       "formula": "annual FCF / market cap",
       "inputs": [
@@ -5226,7 +5244,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "calculated",
       "period": "2026-03-31",
-      "retrieved_at": "2026-11-16T10:11:46.897467+00:00",
+      "retrieved_at": "2026-11-17T11:13:45.191008+00:00",
       "freshness": "derived",
       "formula": "PE / historical EPS CAGR in percentage points; historical proxy, not forecast",
       "inputs": [
@@ -5239,7 +5257,7 @@ Price: 816.5 INR | Score: N/A / 100
       "unit": "ratio",
       "source": "DCF scenarios",
       "period": null,
-      "retrieved_at": "2026-11-16T10:11:46.897488+00:00",
+      "retrieved_at": "2026-11-17T11:13:45.191052+00:00",
       "freshness": "derived",
       "formula": "1 - price/base fair value",
       "inputs": [
@@ -5252,8 +5270,8 @@ Price: 816.5 INR | Score: N/A / 100
       "value": 1.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:46.897497+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:45.191065+00:00",
       "freshness": "stale",
       "formula": "price > SMA50",
       "inputs": []
@@ -5262,8 +5280,8 @@ Price: 816.5 INR | Score: N/A / 100
       "value": 1.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:46.897501+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:45.191071+00:00",
       "freshness": "stale",
       "formula": "price > SMA200",
       "inputs": []
@@ -5272,8 +5290,8 @@ Price: 816.5 INR | Score: N/A / 100
       "value": 1.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:46.897505+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:45.191076+00:00",
       "freshness": "stale",
       "formula": "MACD histogram > 0",
       "inputs": []
@@ -5282,8 +5300,8 @@ Price: 816.5 INR | Score: N/A / 100
       "value": 1.0,
       "unit": "ratio",
       "source": "adjusted OHLCV derived",
-      "period": "2026-11-16",
-      "retrieved_at": "2026-11-16T10:11:46.897509+00:00",
+      "period": "2026-11-17",
+      "retrieved_at": "2026-11-17T11:13:45.191081+00:00",
       "freshness": "stale",
       "formula": "last completed weekly close > weekly SMA20",
       "inputs": []
@@ -5293,7 +5311,7 @@ Price: 816.5 INR | Score: N/A / 100
     {
       "period": "2026-03-31",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "currency": "INR",
       "revenue": 2495617500000.0,
       "net_income": 704793400000.0,
@@ -5313,7 +5331,7 @@ Price: 816.5 INR | Score: N/A / 100
     {
       "period": "2025-03-31",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "currency": "INR",
       "revenue": 2371508200000.0,
       "net_income": 673508300000.0,
@@ -5333,7 +5351,7 @@ Price: 816.5 INR | Score: N/A / 100
     {
       "period": "2024-03-31",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "currency": "INR",
       "revenue": 1986934300000.0,
       "net_income": 622656600000.0,
@@ -5353,7 +5371,7 @@ Price: 816.5 INR | Score: N/A / 100
     {
       "period": "2023-03-31",
       "source": "Yahoo Finance",
-      "retrieved_at": "2026-11-16T10:11:45.742603+00:00",
+      "retrieved_at": "2026-11-17T11:13:44.107373+00:00",
       "currency": "INR",
       "revenue": 1205375000000.0,
       "net_income": 495446900000.0,
@@ -5377,14 +5395,14 @@ Price: 816.5 INR | Score: N/A / 100
   ],
   "news_ids": [],
   "converted_prices": {
-    "USD": 8.69333753567045,
-    "INR": 816.5
+    "USD": 8.719773250408634,
+    "INR": 814.95
   },
   "changes": {
     "price": {
-      "previous": 804.0,
-      "current": 816.5,
-      "delta": 12.5
+      "previous": 816.5,
+      "current": 814.95,
+      "delta": -1.5499999999999545
     },
     "new_news": []
   }
