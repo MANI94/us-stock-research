@@ -1,5 +1,5 @@
 ticker,name,exchange,currency,price,price_timestamp,score,verdict,fair_value,news_overlay,fundamentals_score,fundamentals_coverage,valuation_score,valuation_coverage,technicals_score,technicals_coverage,risk_score,risk_coverage
-AAPL,Apple Inc.,NASDAQ,USD,352.78,2026-11-16T21:00:01+00:00,,INSUFFICIENT DATA,107.89030830441632,No material catalyst,27.71,0.8235,4.89,0.8333,24.86,1.0,,0.5
-MSFT,Microsoft Corporation,NASDAQ,USD,517.99,2026-11-16T21:00:01+00:00,63.38,HOLD / REVIEW,99.97805431900618,No material catalyst,27.86,0.8235,4.73,0.8333,18.3,1.0,12.49,0.7143
-TCS.NS,Tata Consultancy Services Limited,NSE,INR,2406.6,2026-11-17T09:58:11+00:00,,INSUFFICIENT DATA,1527.17671499812,No material catalyst,23.14,0.8235,,0.4167,,0.0,14.58,0.7143
-HDFCBANK.NS,HDFC Bank Limited,NSE,INR,814.95,2026-11-17T09:58:11+00:00,,INSUFFICIENT DATA,,No material catalyst,,0.2857,,0.0,,0.0,,0.0
+AAPL,Apple Inc.,NASDAQ,USD,351.91,2026-11-17T21:00:01+00:00,,INSUFFICIENT DATA,107.89030830441632,No material catalyst,27.71,0.8235,4.91,0.8333,24.51,1.0,,0.5
+MSFT,Microsoft Corporation,NASDAQ,USD,506.24,2026-11-17T21:00:01+00:00,63.09,HOLD / REVIEW,99.99736748912113,No material catalyst,27.86,0.8235,4.84,0.8333,17.9,1.0,12.49,0.7143
+TCS.NS,Tata Consultancy Services Limited,NSE,INR,2379.5,2026-11-18T09:58:51+00:00,,INSUFFICIENT DATA,1527.17671499812,No material catalyst,23.14,0.8235,,0.1667,,0.0,14.58,0.7143
+HDFCBANK.NS,HDFC Bank Limited,NSE,INR,808.15,2026-11-18T09:58:48+00:00,,INSUFFICIENT DATA,,No material catalyst,,0.2857,,0.0,,0.0,,0.0
